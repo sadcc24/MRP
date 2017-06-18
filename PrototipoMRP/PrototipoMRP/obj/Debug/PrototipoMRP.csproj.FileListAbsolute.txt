@@ -1,0 +1,12 @@
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
