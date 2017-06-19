@@ -10,3 +10,6 @@ c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\o
 c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
 c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
 c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
+C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
