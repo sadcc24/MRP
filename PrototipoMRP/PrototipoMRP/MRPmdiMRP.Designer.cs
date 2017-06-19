@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaDeMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +36,8 @@
             this.existenciasDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generacionDeOrdenesDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDeMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trasladosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoFinalizadoAInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,22 +63,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(853, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // materialesToolStripMenuItem
-            // 
-            this.materialesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listaDeMaterialesToolStripMenuItem});
-            this.materialesToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.estructura;
-            this.materialesToolStripMenuItem.Name = "materialesToolStripMenuItem";
-            this.materialesToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.materialesToolStripMenuItem.Text = "Materiales";
-            // 
-            // listaDeMaterialesToolStripMenuItem
-            // 
-            this.listaDeMaterialesToolStripMenuItem.Name = "listaDeMaterialesToolStripMenuItem";
-            this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.listaDeMaterialesToolStripMenuItem.Text = "Lista de Materiales";
-            this.listaDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.listaDeMaterialesToolStripMenuItem_Click);
             // 
             // archivoToolStripMenuItem
             // 
@@ -135,6 +119,22 @@
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Text = "Generacion de Ordenes de Produccion";
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.generacionDeOrdenesDeProduccionToolStripMenuItem_Click);
+            // 
+            // materialesToolStripMenuItem
+            // 
+            this.materialesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listaDeMaterialesToolStripMenuItem});
+            this.materialesToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.estructura;
+            this.materialesToolStripMenuItem.Name = "materialesToolStripMenuItem";
+            this.materialesToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.materialesToolStripMenuItem.Text = "Materiales";
+            // 
+            // listaDeMaterialesToolStripMenuItem
+            // 
+            this.listaDeMaterialesToolStripMenuItem.Name = "listaDeMaterialesToolStripMenuItem";
+            this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.listaDeMaterialesToolStripMenuItem.Text = "Lista de Materiales";
+            this.listaDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.listaDeMaterialesToolStripMenuItem_Click);
             // 
             // trasladosToolStripMenuItem
             // 
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 631);
+            this.ClientSize = new System.Drawing.Size(853, 619);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
