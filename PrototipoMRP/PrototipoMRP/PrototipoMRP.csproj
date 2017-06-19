@@ -64,6 +64,12 @@
     <Compile Include="GloginAutenticacion.Designer.cs">
       <DependentUpon>GloginAutenticacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManoObraMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManoObraMRP.Designer.cs">
+      <DependentUpon>ManoObraMRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="MRPmdiMRP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GloginAutenticacion.resx">
       <DependentUpon>GloginAutenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManoObraMRP.resx">
+      <DependentUpon>ManoObraMRP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MRPmdiMRP.resx">
       <DependentUpon>MRPmdiMRP.cs</DependentUpon>
