@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0A3E800-B2BE-465A-99B1-5403FD003D7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrototipoMRP</RootNamespace>
+    <AssemblyName>PrototipoMRP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultaManoObra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaManoObra.Designer.cs">
+      <DependentUpon>ConsultaManoObra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaTarea.Designer.cs">
+      <DependentUpon>ConsultaTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaTipoTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaTipoTarea.Designer.cs">
+      <DependentUpon>ConsultaTipoTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gconectividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gconectividad.Designer.cs">
+      <DependentUpon>Gconectividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GEmpresa.Designer.cs">
+      <DependentUpon>GEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GloginAutenticacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GloginAutenticacion.Designer.cs">
+      <DependentUpon>GloginAutenticacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManoObraMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManoObraMRP.Designer.cs">
+      <DependentUpon>ManoObraMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRPmdiMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRPmdiMRP.Designer.cs">
+      <DependentUpon>MRPmdiMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TareasMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareasMRP.Designer.cs">
+      <DependentUpon>TareasMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipotareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipotareaMRP.Designer.cs">
+      <DependentUpon>TipotareaMRP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConsultaManoObra.resx">
+      <DependentUpon>ConsultaManoObra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaTarea.resx">
+      <DependentUpon>ConsultaTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaTipoTarea.resx">
+      <DependentUpon>ConsultaTipoTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gconectividad.resx">
+      <DependentUpon>Gconectividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GEmpresa.resx">
+      <DependentUpon>GEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GloginAutenticacion.resx">
+      <DependentUpon>GloginAutenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManoObraMRP.resx">
+      <DependentUpon>ManoObraMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRPmdiMRP.resx">
+      <DependentUpon>MRPmdiMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TareasMRP.resx">
+      <DependentUpon>TareasMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipotareaMRP.resx">
+      <DependentUpon>TipotareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
