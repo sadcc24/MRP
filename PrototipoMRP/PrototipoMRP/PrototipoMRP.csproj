@@ -266,12 +266,15 @@
     <Compile Include="GlListaTraslado.Designer.cs">
       <DependentUpon>GlListaTraslado.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="GMPS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GMPS.Designer.cs">
       <DependentUpon>GMPS.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> PrototipoNoFuncional-Guillermo
     <Compile Include="GOrdenProduccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,9 +331,12 @@
     <EmbeddedResource Include="GlListaTraslado.resx">
       <DependentUpon>GlListaTraslado.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="GMPS.resx">
       <DependentUpon>GMPS.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> PrototipoNoFuncional-Guillermo
     <EmbeddedResource Include="GOrdenProduccion.resx">
       <DependentUpon>GOrdenProduccion.cs</DependentUpon>
     </EmbeddedResource>

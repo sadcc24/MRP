@@ -158,20 +158,20 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(370, 217);
+            this.button4.Location = new System.Drawing.Point(377, 217);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 11;
             this.button4.Text = "Limpiar";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // conectividad
+            // Gconectividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 377);
             this.Controls.Add(this.groupBox1);
-            this.Name = "conectividad";
+            this.Name = "Gconectividad";
             this.Text = "Conexion a Base de Datos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

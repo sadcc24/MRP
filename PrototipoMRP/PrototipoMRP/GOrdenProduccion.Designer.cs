@@ -31,6 +31,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+=======
+            this.label5 = new System.Windows.Forms.Label();
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
@@ -45,17 +49,29 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+=======
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.dataGridView1.Location = new System.Drawing.Point(3, 83);
+=======
+            this.dataGridView1.Location = new System.Drawing.Point(3, 104);
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(802, 325);
             this.dataGridView1.TabIndex = 0;
@@ -77,6 +93,10 @@
             // 
             // panel1
             // 
+<<<<<<< HEAD
+=======
+            this.panel1.Controls.Add(this.groupBox1);
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -85,6 +105,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.textBox1);
+<<<<<<< HEAD
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -101,132 +122,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(631, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "737373";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(553, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Orden #";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(208, 47);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(24, 20);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "...";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Fecha";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Orden de Compra";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(329, 47);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(105, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::PrototipoMRP.Properties.Resources.help;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.Location = new System.Drawing.Point(323, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(50, 40);
-            this.button7.TabIndex = 7;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::PrototipoMRP.Properties.Resources.refresh;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Location = new System.Drawing.Point(270, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(50, 40);
-            this.button6.TabIndex = 6;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::PrototipoMRP.Properties.Resources.guardar;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.Location = new System.Drawing.Point(164, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 40);
-            this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::PrototipoMRP.Properties.Resources.cancelar;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.Location = new System.Drawing.Point(216, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 40);
-            this.button4.TabIndex = 4;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::PrototipoMRP.Properties.Resources.eliminar;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Location = new System.Drawing.Point(112, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 40);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::PrototipoMRP.Properties.Resources.editar;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(60, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 40);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::PrototipoMRP.Properties.Resources.nuevo;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Location = new System.Drawing.Point(9, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 40);
-            this.button1.TabIndex = 0;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+=======
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(783, 95);
+            this.panel1.TabIndex = 1;
             // 
             // label5
             // 
@@ -237,6 +137,218 @@
             this.label5.Size = new System.Drawing.Size(215, 25);
             this.label5.TabIndex = 15;
             this.label5.Text = "Orden de Produccion";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(631, 69);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "737373";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+<<<<<<< HEAD
+            this.label3.Location = new System.Drawing.Point(553, 49);
+=======
+            this.label3.Location = new System.Drawing.Point(553, 69);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Orden #";
+            // 
+            // button8
+            // 
+<<<<<<< HEAD
+            this.button8.Location = new System.Drawing.Point(208, 47);
+=======
+            this.button8.Location = new System.Drawing.Point(208, 67);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(24, 20);
+            this.button8.TabIndex = 12;
+            this.button8.Text = "...";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+<<<<<<< HEAD
+            this.label2.Location = new System.Drawing.Point(286, 49);
+=======
+            this.label2.Location = new System.Drawing.Point(286, 69);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Fecha";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+<<<<<<< HEAD
+            this.label1.Location = new System.Drawing.Point(9, 50);
+=======
+            this.label1.Location = new System.Drawing.Point(9, 70);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Orden de Compra";
+            // 
+            // dateTimePicker1
+            // 
+<<<<<<< HEAD
+            this.dateTimePicker1.Location = new System.Drawing.Point(329, 47);
+=======
+            this.dateTimePicker1.Location = new System.Drawing.Point(329, 67);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+<<<<<<< HEAD
+            this.textBox1.Location = new System.Drawing.Point(105, 47);
+=======
+            this.textBox1.Location = new System.Drawing.Point(105, 67);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::PrototipoMRP.Properties.Resources.help;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
+            this.button7.Location = new System.Drawing.Point(323, 4);
+=======
+            this.button7.Location = new System.Drawing.Point(322, 18);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(50, 40);
+            this.button7.TabIndex = 7;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::PrototipoMRP.Properties.Resources.refresh;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+<<<<<<< HEAD
+            this.button6.Location = new System.Drawing.Point(270, 3);
+=======
+            this.button6.Location = new System.Drawing.Point(269, 17);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(50, 40);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::PrototipoMRP.Properties.Resources.guardar;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
+            this.button5.Location = new System.Drawing.Point(164, 3);
+=======
+            this.button5.Location = new System.Drawing.Point(163, 17);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(50, 40);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::PrototipoMRP.Properties.Resources.cancelar;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
+            this.button4.Location = new System.Drawing.Point(216, 3);
+=======
+            this.button4.Location = new System.Drawing.Point(215, 17);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(50, 40);
+            this.button4.TabIndex = 4;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::PrototipoMRP.Properties.Resources.eliminar;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
+            this.button3.Location = new System.Drawing.Point(112, 3);
+=======
+            this.button3.Location = new System.Drawing.Point(111, 17);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(50, 40);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::PrototipoMRP.Properties.Resources.editar;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+<<<<<<< HEAD
+            this.button2.Location = new System.Drawing.Point(60, 3);
+=======
+            this.button2.Location = new System.Drawing.Point(59, 17);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(50, 40);
+            this.button2.TabIndex = 1;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::PrototipoMRP.Properties.Resources.nuevo;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
+            this.button1.Location = new System.Drawing.Point(9, 3);
+=======
+            this.button1.Location = new System.Drawing.Point(8, 17);
+>>>>>>> PrototipoNoFuncional-Guillermo
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 40);
+            this.button1.TabIndex = 0;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+<<<<<<< HEAD
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(441, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(215, 25);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Orden de Produccion";
+=======
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Location = new System.Drawing.Point(9, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(410, 61);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Menu";
+>>>>>>> PrototipoNoFuncional-Guillermo
             // 
             // CreacionOrdenProduccion
             // 
@@ -250,6 +362,10 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+<<<<<<< HEAD
+=======
+            this.groupBox1.ResumeLayout(false);
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.ResumeLayout(false);
 
         }
@@ -274,5 +390,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.GroupBox groupBox1;
+>>>>>>> PrototipoNoFuncional-Guillermo
     }
 }

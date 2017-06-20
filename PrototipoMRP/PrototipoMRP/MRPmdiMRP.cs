@@ -176,6 +176,7 @@ namespace PrototipoMRP
             GListadoMateriales listado = new GListadoMateriales();
             listado.MdiParent = this;
             listado.Show();
+<<<<<<< HEAD
         }
 
         private void ordenDeProduccionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -183,6 +184,8 @@ namespace PrototipoMRP
             GMPS listado = new GMPS();
             listado.MdiParent = this;
             listado.Show();
+=======
+>>>>>>> PrototipoNoFuncional-Guillermo
         }
     }
 }

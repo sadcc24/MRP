@@ -32,9 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+=======
+            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -76,6 +82,19 @@
             this.panel1.Size = new System.Drawing.Size(686, 30);
             this.panel1.TabIndex = 1;
             // 
+<<<<<<< HEAD
+=======
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(362, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(244, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Existencia de Productos";
+            // 
+>>>>>>> PrototipoNoFuncional-Guillermo
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -100,6 +119,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(802, 371);
             this.dataGridView1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // label2
             // 
             this.label2.AutoSize = true;
@@ -110,6 +130,8 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Existencia de Productos";
             // 
+=======
+>>>>>>> PrototipoNoFuncional-Guillermo
             // GExistenciaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

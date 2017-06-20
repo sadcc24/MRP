@@ -41,7 +41,11 @@
             // 
             // progressBar1
             // 
+<<<<<<< HEAD
             this.progressBar1.Location = new System.Drawing.Point(22, 336);
+=======
+            this.progressBar1.Location = new System.Drawing.Point(12, 336);
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(519, 23);
             this.progressBar1.TabIndex = 0;

@@ -269,7 +269,10 @@
             this.generacionDeOrdenesDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.ordenDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+=======
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.trasladosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productoFinalizadoAInventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -354,10 +357,15 @@
             // 
             // materialesToolStripMenuItem
             // 
+<<<<<<< HEAD
             this.materialesToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.materialesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listaDeMaterialesToolStripMenuItem,
             this.ordenDeProduccionToolStripMenuItem});
+=======
+            this.materialesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listaDeMaterialesToolStripMenuItem});
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.materialesToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.estructura;
             this.materialesToolStripMenuItem.Name = "materialesToolStripMenuItem";
             this.materialesToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
@@ -366,6 +374,7 @@
             // listaDeMaterialesToolStripMenuItem
             // 
             this.listaDeMaterialesToolStripMenuItem.Name = "listaDeMaterialesToolStripMenuItem";
+<<<<<<< HEAD
             this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.listaDeMaterialesToolStripMenuItem.Text = "Lista de Materiales";
             this.listaDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.listaDeMaterialesToolStripMenuItem_Click);
@@ -377,6 +386,12 @@
             this.ordenDeProduccionToolStripMenuItem.Text = "Plan Maestro de Produccion";
             this.ordenDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.ordenDeProduccionToolStripMenuItem_Click);
             // 
+=======
+            this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.listaDeMaterialesToolStripMenuItem.Text = "Lista de Materiales";
+            this.listaDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.listaDeMaterialesToolStripMenuItem_Click);
+            // 
+>>>>>>> PrototipoNoFuncional-Guillermo
             // trasladosToolStripMenuItem
             // 
             this.trasladosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -442,9 +457,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackgroundImage = global::PrototipoMRP.Properties.Resources.Fondo_01;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(853, 631);
+=======
+            this.ClientSize = new System.Drawing.Size(853, 619);
+>>>>>>> PrototipoNoFuncional-Guillermo
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -479,7 +498,10 @@
         private System.Windows.Forms.ToolStripMenuItem conectividadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materialesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDeMaterialesToolStripMenuItem;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem ordenDeProduccionToolStripMenuItem;
+=======
+>>>>>>> PrototipoNoFuncional-Guillermo
     }
 >>>>>>> PrototipoNoFuncional-Rony
 }
