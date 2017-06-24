@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="asignaciontareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asignaciontareaMRP.Designer.cs">
+      <DependentUpon>asignaciontareaMRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaManoObra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <Compile Include="TipotareaMRP.Designer.cs">
       <DependentUpon>TipotareaMRP.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="asignaciontareaMRP.resx">
+      <DependentUpon>asignaciontareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaManoObra.resx">
       <DependentUpon>ConsultaManoObra.cs</DependentUpon>
     </EmbeddedResource>
