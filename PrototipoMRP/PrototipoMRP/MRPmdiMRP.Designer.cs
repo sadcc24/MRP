@@ -37,14 +37,14 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manoDeObraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenManoObraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresoDeTareaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoDeTareaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,15 +125,19 @@
             this.ordenManoObraToolStripMenuItem.Text = "Orden Mano Obra";
             this.ordenManoObraToolStripMenuItem.Click += new System.EventHandler(this.ordenManoObraToolStripMenuItem_Click);
             // 
-            // tareasToolStripMenuItem
+            // ingresoToolStripMenuItem1
             // 
-            this.tareasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresoDeTareaToolStripMenuItem,
-            this.consultaToolStripMenuItem});
-            this.tareasToolStripMenuItem.Name = "tareasToolStripMenuItem";
-            this.tareasToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.tareasToolStripMenuItem.Text = "Tareas";
-            this.tareasToolStripMenuItem.Click += new System.EventHandler(this.tareasToolStripMenuItem_Click);
+            this.ingresoToolStripMenuItem1.Name = "ingresoToolStripMenuItem1";
+            this.ingresoToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.ingresoToolStripMenuItem1.Text = "Ingreso";
+            this.ingresoToolStripMenuItem1.Click += new System.EventHandler(this.ingresoToolStripMenuItem1_Click);
+            // 
+            // consultaToolStripMenuItem2
+            // 
+            this.consultaToolStripMenuItem2.Name = "consultaToolStripMenuItem2";
+            this.consultaToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
+            this.consultaToolStripMenuItem2.Text = "Consulta";
+            this.consultaToolStripMenuItem2.Click += new System.EventHandler(this.consultaToolStripMenuItem2_Click);
             // 
             // tipoTareasToolStripMenuItem
             // 
@@ -145,47 +149,43 @@
             this.tipoTareasToolStripMenuItem.Text = "Tipo Tareas";
             this.tipoTareasToolStripMenuItem.Click += new System.EventHandler(this.tipoTareasToolStripMenuItem_Click);
             // 
-            // ingresoDeTareaToolStripMenuItem
-            // 
-            this.ingresoDeTareaToolStripMenuItem.Name = "ingresoDeTareaToolStripMenuItem";
-            this.ingresoDeTareaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.ingresoDeTareaToolStripMenuItem.Text = "Ingreso de Tarea";
-            this.ingresoDeTareaToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeTareaToolStripMenuItem_Click);
-            // 
-            // consultaToolStripMenuItem
-            // 
-            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.consultaToolStripMenuItem.Text = "Consulta";
-            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
-            // 
             // ingresoToolStripMenuItem
             // 
             this.ingresoToolStripMenuItem.Name = "ingresoToolStripMenuItem";
-            this.ingresoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ingresoToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.ingresoToolStripMenuItem.Text = "Ingreso";
             this.ingresoToolStripMenuItem.Click += new System.EventHandler(this.ingresoToolStripMenuItem_Click);
             // 
             // consultaToolStripMenuItem1
             // 
             this.consultaToolStripMenuItem1.Name = "consultaToolStripMenuItem1";
-            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.consultaToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.consultaToolStripMenuItem1.Text = "Consulta";
             this.consultaToolStripMenuItem1.Click += new System.EventHandler(this.consultaToolStripMenuItem1_Click);
             // 
-            // ingresoToolStripMenuItem1
+            // tareasToolStripMenuItem
             // 
-            this.ingresoToolStripMenuItem1.Name = "ingresoToolStripMenuItem1";
-            this.ingresoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.ingresoToolStripMenuItem1.Text = "Ingreso";
-            this.ingresoToolStripMenuItem1.Click += new System.EventHandler(this.ingresoToolStripMenuItem1_Click);
+            this.tareasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresoDeTareaToolStripMenuItem,
+            this.consultaToolStripMenuItem});
+            this.tareasToolStripMenuItem.Name = "tareasToolStripMenuItem";
+            this.tareasToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.tareasToolStripMenuItem.Text = "Tareas";
+            this.tareasToolStripMenuItem.Click += new System.EventHandler(this.tareasToolStripMenuItem_Click);
             // 
-            // consultaToolStripMenuItem2
+            // ingresoDeTareaToolStripMenuItem
             // 
-            this.consultaToolStripMenuItem2.Name = "consultaToolStripMenuItem2";
-            this.consultaToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.consultaToolStripMenuItem2.Text = "Consulta";
-            this.consultaToolStripMenuItem2.Click += new System.EventHandler(this.consultaToolStripMenuItem2_Click);
+            this.ingresoDeTareaToolStripMenuItem.Name = "ingresoDeTareaToolStripMenuItem";
+            this.ingresoDeTareaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ingresoDeTareaToolStripMenuItem.Text = "Fase Tarea";
+            this.ingresoDeTareaToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeTareaToolStripMenuItem_Click);
+            // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.consultaToolStripMenuItem.Text = "Tarea";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // MRPmdiMRP
             // 
