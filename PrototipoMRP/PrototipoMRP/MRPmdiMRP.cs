@@ -82,5 +82,10 @@ namespace PrototipoMRP
             listado.MdiParent = this;
             listado.Show();
         }
+
+        private void materialesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
