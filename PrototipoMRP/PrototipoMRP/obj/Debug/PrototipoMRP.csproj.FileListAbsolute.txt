@@ -38,13 +38,11 @@ C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\Prototip
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEstructuraMateriales.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GExistenciaProducto.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListadoMateriales.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaProduccion.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaSolicitudProducto.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GlListaTraslado.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.CreacionOrdenProduccion.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
 C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GSolicitudProducto.resources

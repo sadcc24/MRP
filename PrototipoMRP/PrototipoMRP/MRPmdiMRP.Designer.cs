@@ -43,13 +43,13 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produccionPorOCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manoObraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tAREAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prorrateoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conectividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tAREAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -176,6 +176,13 @@
             this.manoObraToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.manoObraToolStripMenuItem.Text = "Mano Obra";
             // 
+            // tAREAToolStripMenuItem
+            // 
+            this.tAREAToolStripMenuItem.Name = "tAREAToolStripMenuItem";
+            this.tAREAToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.tAREAToolStripMenuItem.Text = "TAREA";
+            this.tAREAToolStripMenuItem.Click += new System.EventHandler(this.tAREAToolStripMenuItem_Click);
+            // 
             // prorrateoToolStripMenuItem
             // 
             this.prorrateoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("prorrateoToolStripMenuItem.Image")));
@@ -220,21 +227,15 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de:";
             // 
-            // tAREAToolStripMenuItem
-            // 
-            this.tAREAToolStripMenuItem.Name = "tAREAToolStripMenuItem";
-            this.tAREAToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.tAREAToolStripMenuItem.Text = "TAREA";
-            this.tAREAToolStripMenuItem.Click += new System.EventHandler(this.tAREAToolStripMenuItem_Click);
-            // 
             // MRPmdiMRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::PrototipoMRP.Properties.Resources.Fondo_01;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = global::PrototipoMRP.Properties.Resources._02;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(853, 631);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MRPmdiMRP";
