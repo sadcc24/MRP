@@ -1,0 +1,100 @@
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
+c:\users\canel\documents\visual studio 2015\Projects\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.CreacionOrdenProduccion.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GExistenciaProducto.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaProduccion.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaSolicitudProducto.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GSolicitudProducto.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GlListaTraslado.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEstructuraMateriales.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListadoMateriales.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Inicial.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEstructuraMateriales.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GExistenciaProducto.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListadoMateriales.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaProduccion.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaSolicitudProducto.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GlListaTraslado.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.CreacionOrdenProduccion.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GSolicitudProducto.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Inicial.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GMPS.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEstructuraMateriales.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GExistenciaProducto.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListadoMateriales.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaProduccion.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaSolicitudProducto.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GlListaTraslado.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GMPS.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.CreacionOrdenProduccion.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GSolicitudProducto.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Inicial.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+C:\Users\ronyc\Google Drive\Seminario\Semana 1 (Planeacion)\4-Prototipo No Funcional\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+C:\Users\Olivia Perez\Documents\SEMINARIOS\Source-20170625T071347Z-001\Source\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\Olivia Perez\Documents\SEMINARIOS\Source-20170625T071347Z-001\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\Olivia Perez\Documents\SEMINARIOS\Source-20170625T071347Z-001\Source\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEstructuraMateriales.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GExistenciaProducto.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListadoMateriales.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaProduccion.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaSolicitudProducto.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GMPS.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.CreacionOrdenProduccion.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GSolicitudProducto.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Inicial.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe
+C:\Users\Olivia Perez\Desktop\MRP\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
