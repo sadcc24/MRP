@@ -123,6 +123,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareaMRP.Designer.cs">
+      <DependentUpon>TareaMRP.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Gconectividad.resx">
       <DependentUpon>Gconectividad.cs</DependentUpon>
     </EmbeddedResource>

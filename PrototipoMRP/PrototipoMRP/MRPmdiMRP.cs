@@ -83,5 +83,12 @@ namespace PrototipoMRP
         {
 
         }
+
+        private void tAREAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TareaMRP tarea = new TareaMRP();
+            tarea.Show();
+    
+        }
     }
 }
