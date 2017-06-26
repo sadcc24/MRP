@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MRP_BD">
-      <HintPath>..\..\..\..\..\ANALISISYDISEÑO2\DLL\MRP_BD.dll</HintPath>
+      <HintPath>..\..\..\..\Visual Studio 2015\Projects\MRP_BD\MRP_BD\bin\Debug\MRP_BD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,11 +85,23 @@
     <Compile Include="GListaSolicitudProducto.Designer.cs">
       <DependentUpon>GListaSolicitudProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="GMantUnidadMedidacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GMantUnidadMedidacs.Designer.cs">
+      <DependentUpon>GMantUnidadMedidacs.cs</DependentUpon>
+    </Compile>
     <Compile Include="GMPS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GMPS.Designer.cs">
       <DependentUpon>GMPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GNuevaUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GNuevaUnidadMedida.Designer.cs">
+      <DependentUpon>GNuevaUnidadMedida.cs</DependentUpon>
     </Compile>
     <Compile Include="GOrdenProduccion.cs">
       <SubType>Form</SubType>
@@ -108,6 +120,12 @@
     </Compile>
     <Compile Include="GSolicitudProducto.Designer.cs">
       <DependentUpon>GSolicitudProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUnidadMedida.Designer.cs">
+      <DependentUpon>GUnidadMedida.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
@@ -147,8 +165,14 @@
     <EmbeddedResource Include="GListaSolicitudProducto.resx">
       <DependentUpon>GListaSolicitudProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GMantUnidadMedidacs.resx">
+      <DependentUpon>GMantUnidadMedidacs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GMPS.resx">
       <DependentUpon>GMPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GNuevaUnidadMedida.resx">
+      <DependentUpon>GNuevaUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GOrdenProduccion.resx">
       <DependentUpon>GOrdenProduccion.cs</DependentUpon>
@@ -158,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GSolicitudProducto.resx">
       <DependentUpon>GSolicitudProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUnidadMedida.resx">
+      <DependentUpon>GUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicial.resx">
       <DependentUpon>Inicial.cs</DependentUpon>

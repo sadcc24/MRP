@@ -17,7 +17,6 @@ C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\Prototip
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Gconectividad.resources
-C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEmpresa.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GloginAutenticacion.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
@@ -27,7 +26,6 @@ C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\Prototip
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaProduccion.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListaSolicitudProducto.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GSolicitudProducto.resources
-C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GlListaTraslado.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GEstructuraMateriales.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GListadoMateriales.resources
 C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Inicial.resources
@@ -116,3 +114,9 @@ C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\P
 C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRPmdiMRP.resources
 C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
 C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GMPS.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GUnidadMedida.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GMantUnidadMedidacs.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.GNuevaUnidadMedida.resources
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\MRP_BD.dll
+C:\Users\Canel\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\MRP_BD.pdb

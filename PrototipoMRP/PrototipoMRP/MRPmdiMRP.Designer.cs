@@ -50,6 +50,7 @@
             this.conectividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,7 +100,8 @@
             this.inventarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.existenciasDeProductoToolStripMenuItem,
             this.solicitudDeProductoToolStripMenuItem,
-            this.generacionDeOrdenesDeProduccionToolStripMenuItem});
+            this.generacionDeOrdenesDeProduccionToolStripMenuItem,
+            this.unidadMedidaToolStripMenuItem});
             this.inventarioToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.inventario;
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
@@ -227,6 +229,13 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de:";
             // 
+            // unidadMedidaToolStripMenuItem
+            // 
+            this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
+            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.unidadMedidaToolStripMenuItem.Text = "Unidad Medida";
+            this.unidadMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadMedidaToolStripMenuItem_Click);
+            // 
             // MRPmdiMRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,5 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem polizaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prorrateoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tAREAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unidadMedidaToolStripMenuItem;
     }
 }

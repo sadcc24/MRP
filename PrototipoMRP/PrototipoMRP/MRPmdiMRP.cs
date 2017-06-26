@@ -90,5 +90,12 @@ namespace PrototipoMRP
             tarea.Show();
     
         }
+
+        private void unidadMedidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GUnidadMedida medida = new GUnidadMedida();
+            medida.MdiParent = this;
+            medida.Show();            
+        }
     }
 }
