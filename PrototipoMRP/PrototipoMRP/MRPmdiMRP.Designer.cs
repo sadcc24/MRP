@@ -45,13 +45,14 @@
             this.manoObraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tAREAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fasesTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prorrateoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.conectividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asignacionTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,7 +175,8 @@
             this.manoObraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tAREAToolStripMenuItem,
             this.fasesTareasToolStripMenuItem,
-            this.asignacionTareasToolStripMenuItem});
+            this.asignacionTareasToolStripMenuItem,
+            this.asignacionEmpleadoToolStripMenuItem});
             this.manoObraToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("manoObraToolStripMenuItem.Image")));
             this.manoObraToolStripMenuItem.Name = "manoObraToolStripMenuItem";
             this.manoObraToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
@@ -183,16 +185,23 @@
             // tAREAToolStripMenuItem
             // 
             this.tAREAToolStripMenuItem.Name = "tAREAToolStripMenuItem";
-            this.tAREAToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.tAREAToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.tAREAToolStripMenuItem.Text = "Tarea";
             this.tAREAToolStripMenuItem.Click += new System.EventHandler(this.tAREAToolStripMenuItem_Click);
             // 
             // fasesTareasToolStripMenuItem
             // 
             this.fasesTareasToolStripMenuItem.Name = "fasesTareasToolStripMenuItem";
-            this.fasesTareasToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.fasesTareasToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.fasesTareasToolStripMenuItem.Text = "Fases Tareas";
             this.fasesTareasToolStripMenuItem.Click += new System.EventHandler(this.fasesTareasToolStripMenuItem_Click);
+            // 
+            // asignacionTareasToolStripMenuItem
+            // 
+            this.asignacionTareasToolStripMenuItem.Name = "asignacionTareasToolStripMenuItem";
+            this.asignacionTareasToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.asignacionTareasToolStripMenuItem.Text = "Asignacion Tareas";
+            this.asignacionTareasToolStripMenuItem.Click += new System.EventHandler(this.asignacionTareasToolStripMenuItem_Click);
             // 
             // prorrateoToolStripMenuItem
             // 
@@ -238,12 +247,12 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de:";
             // 
-            // asignacionTareasToolStripMenuItem
+            // asignacionEmpleadoToolStripMenuItem
             // 
-            this.asignacionTareasToolStripMenuItem.Name = "asignacionTareasToolStripMenuItem";
-            this.asignacionTareasToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.asignacionTareasToolStripMenuItem.Text = "Asignacion Tareas";
-            this.asignacionTareasToolStripMenuItem.Click += new System.EventHandler(this.asignacionTareasToolStripMenuItem_Click);
+            this.asignacionEmpleadoToolStripMenuItem.Name = "asignacionEmpleadoToolStripMenuItem";
+            this.asignacionEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.asignacionEmpleadoToolStripMenuItem.Text = "Asignacion Empleado";
+            this.asignacionEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.asignacionEmpleadoToolStripMenuItem_Click);
             // 
             // MRPmdiMRP
             // 
@@ -292,5 +301,6 @@
         private System.Windows.Forms.ToolStripMenuItem tAREAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fasesTareasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignacionTareasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignacionEmpleadoToolStripMenuItem;
     }
 }

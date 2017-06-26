@@ -102,5 +102,11 @@ namespace PrototipoMRP
             AsignacionTareaMRP asignacion = new AsignacionTareaMRP();
             asignacion.Show();
         }
+
+        private void asignacionEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManoObraMRP manoobra = new ManoObraMRP();
+            manoobra.Show();
+        }
     }
 }
