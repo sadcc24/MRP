@@ -96,5 +96,11 @@ namespace PrototipoMRP
             FasesTareaMRP fases = new FasesTareaMRP();
             fases.Show();
         }
+
+        private void asignacionTareasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AsignacionTareaMRP asignacion = new AsignacionTareaMRP();
+            asignacion.Show();
+        }
     }
 }

@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignacionTareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsignacionTareaMRP.Designer.cs">
+      <DependentUpon>AsignacionTareaMRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="FasesTareaMRP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,12 @@
     <Compile Include="Inicial.Designer.cs">
       <DependentUpon>Inicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManoObraMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManoObraMRP.Designer.cs">
+      <DependentUpon>ManoObraMRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="MRPmdiMRP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +147,9 @@
     <Compile Include="TareaMRP.Designer.cs">
       <DependentUpon>TareaMRP.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AsignacionTareaMRP.resx">
+      <DependentUpon>AsignacionTareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FasesTareaMRP.resx">
       <DependentUpon>FasesTareaMRP.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicial.resx">
       <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManoObraMRP.resx">
+      <DependentUpon>ManoObraMRP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MRPmdiMRP.resx">
       <DependentUpon>MRPmdiMRP.cs</DependentUpon>

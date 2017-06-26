@@ -119,3 +119,5 @@ C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\P
 C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\bin\Debug\MRP_BD.dll
 C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.TareaMRP.resources
 C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.FasesTareaMRP.resources
+C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.AsignacionTareaMRP.resources
+C:\Users\Olivia Perez\Documents\GitHub\MRP\PrototipoMRP\PrototipoMRP\obj\Debug\PrototipoMRP.ManoObraMRP.resources
