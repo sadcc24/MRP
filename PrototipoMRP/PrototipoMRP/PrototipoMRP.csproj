@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MRP_BD">
-      <HintPath>..\..\..\..\..\ANALISISYDISEÑO2\DLL\MRP_BD.dll</HintPath>
+      <HintPath>..\..\..\..\SEMINARIOS\ANALISISYDISEÑO2\DLL\MRP_BD.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -175,6 +175,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TareaMRP.resx">
+      <DependentUpon>TareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
