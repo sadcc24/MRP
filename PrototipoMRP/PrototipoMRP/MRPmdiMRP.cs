@@ -90,5 +90,11 @@ namespace PrototipoMRP
             tarea.Show();
     
         }
+
+        private void fasesTareasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FasesTareaMRP fases = new FasesTareaMRP();
+            fases.Show();
+        }
     }
 }

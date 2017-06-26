@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FasesTareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FasesTareaMRP.Designer.cs">
+      <DependentUpon>FasesTareaMRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gconectividad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     <Compile Include="TareaMRP.Designer.cs">
       <DependentUpon>TareaMRP.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FasesTareaMRP.resx">
+      <DependentUpon>FasesTareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gconectividad.resx">
       <DependentUpon>Gconectividad.cs</DependentUpon>
     </EmbeddedResource>
