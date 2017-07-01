@@ -1,2 +1,0 @@
-# MRP
-Planeación Recursos Materiales
