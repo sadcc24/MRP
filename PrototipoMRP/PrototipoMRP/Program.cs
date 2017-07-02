@@ -17,7 +17,7 @@ namespace PrototipoMRP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new GloginAutenticacion());
-            Application.Run(new Inicial());
+            Application.Run(new MRPmdiMRP());
         }
     }
 }

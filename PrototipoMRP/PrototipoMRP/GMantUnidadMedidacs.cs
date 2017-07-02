@@ -16,7 +16,11 @@ namespace PrototipoMRP
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
         MRP_BD MRP = new MRP_BD("user", "database123$", "MRPBD1", @".\SQLEXPRESS");
+=======
+        MRP_BD MRP = new MRP_BD("canel", "canel", "BDMRP", @".\SQL");
+>>>>>>> 7b41d1f3e3f8280d801b3f3d0b8172ac07053fdc
 
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
