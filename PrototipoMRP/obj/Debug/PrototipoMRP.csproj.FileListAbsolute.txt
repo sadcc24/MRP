@@ -290,3 +290,6 @@ C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.MRP
 C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.OP_ManoObraMRP.resources
 C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_mdiMRP.resources
 C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.OP_TareaMRP.resources
+C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
