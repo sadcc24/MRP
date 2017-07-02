@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GC_conversionproductos_matprimabusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_conversionproductos_matprimabusq.designer.cs">
+      <DependentUpon>GC_conversionproductos_matprimabusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_conversionproductos_nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_conversionproductos_nuevo.designer.cs">
+      <DependentUpon>GC_conversionproductos_nuevo.cs</DependentUpon>
+    </Compile>
     <Compile Include="OP_AsignacionTareaMRP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +69,24 @@
     </Compile>
     <Compile Include="OP_FasesTareaMRP.Designer.cs">
       <DependentUpon>OP_FasesTareaMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_ordenproduccion_listado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_ordenproduccion_listado.designer.cs">
+      <DependentUpon>GC_ordenproduccion_listado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_ordenproduccion_nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_ordenproduccion_nuevo.designer.cs">
+      <DependentUpon>GC_ordenproduccion_nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_ordenproduccion_prodfinalizadobusq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_ordenproduccion_prodfinalizadobusq.designer.cs">
+      <DependentUpon>GC_ordenproduccion_prodfinalizadobusq.cs</DependentUpon>
     </Compile>
     <Compile Include="RC_frmBuscarOP.cs">
       <SubType>Form</SubType>
@@ -210,11 +240,35 @@
     <Compile Include="OP_TareaMRP.Designer.cs">
       <DependentUpon>OP_TareaMRP.cs</DependentUpon>
     </Compile>
+    <Compile Include="GC_recetario_nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_recetario_nuevo.designer.cs">
+      <DependentUpon>GC_recetario_nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_unidadmedida_nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_unidadmedida_nuevo.designer.cs">
+      <DependentUpon>GC_unidadmedida_nuevo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GC_conversionproductos_matprimabusq.resx">
+      <DependentUpon>GC_conversionproductos_matprimabusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_conversionproductos_nuevo.resx">
+      <DependentUpon>GC_conversionproductos_nuevo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OP_AsignacionTareaMRP.resx">
       <DependentUpon>OP_AsignacionTareaMRP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OP_FasesTareaMRP.resx">
       <DependentUpon>OP_FasesTareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_ordenproduccion_nuevo.resx">
+      <DependentUpon>GC_ordenproduccion_nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_ordenproduccion_prodfinalizadobusq.resx">
+      <DependentUpon>GC_ordenproduccion_prodfinalizadobusq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RC_frmBuscarOP.resx">
       <DependentUpon>RC_frmBuscarOP.cs</DependentUpon>
@@ -301,6 +355,12 @@
     <EmbeddedResource Include="OP_TareaMRP.resx">
       <DependentUpon>OP_TareaMRP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GC_recetario_nuevo.resx">
+      <DependentUpon>GC_recetario_nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_unidadmedida_nuevo.resx">
+      <DependentUpon>GC_unidadmedida_nuevo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -313,18 +373,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nuevo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\editar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eliminar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\guardar.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancelar.ico" />
@@ -382,9 +430,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bancos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\buscar.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CALENDARIO.png" />
@@ -446,6 +491,39 @@
       <Project>{73e47a63-e2a2-488e-b8f0-5474df2e00cc}</Project>
       <Name>CAPANEGOCIO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\derecho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\derechotope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izquierdo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izquierdotope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
