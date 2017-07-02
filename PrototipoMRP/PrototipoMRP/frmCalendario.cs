@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PrototipoMRP
 {
-    public partial class GMPS : Form
+    public partial class frmCalendario : Form
     {
-        public GMPS()
+        public frmCalendario()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -17,7 +17,7 @@ namespace PrototipoMRP
             InitializeComponent();
         }
 
-        MRP_BD PRUEBA = new MRP_BD("OLIVIA", "oliviamrp", "master", @".\SQLEXPRESS");
+        MRP_BD PRUEBA = new MRP_BD("user", "database123$", "MRPBD1", @".\SQLEXPRESS");
         public void limpiar()
         {
             txtcodigo.Text = "";

@@ -163,9 +163,9 @@
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 19);
+            this.label3.Size = new System.Drawing.Size(45, 19);
             this.label3.TabIndex = 52;
-            this.label3.Text = "Producto";
+            this.label3.Text = "Tarea";
             // 
             // dataGridView1
             // 
@@ -239,6 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(609, 380);
             this.Controls.Add(this.txthoras);
             this.Controls.Add(this.txtSalario);

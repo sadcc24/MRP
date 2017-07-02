@@ -31,6 +31,7 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Estado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -92,6 +92,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(669, 74);
             this.panel1.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(434, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(216, 25);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Solicitud de Producto";
             // 
             // button8
             // 
@@ -269,20 +279,11 @@
             this.Estado.Name = "Estado";
             this.Estado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(434, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 25);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Solicitud de Producto";
-            // 
             // GListaSolicitudProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(756, 439);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "GListaSolicitudProducto";

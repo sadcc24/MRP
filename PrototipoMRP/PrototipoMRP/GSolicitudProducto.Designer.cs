@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CantidadMinimaRequerida = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -72,6 +72,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(669, 74);
             this.panel1.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(424, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(216, 25);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Solicitud de Producto";
             // 
             // button7
             // 
@@ -246,20 +256,11 @@
             this.CantidadMinimaRequerida.HeaderText = "Cantidad Minima Requerida";
             this.CantidadMinimaRequerida.Name = "CantidadMinimaRequerida";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(424, 5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(216, 25);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Solicitud de Producto";
-            // 
             // GSolicitudProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(775, 415);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "GSolicitudProducto";

@@ -39,6 +39,7 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -173,6 +173,16 @@
             this.panel1.Size = new System.Drawing.Size(712, 74);
             this.panel1.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(460, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(237, 25);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Listados de Produccion";
+            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(518, 44);
@@ -260,20 +270,11 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(460, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 25);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Listados de Produccion";
-            // 
             // GListaProduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(736, 425);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "GListaProduccion";

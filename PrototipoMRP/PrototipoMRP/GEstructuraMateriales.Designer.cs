@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Botes de Plastico");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Material A");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Ensamblado", new System.Windows.Forms.TreeNode[] {
-            treeNode33,
-            treeNode34});
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("5 botes de pintura");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("50 metros de metal");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("7 Botes Plasticos");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Pintura", new System.Windows.Forms.TreeNode[] {
-            treeNode36,
-            treeNode37,
-            treeNode38});
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Producto A", new System.Windows.Forms.TreeNode[] {
-            treeNode35,
-            treeNode39});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Botes de Plastico");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Material A");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Ensamblado", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("5 botes de pintura");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("50 metros de metal");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("7 Botes Plasticos");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Pintura", new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode5,
+            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Producto A", new System.Windows.Forms.TreeNode[] {
+            treeNode3,
+            treeNode7});
             this.button8 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,16 +56,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CodProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -208,6 +208,16 @@
             this.panel1.Size = new System.Drawing.Size(964, 74);
             this.panel1.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(674, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(270, 25);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Estructura de Materiales";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -256,26 +266,44 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode33.Name = "Nodo6";
-            treeNode33.Text = "Botes de Plastico";
-            treeNode34.Name = "Nodo7";
-            treeNode34.Text = "Material A";
-            treeNode35.Name = "Producto B";
-            treeNode35.Text = "Ensamblado";
-            treeNode36.Name = "Nodo3";
-            treeNode36.Text = "5 botes de pintura";
-            treeNode37.Name = "Nodo4";
-            treeNode37.Text = "50 metros de metal";
-            treeNode38.Name = "Nodo5";
-            treeNode38.Text = "7 Botes Plasticos";
-            treeNode39.Name = "Nodo2";
-            treeNode39.Text = "Pintura";
-            treeNode40.Name = "Nodo0";
-            treeNode40.Text = "Producto A";
+            treeNode1.Name = "Nodo6";
+            treeNode1.Text = "Botes de Plastico";
+            treeNode2.Name = "Nodo7";
+            treeNode2.Text = "Material A";
+            treeNode3.Name = "Producto B";
+            treeNode3.Text = "Ensamblado";
+            treeNode4.Name = "Nodo3";
+            treeNode4.Text = "5 botes de pintura";
+            treeNode5.Name = "Nodo4";
+            treeNode5.Text = "50 metros de metal";
+            treeNode6.Name = "Nodo5";
+            treeNode6.Text = "7 Botes Plasticos";
+            treeNode7.Name = "Nodo2";
+            treeNode7.Text = "Pintura";
+            treeNode8.Name = "Nodo0";
+            treeNode8.Text = "Producto A";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode40});
+            treeNode8});
             this.treeView1.Size = new System.Drawing.Size(484, 383);
             this.treeView1.TabIndex = 0;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(5, 129);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(36, 44);
+            this.button10.TabIndex = 2;
+            this.button10.Text = ">>";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(3, 71);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(37, 41);
+            this.button9.TabIndex = 1;
+            this.button9.Text = "<<";
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -298,38 +326,11 @@
             this.Descripcion.HeaderText = "Descripcion";
             this.Descripcion.Name = "Descripcion";
             // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(3, 71);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(37, 41);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "<<";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(5, 129);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(36, 44);
-            this.button10.TabIndex = 2;
-            this.button10.Text = ">>";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(674, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(270, 25);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Estructura de Materiales";
-            // 
             // GEstructuraMateriales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1032, 469);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "GEstructuraMateriales";

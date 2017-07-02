@@ -74,7 +74,7 @@ namespace PrototipoMRP
 
         private void ordenDeProduccionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GMPS listado = new GMPS();
+            frmPlanificacion listado = new frmPlanificacion();
             listado.MdiParent = this;
             listado.Show();
         }
@@ -107,6 +107,49 @@ namespace PrototipoMRP
         {
             ManoObraMRP manoobra = new ManoObraMRP();
             manoobra.Show();
+        }
+
+        private void pedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPedidoCRM     listado = new frmPedidoCRM();
+            listado.MdiParent = this;
+            listado.Show();
+        }
+
+        private void pronosticoDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPedidoCRM listado = new frmPedidoCRM();
+            listado.MdiParent = this;
+            listado.Show();
+        }
+
+
+        private void estadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEstadoPlanificacion listado = new frmEstadoPlanificacion();
+            listado.MdiParent = this;
+            listado.Show();
+        }
+
+        private void unidadMedidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GUnidadMedida uni = new GUnidadMedida();
+            uni.MdiParent = this;
+            uni.Show();
+        }
+
+        private void prorrateoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GProrrateo PRORRATEO = new GProrrateo();
+            PRORRATEO.MdiParent = this;
+            PRORRATEO.Show();
+        }
+
+        private void polizaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gpoliza poliza = new Gpoliza();
+            poliza.MdiParent = this;
+            poliza.Show();
         }
     }
 }

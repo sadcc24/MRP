@@ -61,6 +61,36 @@
     <Compile Include="FasesTareaMRP.Designer.cs">
       <DependentUpon>FasesTareaMRP.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscarOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarOP.Designer.cs">
+      <DependentUpon>frmBuscarOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendario.Designer.cs">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstadoPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadoPlanificacion.Designer.cs">
+      <DependentUpon>frmEstadoPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidoCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPedidoCRM.Designer.cs">
+      <DependentUpon>frmPedidoCRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPronosticoVentasCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPronosticoVentasCRM.Designer.cs">
+      <DependentUpon>frmPronosticoVentasCRM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gconectividad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +127,23 @@
     <Compile Include="GListaSolicitudProducto.Designer.cs">
       <DependentUpon>GListaSolicitudProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="GMPS.cs">
+    <Compile Include="frmPlanificacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GMPS.Designer.cs">
-      <DependentUpon>GMPS.cs</DependentUpon>
+    <Compile Include="frmPlanificacion.Designer.cs">
+      <DependentUpon>frmPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GMantUnidadMedidacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GMantUnidadMedidacs.designer.cs">
+      <DependentUpon>GMantUnidadMedidacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GNuevaUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GNuevaUnidadMedida.designer.cs">
+      <DependentUpon>GNuevaUnidadMedida.cs</DependentUpon>
     </Compile>
     <Compile Include="GOrdenProduccion.cs">
       <SubType>Form</SubType>
@@ -115,11 +157,29 @@
     <Compile Include="GloginAutenticacion.Designer.cs">
       <DependentUpon>GloginAutenticacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gpoliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gpoliza.designer.cs">
+      <DependentUpon>Gpoliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GProrrateo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GProrrateo.designer.cs">
+      <DependentUpon>GProrrateo.cs</DependentUpon>
+    </Compile>
     <Compile Include="GSolicitudProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GSolicitudProducto.Designer.cs">
       <DependentUpon>GSolicitudProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUnidadMedida.designer.cs">
+      <DependentUpon>GUnidadMedida.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
@@ -153,6 +213,21 @@
     <EmbeddedResource Include="FasesTareaMRP.resx">
       <DependentUpon>FasesTareaMRP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarOP.resx">
+      <DependentUpon>frmBuscarOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendario.resx">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadoPlanificacion.resx">
+      <DependentUpon>frmEstadoPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidoCRM.resx">
+      <DependentUpon>frmPedidoCRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPronosticoVentasCRM.resx">
+      <DependentUpon>frmPronosticoVentasCRM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gconectividad.resx">
       <DependentUpon>Gconectividad.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,8 +246,14 @@
     <EmbeddedResource Include="GListaSolicitudProducto.resx">
       <DependentUpon>GListaSolicitudProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GMPS.resx">
-      <DependentUpon>GMPS.cs</DependentUpon>
+    <EmbeddedResource Include="frmPlanificacion.resx">
+      <DependentUpon>frmPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMantUnidadMedidacs.resx">
+      <DependentUpon>GMantUnidadMedidacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GNuevaUnidadMedida.resx">
+      <DependentUpon>GNuevaUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GOrdenProduccion.resx">
       <DependentUpon>GOrdenProduccion.cs</DependentUpon>
@@ -180,8 +261,17 @@
     <EmbeddedResource Include="GloginAutenticacion.resx">
       <DependentUpon>GloginAutenticacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gpoliza.resx">
+      <DependentUpon>Gpoliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GProrrateo.resx">
+      <DependentUpon>GProrrateo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GSolicitudProducto.resx">
       <DependentUpon>GSolicitudProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUnidadMedida.resx">
+      <DependentUpon>GUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicial.resx">
       <DependentUpon>Inicial.cs</DependentUpon>
@@ -280,6 +370,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDARIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuentasporpagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EFECTIVO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadisticas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loggin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manual usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\privilegios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TARJETADECREDITO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubicacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
