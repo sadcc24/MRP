@@ -47,5 +47,80 @@ namespace PrototipoMRP
             this.prorrateo2TableAdapter.Fill(this.eRPSeminarioDataSet1.prorrateo2);
 
         }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.prorrateo2TableAdapter.FillBy(this.eRPSeminarioDataSet1.prorrateo2);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBy1ToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.prorrateo2TableAdapter.FillBy1(this.eRPSeminarioDataSet1.prorrateo2);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void idordenproduccionTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buscaridToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.prorrateo2TableAdapter.buscarid(this.eRPSeminarioDataSet1.prorrateo2, ((int)(System.Convert.ChangeType(idordenproduccionTextBoxToolStripTextBox.Text, typeof(int)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void idordenproduccionTextBoxToolStripLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buscafechaToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.prorrateo2TableAdapter.buscafecha(this.eRPSeminarioDataSet1.prorrateo2);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillBy2ToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.prorrateo2TableAdapter.FillBy2(this.eRPSeminarioDataSet1.prorrateo2, ((int)(System.Convert.ChangeType(idordenproduccionTextBoxToolStripTextBox.Text, typeof(int)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

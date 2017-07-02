@@ -29,13 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label idordenproduccionLabel;
+            System.Windows.Forms.Label fechacreacionLabel;
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -43,11 +40,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.eRPSeminarioDataSet1 = new PrototipoMRP.ERPSeminarioDataSet1();
-            this.prorrateo2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.prorrateo2TableAdapter = new PrototipoMRP.ERPSeminarioDataSet1TableAdapters.prorrateo2TableAdapter();
-            this.tableAdapterManager = new PrototipoMRP.ERPSeminarioDataSet1TableAdapters.TableAdapterManager();
             this.prorrateo2DataGridView = new System.Windows.Forms.DataGridView();
+            this.idordenproduccionTextBox = new System.Windows.Forms.TextBox();
+            this.fechacreacionDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.buscafechaToolStrip = new System.Windows.Forms.ToolStrip();
+            this.buscafechaToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.fillBy2ToolStrip = new System.Windows.Forms.ToolStrip();
+            this.idordenproduccionTextBoxToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.idordenproduccionTextBoxToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillBy2ToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,20 +60,27 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prorrateo2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eRPSeminarioDataSet1 = new PrototipoMRP.ERPSeminarioDataSet1();
+            this.prorrateo2TableAdapter = new PrototipoMRP.ERPSeminarioDataSet1TableAdapters.prorrateo2TableAdapter();
+            this.tableAdapterManager = new PrototipoMRP.ERPSeminarioDataSet1TableAdapters.TableAdapterManager();
+            idordenproduccionLabel = new System.Windows.Forms.Label();
+            fechacreacionLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prorrateo2DataGridView)).BeginInit();
+            this.buscafechaToolStrip.SuspendLayout();
+            this.fillBy2ToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(fechacreacionLabel);
+            this.panel1.Controls.Add(this.fechacreacionDateTimePicker);
+            this.panel1.Controls.Add(idordenproduccionLabel);
+            this.panel1.Controls.Add(this.idordenproduccionTextBox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -82,7 +90,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(712, 74);
+            this.panel1.Size = new System.Drawing.Size(822, 100);
             this.panel1.TabIndex = 2;
             // 
             // label3
@@ -95,47 +103,6 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Prorrateo";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(208, 47);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(24, 20);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "...";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(468, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Fecha Inicial";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Codigo Prorrateo";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(587, 45);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(104, 20);
-            this.dateTimePicker1.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(105, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
             // 
             // button7
             // 
@@ -208,28 +175,11 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // eRPSeminarioDataSet1
-            // 
-            this.eRPSeminarioDataSet1.DataSetName = "ERPSeminarioDataSet1";
-            this.eRPSeminarioDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // prorrateo2BindingSource
-            // 
-            this.prorrateo2BindingSource.DataMember = "prorrateo2";
-            this.prorrateo2BindingSource.DataSource = this.eRPSeminarioDataSet1;
-            // 
-            // prorrateo2TableAdapter
-            // 
-            this.prorrateo2TableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = PrototipoMRP.ERPSeminarioDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // prorrateo2DataGridView
             // 
+            this.prorrateo2DataGridView.AllowUserToAddRows = false;
+            this.prorrateo2DataGridView.AllowUserToDeleteRows = false;
+            this.prorrateo2DataGridView.AllowUserToOrderColumns = true;
             this.prorrateo2DataGridView.AutoGenerateColumns = false;
             this.prorrateo2DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.prorrateo2DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -247,26 +197,118 @@
             this.prorrateo2DataGridView.DataSource = this.prorrateo2BindingSource;
             this.prorrateo2DataGridView.Location = new System.Drawing.Point(12, 92);
             this.prorrateo2DataGridView.Name = "prorrateo2DataGridView";
-            this.prorrateo2DataGridView.Size = new System.Drawing.Size(894, 283);
+            this.prorrateo2DataGridView.ReadOnly = true;
+            this.prorrateo2DataGridView.Size = new System.Drawing.Size(906, 286);
             this.prorrateo2DataGridView.TabIndex = 3;
+            // 
+            // idordenproduccionLabel
+            // 
+            idordenproduccionLabel.AutoSize = true;
+            idordenproduccionLabel.Location = new System.Drawing.Point(12, 52);
+            idordenproduccionLabel.Name = "idordenproduccionLabel";
+            idordenproduccionLabel.Size = new System.Drawing.Size(98, 13);
+            idordenproduccionLabel.TabIndex = 17;
+            idordenproduccionLabel.Text = "idordenproduccion:";
+            // 
+            // idordenproduccionTextBox
+            // 
+            this.idordenproduccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prorrateo2BindingSource, "idordenproduccion", true));
+            this.idordenproduccionTextBox.Location = new System.Drawing.Point(116, 49);
+            this.idordenproduccionTextBox.Name = "idordenproduccionTextBox";
+            this.idordenproduccionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idordenproduccionTextBox.TabIndex = 18;
+            this.idordenproduccionTextBox.TextChanged += new System.EventHandler(this.idordenproduccionTextBox_TextChanged);
+            // 
+            // fechacreacionLabel
+            // 
+            fechacreacionLabel.AutoSize = true;
+            fechacreacionLabel.Location = new System.Drawing.Point(516, 49);
+            fechacreacionLabel.Name = "fechacreacionLabel";
+            fechacreacionLabel.Size = new System.Drawing.Size(78, 13);
+            fechacreacionLabel.TabIndex = 18;
+            fechacreacionLabel.Text = "fechacreacion:";
+            // 
+            // fechacreacionDateTimePicker
+            // 
+            this.fechacreacionDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.prorrateo2BindingSource, "fechacreacion", true));
+            this.fechacreacionDateTimePicker.Location = new System.Drawing.Point(600, 45);
+            this.fechacreacionDateTimePicker.Name = "fechacreacionDateTimePicker";
+            this.fechacreacionDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.fechacreacionDateTimePicker.TabIndex = 19;
+            // 
+            // buscafechaToolStrip
+            // 
+            this.buscafechaToolStrip.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buscafechaToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.buscafechaToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buscafechaToolStripButton});
+            this.buscafechaToolStrip.Location = new System.Drawing.Point(0, 378);
+            this.buscafechaToolStrip.Name = "buscafechaToolStrip";
+            this.buscafechaToolStrip.Size = new System.Drawing.Size(918, 25);
+            this.buscafechaToolStrip.TabIndex = 5;
+            this.buscafechaToolStrip.Text = "buscafechaToolStrip";
+            // 
+            // buscafechaToolStripButton
+            // 
+            this.buscafechaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.buscafechaToolStripButton.Name = "buscafechaToolStripButton";
+            this.buscafechaToolStripButton.Size = new System.Drawing.Size(71, 22);
+            this.buscafechaToolStripButton.Text = "buscafecha";
+            this.buscafechaToolStripButton.Click += new System.EventHandler(this.buscafechaToolStripButton_Click);
+            // 
+            // fillBy2ToolStrip
+            // 
+            this.fillBy2ToolStrip.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.fillBy2ToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.fillBy2ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.idordenproduccionTextBoxToolStripLabel,
+            this.idordenproduccionTextBoxToolStripTextBox,
+            this.fillBy2ToolStripButton});
+            this.fillBy2ToolStrip.Location = new System.Drawing.Point(0, 353);
+            this.fillBy2ToolStrip.Name = "fillBy2ToolStrip";
+            this.fillBy2ToolStrip.Size = new System.Drawing.Size(918, 25);
+            this.fillBy2ToolStrip.TabIndex = 6;
+            this.fillBy2ToolStrip.Text = "fillBy2ToolStrip";
+            // 
+            // idordenproduccionTextBoxToolStripLabel
+            // 
+            this.idordenproduccionTextBoxToolStripLabel.Name = "idordenproduccionTextBoxToolStripLabel";
+            this.idordenproduccionTextBoxToolStripLabel.Size = new System.Drawing.Size(152, 22);
+            this.idordenproduccionTextBoxToolStripLabel.Text = "idordenproduccionTextBox:";
+            // 
+            // idordenproduccionTextBoxToolStripTextBox
+            // 
+            this.idordenproduccionTextBoxToolStripTextBox.Name = "idordenproduccionTextBoxToolStripTextBox";
+            this.idordenproduccionTextBoxToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillBy2ToolStripButton
+            // 
+            this.fillBy2ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillBy2ToolStripButton.Name = "fillBy2ToolStripButton";
+            this.fillBy2ToolStripButton.Size = new System.Drawing.Size(45, 22);
+            this.fillBy2ToolStripButton.Text = "FillBy2";
+            this.fillBy2ToolStripButton.Click += new System.EventHandler(this.fillBy2ToolStripButton_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "idordenproduccion";
             this.dataGridViewTextBoxColumn1.HeaderText = "idordenproduccion";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "fechacreacion";
             this.dataGridViewTextBoxColumn2.HeaderText = "fechacreacion";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "gastototalGF";
             this.dataGridViewTextBoxColumn3.HeaderText = "gastototalGF";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -315,6 +357,7 @@
             this.dataGridViewTextBoxColumn10.DataPropertyName = "cantidadproducida";
             this.dataGridViewTextBoxColumn10.HeaderText = "cantidadproducida";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -323,12 +366,34 @@
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
+            // prorrateo2BindingSource
+            // 
+            this.prorrateo2BindingSource.DataMember = "prorrateo2";
+            this.prorrateo2BindingSource.DataSource = this.eRPSeminarioDataSet1;
+            // 
+            // eRPSeminarioDataSet1
+            // 
+            this.eRPSeminarioDataSet1.DataSetName = "ERPSeminarioDataSet1";
+            this.eRPSeminarioDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // prorrateo2TableAdapter
+            // 
+            this.prorrateo2TableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.UpdateOrder = PrototipoMRP.ERPSeminarioDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // CP_Prorrateo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(918, 378);
+            this.ClientSize = new System.Drawing.Size(918, 403);
+            this.Controls.Add(this.fillBy2ToolStrip);
+            this.Controls.Add(this.buscafechaToolStrip);
             this.Controls.Add(this.prorrateo2DataGridView);
             this.Controls.Add(this.panel1);
             this.Name = "CP_Prorrateo";
@@ -336,10 +401,15 @@
             this.Load += new System.EventHandler(this.CP_Prorrateo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prorrateo2DataGridView)).EndInit();
+            this.buscafechaToolStrip.ResumeLayout(false);
+            this.buscafechaToolStrip.PerformLayout();
+            this.fillBy2ToolStrip.ResumeLayout(false);
+            this.fillBy2ToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -347,11 +417,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
@@ -375,5 +440,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.TextBox idordenproduccionTextBox;
+        private System.Windows.Forms.DateTimePicker fechacreacionDateTimePicker;
+        private System.Windows.Forms.ToolStrip buscafechaToolStrip;
+        private System.Windows.Forms.ToolStripButton buscafechaToolStripButton;
+        private System.Windows.Forms.ToolStrip fillBy2ToolStrip;
+        private System.Windows.Forms.ToolStripLabel idordenproduccionTextBoxToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox idordenproduccionTextBoxToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillBy2ToolStripButton;
     }
 }
