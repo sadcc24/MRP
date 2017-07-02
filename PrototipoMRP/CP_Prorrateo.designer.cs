@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
@@ -42,19 +43,26 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.eRPSeminarioDataSet1 = new PrototipoMRP.ERPSeminarioDataSet1();
+            this.prorrateo2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prorrateo2TableAdapter = new PrototipoMRP.ERPSeminarioDataSet1TableAdapters.prorrateo2TableAdapter();
+            this.tableAdapterManager = new PrototipoMRP.ERPSeminarioDataSet1TableAdapters.TableAdapterManager();
+            this.prorrateo2DataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -200,129 +208,138 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // eRPSeminarioDataSet1
             // 
-            this.textBox2.Location = new System.Drawing.Point(232, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(315, 20);
-            this.textBox2.TabIndex = 3;
+            this.eRPSeminarioDataSet1.DataSetName = "ERPSeminarioDataSet1";
+            this.eRPSeminarioDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label4
+            // prorrateo2BindingSource
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(99, 127);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Costo Primo";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.prorrateo2BindingSource.DataMember = "prorrateo2";
+            this.prorrateo2BindingSource.DataSource = this.eRPSeminarioDataSet1;
             // 
-            // label6
+            // prorrateo2TableAdapter
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(99, 171);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Factor";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.prorrateo2TableAdapter.ClearBeforeFill = true;
             // 
-            // label7
+            // tableAdapterManager
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(99, 210);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Prorrateo";
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.UpdateOrder = PrototipoMRP.ERPSeminarioDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // label8
+            // prorrateo2DataGridView
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(99, 249);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Costo Total";
+            this.prorrateo2DataGridView.AutoGenerateColumns = false;
+            this.prorrateo2DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.prorrateo2DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
+            this.prorrateo2DataGridView.DataSource = this.prorrateo2BindingSource;
+            this.prorrateo2DataGridView.Location = new System.Drawing.Point(12, 92);
+            this.prorrateo2DataGridView.Name = "prorrateo2DataGridView";
+            this.prorrateo2DataGridView.Size = new System.Drawing.Size(894, 283);
+            this.prorrateo2DataGridView.TabIndex = 3;
             // 
-            // label9
+            // dataGridViewTextBoxColumn1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(99, 288);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Cantidad Producida";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "idordenproduccion";
+            this.dataGridViewTextBoxColumn1.HeaderText = "idordenproduccion";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // label10
+            // dataGridViewTextBoxColumn2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(99, 323);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Costo Unitario";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "fechacreacion";
+            this.dataGridViewTextBoxColumn2.HeaderText = "fechacreacion";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // textBox4
+            // dataGridViewTextBoxColumn3
             // 
-            this.textBox4.Location = new System.Drawing.Point(232, 164);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(315, 20);
-            this.textBox4.TabIndex = 11;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "gastototalGF";
+            this.dataGridViewTextBoxColumn3.HeaderText = "gastototalGF";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // textBox6
+            // dataGridViewTextBoxColumn4
             // 
-            this.textBox6.Location = new System.Drawing.Point(232, 203);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(315, 20);
-            this.textBox6.TabIndex = 13;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "gastototalMP";
+            this.dataGridViewTextBoxColumn4.HeaderText = "gastototalMP";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // textBox10
+            // dataGridViewTextBoxColumn5
             // 
-            this.textBox10.Location = new System.Drawing.Point(232, 242);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(315, 20);
-            this.textBox10.TabIndex = 15;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "gastototalMO";
+            this.dataGridViewTextBoxColumn5.HeaderText = "gastototalMO";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // textBox3
+            // dataGridViewTextBoxColumn6
             // 
-            this.textBox3.Location = new System.Drawing.Point(232, 320);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(315, 20);
-            this.textBox3.TabIndex = 18;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "costoprimo";
+            this.dataGridViewTextBoxColumn6.HeaderText = "costoprimo";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // textBox5
+            // dataGridViewTextBoxColumn7
             // 
-            this.textBox5.Location = new System.Drawing.Point(232, 281);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(315, 20);
-            this.textBox5.TabIndex = 17;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "factorX";
+            this.dataGridViewTextBoxColumn7.HeaderText = "factorX";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
-            // GProrrateo
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "gastosprorrateados";
+            this.dataGridViewTextBoxColumn8.HeaderText = "gastosprorrateados";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "costodeproducciontotal";
+            this.dataGridViewTextBoxColumn9.HeaderText = "costodeproducciontotal";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "cantidadproducida";
+            this.dataGridViewTextBoxColumn10.HeaderText = "cantidadproducida";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Costounitario";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Costounitario";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // CP_Prorrateo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(848, 375);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(918, 378);
+            this.Controls.Add(this.prorrateo2DataGridView);
             this.Controls.Add(this.panel1);
-            this.Name = "GProrrateo";
+            this.Name = "CP_Prorrateo";
             this.Text = "GProrrateo";
+            this.Load += new System.EventHandler(this.CP_Prorrateo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2DataGridView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -342,17 +359,21 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
+        private ERPSeminarioDataSet1 eRPSeminarioDataSet1;
+        private System.Windows.Forms.BindingSource prorrateo2BindingSource;
+        private ERPSeminarioDataSet1TableAdapters.prorrateo2TableAdapter prorrateo2TableAdapter;
+        private ERPSeminarioDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView prorrateo2DataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }

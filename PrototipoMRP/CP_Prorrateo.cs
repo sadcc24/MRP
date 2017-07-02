@@ -40,5 +40,12 @@ namespace PrototipoMRP
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
                     }
+
+        private void CP_Prorrateo_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'eRPSeminarioDataSet1.prorrateo2' Puede moverla o quitarla según sea necesario.
+            this.prorrateo2TableAdapter.Fill(this.eRPSeminarioDataSet1.prorrateo2);
+
+        }
     }
 }
