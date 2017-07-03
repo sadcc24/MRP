@@ -55,7 +55,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(94, 9);
+            this.comboBox1.Location = new System.Drawing.Point(109, 9);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(236, 21);
             this.comboBox1.TabIndex = 2;
@@ -67,7 +67,7 @@
             this.textBox1.Size = new System.Drawing.Size(315, 20);
             this.textBox1.TabIndex = 3;
             // 
-            // conversionproductos_matprimabusq
+            // GC_conversionproductos_matprimabusq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,7 +76,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtetiqueta);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "conversionproductos_matprimabusq";
+            this.Name = "GC_conversionproductos_matprimabusq";
             this.Text = "Busqueda Materia Prima";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
