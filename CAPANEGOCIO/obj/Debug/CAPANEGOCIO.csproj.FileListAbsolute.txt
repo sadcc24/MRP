@@ -5,6 +5,13 @@ C:\Users\Canel\Desktop\subir repositorio\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.pdb
 C:\Users\Canel\Desktop\subir repositorio\CAPANEGOCIO\bin\Debug\CAPADATOS.dll
 C:\Users\Canel\Desktop\subir repositorio\CAPANEGOCIO\bin\Debug\CAPADATOS.pdb
 C:\Users\Canel\Desktop\subir repositorio\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.csprojResolveAssemblyReference.cache
+C:\Users\Sayuka\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPANEGOCIO.dll
+C:\Users\Sayuka\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPANEGOCIO.pdb
+C:\Users\Sayuka\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPADATOS.dll
+C:\Users\Sayuka\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPADATOS.pdb
+C:\Users\Sayuka\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.csprojResolveAssemblyReference.cache
+C:\Users\Sayuka\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.dll
+C:\Users\Sayuka\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.pdb
 C:\Users\Olivia Perez\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPANEGOCIO.dll
 C:\Users\Olivia Perez\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPANEGOCIO.pdb
 C:\Users\Olivia Perez\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPADATOS.dll
