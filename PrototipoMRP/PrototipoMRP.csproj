@@ -82,6 +82,12 @@
     <Compile Include="RC_frmEstadoPlanificacion.Designer.cs">
       <DependentUpon>RC_frmEstadoPlanificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="RC_frmFasesPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmFasesPlanificacion.Designer.cs">
+      <DependentUpon>RC_frmFasesPlanificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="RC_frmPedidoCRM.cs">
       <SubType>Form</SubType>
     </Compile>
