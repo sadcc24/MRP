@@ -54,31 +54,6 @@ namespace PrototipoMRP
 
         }
 
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.prorrateo2TableAdapter.FillBy(this.eRPSeminarioDataSet1.prorrateo2);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
-        private void fillBy1ToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.prorrateo2TableAdapter.FillBy1(this.eRPSeminarioDataSet1.prorrateo2);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
 
         private void idordenproduccionTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -91,20 +66,7 @@ namespace PrototipoMRP
 
         }
 
-        private void buscafechaToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.prorrateo2TableAdapter.buscafecha(this.eRPSeminarioDataSet1.prorrateo2);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
-   
+  
         private void idordenproduccionTextBox_TextChanged_1(object sender, EventArgs e)
         {
 
@@ -130,5 +92,43 @@ namespace PrototipoMRP
         {
 
         }
+
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (idordenproduccionTextBox==null|| idordenproduccionTextBox.Equals(""))
+
+            {
+                if (fechacreacionDateTimePicker==null)
+                  { System.Windows.Forms.MessageBox.Show("error");
+                }
+                else
+                {
+                    try
+                    {
+                        this.prorrateo2TableAdapter2.FillBy(this.eRPSeminarioDataSet2.prorrateo2, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechacreacionDateTimePicker.Text, typeof(System.DateTime))))));
+                    }
+                    catch (System.Exception ex)
+                    {
+                        System.Windows.Forms.MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            else
+                {
+                    try
+                    {
+                this.prorrateo2TableAdapter2.consultaid(this.eRPSeminarioDataSet2.prorrateo2, ((int)(System.Convert.ChangeType(idordenproduccionTextBox.Text, typeof(int)))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+                }
+
+
+            }
+
     }
 }

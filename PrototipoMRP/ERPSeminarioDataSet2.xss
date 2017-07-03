@@ -9,7 +9,7 @@
     <Shape ID="DesignTable:poliza1" ZOrder="4" X="70" Y="70" Height="305" Width="186" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
     <Shape ID="DesignTable:poliza2" ZOrder="3" X="326" Y="70" Height="305" Width="186" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
     <Shape ID="DesignTable:prorrateo1" ZOrder="2" X="582" Y="70" Height="248" Width="207" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="197" />
-    <Shape ID="DesignTable:prorrateo2" ZOrder="1" X="859" Y="70" Height="305" Width="264" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="235" />
+    <Shape ID="DesignTable:prorrateo2" ZOrder="1" X="859" Y="70" Height="324" Width="264" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="235" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

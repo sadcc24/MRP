@@ -4264,7 +4264,7 @@ namespace PrototipoMRP.ERPSeminarioDataSet2TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO" +
@@ -4278,6 +4278,13 @@ FROM            prorrateo2
 WHERE        (idordenproduccion = @idordenproduccionTextBox)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idordenproduccionTextBox", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "idordenproduccion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"SELECT        idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO, costoprimo, factorX, gastosprorrateados, costodeproducciontotal, cantidadproducida, Costounitario
+FROM            prorrateo2
+WHERE        (fechacreacion = @fechacreacionDateTimePicker)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fechacreacionDateTimePicker", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 0, 0, "fechacreacion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4311,6 +4318,25 @@ WHERE        (idordenproduccion = @idordenproduccionTextBox)";
         public virtual int consultaid(ERPSeminarioDataSet2.prorrateo2DataTable dataTable, int idordenproduccionTextBox) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(idordenproduccionTextBox));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(ERPSeminarioDataSet2.prorrateo2DataTable dataTable, global::System.Nullable<global::System.DateTime> fechacreacionDateTimePicker) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((fechacreacionDateTimePicker.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((System.DateTime)(fechacreacionDateTimePicker.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
