@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0A3E800-B2BE-465A-99B1-5403FD003D7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrototipoMRP</RootNamespace>
+    <AssemblyName>PrototipoMRP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OP_AsignacionTareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_AsignacionTareaMRP.Designer.cs">
+      <DependentUpon>OP_AsignacionTareaMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OP_FasesTareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_FasesTareaMRP.Designer.cs">
+      <DependentUpon>OP_FasesTareaMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmBuscarOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmBuscarOP.Designer.cs">
+      <DependentUpon>RC_frmBuscarOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmCalendario.Designer.cs">
+      <DependentUpon>RC_frmCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRP_frmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRP_frmEmpresa.Designer.cs">
+      <DependentUpon>MRP_frmEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmEstadoPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmEstadoPlanificacion.Designer.cs">
+      <DependentUpon>RC_frmEstadoPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmPedidoCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmPedidoCRM.Designer.cs">
+      <DependentUpon>RC_frmPedidoCRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmPronosticoVentasCRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmPronosticoVentasCRM.Designer.cs">
+      <DependentUpon>RC_frmPronosticoVentasCRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRP_conectividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRP_conectividad.Designer.cs">
+      <DependentUpon>MRP_conectividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_EstructuraMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_EstructuraMateriales.Designer.cs">
+      <DependentUpon>GC_EstructuraMateriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_ExistenciaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_ExistenciaProducto.Designer.cs">
+      <DependentUpon>GC_ExistenciaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_ListadoMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_ListadoMateriales.Designer.cs">
+      <DependentUpon>GC_ListadoMateriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_ListaProduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_ListaProduccion.Designer.cs">
+      <DependentUpon>GC_ListaProduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_ListaSolicitudProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_ListaSolicitudProducto.Designer.cs">
+      <DependentUpon>GC_ListaSolicitudProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmPlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmPlanificacion.Designer.cs">
+      <DependentUpon>RC_frmPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_MantUnidadMedidacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_MantUnidadMedidacs.designer.cs">
+      <DependentUpon>GC_MantUnidadMedidacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_NuevaUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_NuevaUnidadMedida.designer.cs">
+      <DependentUpon>GC_NuevaUnidadMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_OrdenProduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_OrdenProduccion.Designer.cs">
+      <DependentUpon>GC_OrdenProduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRP_loginAutenticacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRP_loginAutenticacion.Designer.cs">
+      <DependentUpon>MRP_loginAutenticacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_poliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_poliza.designer.cs">
+      <DependentUpon>CP_poliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Prorrateo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Prorrateo.designer.cs">
+      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_SolicitudProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_SolicitudProducto.Designer.cs">
+      <DependentUpon>GC_SolicitudProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_UnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_UnidadMedida.designer.cs">
+      <DependentUpon>GC_UnidadMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRP_Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRP_Inicial.Designer.cs">
+      <DependentUpon>MRP_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OP_ManoObraMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_ManoObraMRP.Designer.cs">
+      <DependentUpon>OP_ManoObraMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRP_mdiMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRP_mdiMRP.Designer.cs">
+      <DependentUpon>MRP_mdiMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OP_TareaMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_TareaMRP.Designer.cs">
+      <DependentUpon>OP_TareaMRP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="OP_AsignacionTareaMRP.resx">
+      <DependentUpon>OP_AsignacionTareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OP_FasesTareaMRP.resx">
+      <DependentUpon>OP_FasesTareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmBuscarOP.resx">
+      <DependentUpon>RC_frmBuscarOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmCalendario.resx">
+      <DependentUpon>RC_frmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRP_frmEmpresa.resx">
+      <DependentUpon>MRP_frmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmEstadoPlanificacion.resx">
+      <DependentUpon>RC_frmEstadoPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmPedidoCRM.resx">
+      <DependentUpon>RC_frmPedidoCRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmPronosticoVentasCRM.resx">
+      <DependentUpon>RC_frmPronosticoVentasCRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRP_conectividad.resx">
+      <DependentUpon>MRP_conectividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_EstructuraMateriales.resx">
+      <DependentUpon>GC_EstructuraMateriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_ExistenciaProducto.resx">
+      <DependentUpon>GC_ExistenciaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_ListadoMateriales.resx">
+      <DependentUpon>GC_ListadoMateriales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_ListaProduccion.resx">
+      <DependentUpon>GC_ListaProduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_ListaSolicitudProducto.resx">
+      <DependentUpon>GC_ListaSolicitudProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmPlanificacion.resx">
+      <DependentUpon>RC_frmPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_MantUnidadMedidacs.resx">
+      <DependentUpon>GC_MantUnidadMedidacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_NuevaUnidadMedida.resx">
+      <DependentUpon>GC_NuevaUnidadMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_OrdenProduccion.resx">
+      <DependentUpon>GC_OrdenProduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRP_loginAutenticacion.resx">
+      <DependentUpon>MRP_loginAutenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_poliza.resx">
+      <DependentUpon>CP_poliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Prorrateo.resx">
+      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_SolicitudProducto.resx">
+      <DependentUpon>GC_SolicitudProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_UnidadMedida.resx">
+      <DependentUpon>GC_UnidadMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRP_Inicial.resx">
+      <DependentUpon>MRP_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OP_ManoObraMRP.resx">
+      <DependentUpon>OP_ManoObraMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRP_mdiMRP.resx">
+      <DependentUpon>MRP_mdiMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="OP_TareaMRP.resx">
+      <DependentUpon>OP_TareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go to first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go to last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu principal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajustes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reporte.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estructura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bancos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALENDARIO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuentasporpagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EFECTIVO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estadisticas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loggin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manual usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\privilegios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TARJETADECREDITO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubicacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPADATOS\CAPADATOS.csproj">
+      <Project>{4b0a98cd-976c-4771-8d3f-a4358dc38afa}</Project>
+      <Name>CAPADATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAPANEGOCIO\CAPANEGOCIO.csproj">
+      <Project>{73e47a63-e2a2-488e-b8f0-5474df2e00cc}</Project>
+      <Name>CAPANEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
