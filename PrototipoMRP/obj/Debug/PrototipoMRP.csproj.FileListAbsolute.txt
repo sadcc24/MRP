@@ -329,3 +329,6 @@ C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_mdi
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.OP_TareaMRP.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
+C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
