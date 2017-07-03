@@ -36,10 +36,11 @@
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factorDeConversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.existenciasDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generacionDeOrdenesDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -121,14 +122,29 @@
             // inventarioToolStripMenuItem
             // 
             this.inventarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.unidadMedidaToolStripMenuItem,
+            this.factorDeConversionToolStripMenuItem,
             this.existenciasDeProductoToolStripMenuItem,
             this.solicitudDeProductoToolStripMenuItem,
-            this.generacionDeOrdenesDeProduccionToolStripMenuItem,
-            this.unidadMedidaToolStripMenuItem});
+            this.generacionDeOrdenesDeProduccionToolStripMenuItem});
             this.inventarioToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.inventario;
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.inventarioToolStripMenuItem.Text = "Inventario";
+            // 
+            // unidadMedidaToolStripMenuItem
+            // 
+            this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
+            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.unidadMedidaToolStripMenuItem.Text = "Unidad Medida";
+            this.unidadMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadMedidaToolStripMenuItem_Click);
+            // 
+            // factorDeConversionToolStripMenuItem
+            // 
+            this.factorDeConversionToolStripMenuItem.Name = "factorDeConversionToolStripMenuItem";
+            this.factorDeConversionToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.factorDeConversionToolStripMenuItem.Text = "Factor de conversion";
+            this.factorDeConversionToolStripMenuItem.Click += new System.EventHandler(this.factorDeConversionToolStripMenuItem_Click);
             // 
             // existenciasDeProductoToolStripMenuItem
             // 
@@ -150,13 +166,6 @@
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Text = "Generacion de Ordenes de Produccion";
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.generacionDeOrdenesDeProduccionToolStripMenuItem_Click);
-            // 
-            // unidadMedidaToolStripMenuItem
-            // 
-            this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
-            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
-            this.unidadMedidaToolStripMenuItem.Text = "Unidad Medida";
-            this.unidadMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadMedidaToolStripMenuItem_Click);
             // 
             // materialesToolStripMenuItem
             // 
@@ -369,7 +378,7 @@
             this.tooltxtempresa.Size = new System.Drawing.Size(15, 17);
             this.tooltxtempresa.Text = "[]";
             // 
-            // MRPmdiMRP
+            // MRP_mdiMRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -383,7 +392,7 @@
             this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "MRPmdiMRP";
+            this.Name = "MRP_mdiMRP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modulo - MRP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -436,5 +445,6 @@
         private System.Windows.Forms.ToolStripStatusLabel tooltxtusuario;
         private System.Windows.Forms.ToolStripStatusLabel toolEmpresa;
         private System.Windows.Forms.ToolStripStatusLabel tooltxtempresa;
+        private System.Windows.Forms.ToolStripMenuItem factorDeConversionToolStripMenuItem;
     }
 }

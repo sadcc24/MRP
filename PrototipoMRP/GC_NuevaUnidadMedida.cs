@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CAPANEGOCIO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,8 @@ namespace PrototipoMRP
     
     public partial class GC_NuevaUnidadMedida : Form
     {
-
-
+        
+        GCCL_UnidadMedida UNIDADMEDIDA = new GCCL_UnidadMedida();
         public bool edicion { get; set; }
 
         MRP_BD MRP = new MRP_BD();
@@ -33,14 +34,24 @@ namespace PrototipoMRP
 
         private void button5_Click(object sender, EventArgs e)
         {
+            if (txtdescripcion.Text.Trim() == string.Empty || txtsimbolo.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("No pueden haber campos vacios");
+                return;
+            }
 
-            if (txtcodigo.Text == string.Empty)
+            if (txtcodigo.Text.Trim() == string.Empty)
             {
 
+                
 
                 try
                 {
-                    MRP.insertSQL("INSERT INTO tipounidad  (DESCRIPCIONUNIDAD, SIMBOLO) VALUES ('" + txtnombre.Text + "','" + txtsimbolo.Text + "')");
+
+                    UNIDADMEDIDA.Descripcion = txtsimbolo.Text;
+                    UNIDADMEDIDA.NombreUnidad = txtdescripcion.Text;
+                    UNIDADMEDIDA.Insertar_TipoUnidad(UNIDADMEDIDA);
+                    //MRP.insertSQL("INSERT INTO tipounidad  (descripcion, SIMBOLO) VALUES ('" + txtdescripcion.Text + "','" + txtsimbolo.Text + "')");
                     MessageBox.Show("Registro Almacenado");
                     LimpiarCampos();
                     ActualizacionGridview();
@@ -57,7 +68,12 @@ namespace PrototipoMRP
                 try
                 {
 
-                    MRP.updateSQL("UPDATE tipounidad SET DESCRIPCIONUNIDAD='" + txtnombre.Text + "', SIMBOLO='" + txtsimbolo.Text + "' WHERE tipounidad='" + txtcodigo.Text + "'; ");
+                    UNIDADMEDIDA.Descripcion = txtsimbolo.Text;
+                    UNIDADMEDIDA.NombreUnidad = txtdescripcion.Text;
+                    UNIDADMEDIDA.Codunidad = Convert.ToInt32( txtcodigo.Text);
+                    UNIDADMEDIDA.Editar_TipoUnidad(UNIDADMEDIDA);
+
+                    //MRP.updateSQL("UPDATE tipounidad SET descripcion='" + txtdescripcion.Text + "', SIMBOLO='" + txtsimbolo.Text + "' WHERE idtipounidad='" + txtcodigo.Text + "'; ");
                     MessageBox.Show("Registro Actualizado");
                     ActualizacionGridview();
                     this.LimpiarCampos();
@@ -74,7 +90,7 @@ namespace PrototipoMRP
         public void LimpiarCampos()
         {
             txtcodigo.Text = string.Empty;
-            txtnombre.Text = string.Empty;
+            txtdescripcion.Text = string.Empty;
             txtsimbolo.Text = string.Empty;
         }
 
@@ -107,12 +123,18 @@ namespace PrototipoMRP
                 //txtnombre.Text = dataGridView1.Rows[indice].Cells["Nombre"].Value.ToString();
 
 
-                DialogResult resultado = MessageBox.Show("Desea elminar el registro: " + dataGridView1.Rows[indice].Cells["Nombre"].Value.ToString(),"", MessageBoxButtons.YesNo);                
+                DialogResult resultado = MessageBox.Show("Desea elminar el registro: " + dataGridView1.Rows[indice].Cells["Descripcion"].Value.ToString(),"", MessageBoxButtons.YesNo);                
                 if (resultado == DialogResult.Yes)
                 {
                     try
                     {
-                        MRP.deleteSQL("delete tipounidad where tipounidad='" + txtcodigo.Text +  "'");
+
+                        UNIDADMEDIDA.Descripcion = txtsimbolo.Text;
+                        UNIDADMEDIDA.NombreUnidad = txtdescripcion.Text;
+                        UNIDADMEDIDA.Codunidad = Convert.ToInt32(txtcodigo.Text);
+                        UNIDADMEDIDA.Eliminar_TipoUnidad(UNIDADMEDIDA);
+
+//                        MRP.deleteSQL("delete tipounidad where idtipounidad='"+ dataGridView1.Rows[indice].Cells["Codigo"].Value +  "'");
                         MessageBox.Show("Registro Eliminado");
                     }
                     catch (Exception ex)
@@ -133,10 +155,14 @@ namespace PrototipoMRP
         {
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.DataSource = MRP.getSQL("select tipounidad , simbolo  ,descripcionunidad from TIPOUNIDAD;");            
-            dataGridView1.Columns["Codigo"].DataPropertyName = "tipounidad";
-            dataGridView1.Columns["simbolo"].DataPropertyName = "simbolo";
-            dataGridView1.Columns["Nombre"].DataPropertyName = "descripcionunidad";
+            //this.dataGridView1.DataSource = MRP.getSQL("select idtipounidad , simbolo  ,descripcion from TIPOUNIDAD;");            
+            //dataGridView1.Columns["Codigo"].DataPropertyName = "idtipounidad";
+            //dataGridView1.Columns["Simbolo"].DataPropertyName = "simbolo";
+            //dataGridView1.Columns["Descripcion"].DataPropertyName = "descripcion";
+            this.dataGridView1.DataSource = UNIDADMEDIDA.Listado_UnidadMedidas();
+            dataGridView1.Columns["Codigo"].DataPropertyName = "Codunidad";
+            dataGridView1.Columns["Simbolo"].DataPropertyName = "Descripcion";
+            dataGridView1.Columns["Descripcion"].DataPropertyName = "NombreUnidad";
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -146,19 +172,19 @@ namespace PrototipoMRP
 
         private void btneditar_Click(object sender, EventArgs e)
         {
-            int indice = this.dataGridView1.CurrentRow.Index;
-            if (indice>-1)
-            {
-                txtcodigo.Text = dataGridView1.Rows[indice].Cells["Codigo"].Value.ToString();
-                txtsimbolo.Text = dataGridView1.Rows[indice].Cells["simbolo"].Value.ToString();
-                txtnombre.Text = dataGridView1.Rows[indice].Cells["Nombre"].Value.ToString();
-            }
+            LimpiarCampos();           
             
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            LimpiarCampos();
+            int indice = this.dataGridView1.CurrentRow.Index;
+            if (indice > -1)
+            {
+                txtcodigo.Text = dataGridView1.Rows[indice].Cells["Codigo"].Value.ToString();
+                txtsimbolo.Text = dataGridView1.Rows[indice].Cells["Simbolo"].Value.ToString();
+                txtdescripcion.Text = dataGridView1.Rows[indice].Cells["Descripcion"].Value.ToString();
+            }
         }
     }
 }
