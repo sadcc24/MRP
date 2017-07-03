@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ERPSeminarioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERPSeminarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ERPSeminarioDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERPSeminarioDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ERPSeminarioDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERPSeminarioDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="OP_AsignacionTareaMRP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -307,6 +322,39 @@
     <EmbeddedResource Include="OP_TareaMRP.resx">
       <DependentUpon>OP_TareaMRP.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ERPSeminarioDataSet.xsc">
+      <DependentUpon>ERPSeminarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ERPSeminarioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ERPSeminarioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ERPSeminarioDataSet.xss">
+      <DependentUpon>ERPSeminarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ERPSeminarioDataSet1.xsc">
+      <DependentUpon>ERPSeminarioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ERPSeminarioDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ERPSeminarioDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ERPSeminarioDataSet1.xss">
+      <DependentUpon>ERPSeminarioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ERPSeminarioDataSet2.xsc">
+      <DependentUpon>ERPSeminarioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ERPSeminarioDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ERPSeminarioDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ERPSeminarioDataSet2.xss">
+      <DependentUpon>ERPSeminarioDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
