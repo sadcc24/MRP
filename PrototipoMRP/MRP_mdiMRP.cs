@@ -166,10 +166,12 @@ namespace PrototipoMRP
 
         private void factorDeConversionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GC_Listadodeconversiones listado = new GC_Listadodeconversiones();
-            listado.MdiParent = this;
-            listado.Show();
-
+            //GC_Listadodeconversiones listado = new GC_Listadodeconversiones();
+            //listado.MdiParent = this;
+            //listado.Show();
+            GC_Manfactorconversioncs mantenimiento = new GC_Manfactorconversioncs();
+            mantenimiento.MdiParent = this;
+            mantenimiento.Show();
         }
     }
 }
