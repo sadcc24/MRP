@@ -24,6 +24,8 @@ namespace PrototipoMRP
 
             switch (actualizarmodificar) {
                 case 0:
+                 
+
                     break;
                 case 1: //insertar
                     try
@@ -33,11 +35,13 @@ namespace PrototipoMRP
                     catch (Exception)
                     {
 
-                        MessageBox.Show("NO SE PUDO GUARDAR LA INFORMACION")
+                        MessageBox.Show("NO SE PUDO GUARDAR LA INFORMACION");
                     }
                     break;
 
                 case 2: //modificar
+
+
 
                    break;
             }
@@ -98,6 +102,8 @@ namespace PrototipoMRP
 
         private void button5_Click(object sender, EventArgs e)
         {
+
+
             Acciones();
             
             
@@ -105,17 +111,21 @@ namespace PrototipoMRP
 
         private void button1_Click(object sender, EventArgs e)
         {
+            actualizarmodificar = 1;
             Acciones();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            actualizarmodificar = 2;
             Acciones();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            actualizarmodificar = 0;
             Acciones();
+
         }
     }
 }
