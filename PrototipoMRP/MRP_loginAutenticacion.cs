@@ -31,8 +31,8 @@ namespace PrototipoMRP
                 MessageBox.Show("Debe ingresar contraseña");
                 return;
             }
-            else                
-                {
+            else
+            { 
                 MPRCL_Usuario user = new MPRCL_Usuario();
                 user.CodigoEmpleado = 1;
                 user.NombreEmpleado = txtusuario.Text;
@@ -40,7 +40,9 @@ namespace PrototipoMRP
                 MRP_frmEmpresa emp = new MRP_frmEmpresa(user);
                 this.Hide();
                 emp.Show();
-            }            
+            }  
+            
+           
         }
 
         private void button2_Click(object sender, EventArgs e)

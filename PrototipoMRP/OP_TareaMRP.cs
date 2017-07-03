@@ -38,7 +38,10 @@ namespace PrototipoMRP
 
         private void button5_Click(object sender, EventArgs e)
         {
-            PRUEBA.insertSQL("insert into [dbo].[TAREA] (descripcion,estado,nombre,idempresa) values ('" + txtdescripcion.Text + "','" + txtestado.Text + "','" + txtnombre.Text + "','" + cmbempresa.Text + "')");
+            
+            PRUEBA.insertSQL("insert into [dbo].[TAREA] (descripcion,estado,nombre,idempresa) values ('" + txtdescripcion.Text + "','" + cmbestado.Text + "','" + txtnombre.Text + "','"+cmbempresa.SelectedValue.ToString()+"')");
+            MessageBox.Show("Ingreso Exitoso", "Ingreso Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             consulta();
         }
 
@@ -46,7 +49,7 @@ namespace PrototipoMRP
         {
             txtcodigo.Text = "";
             txtdescripcion.Text = "";
-            txtestado.Text = "";
+            cmbestado.Text = "";
             txtnombre.Text = "";
             cmbempresa.Text = "";
         }
@@ -54,12 +57,14 @@ namespace PrototipoMRP
         private void button3_Click(object sender, EventArgs e)
         {
             PRUEBA.deleteSQL("delete [dbo].[TAREA] where codtarea = '" + txtcodigo.Text + "'");
+            MessageBox.Show("Fallo Registro Insertado", "Fallo Insercion cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
             consulta();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PRUEBA.updateSQL("update tarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + txtestado.Text + "',nombre='"+txtnombre.Text+"',idempresa='"+cmbempresa.Text+"' where codtarea='" + txtcodigo.Text+ "'");
+            txtcodigo.Visible = true;
+            PRUEBA.updateSQL("update tarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + cmbestado.Text + "',nombre='"+txtnombre.Text+"',idempresa='"+cmbempresa.Text+"' where codtarea='" + txtcodigo.Text+ "'");
             consulta();
         }
         
@@ -67,17 +72,22 @@ namespace PrototipoMRP
         {
             txtcodigo.Text = "";
             txtdescripcion.Text = "";
-            txtestado.Text = "";
+            cmbestado.Text = "";
             txtnombre.Text = "";
             cmbempresa.Text = "";
         }
          public void consulta()
         {
-            dataGridView1.DataSource = PRUEBA.getSQL("select * from tarea");
+            dataGridView1.DataSource = PRUEBA.getSQL("select codtarea as 'Codigo', nombre as 'Nombre',descripcion as 'Descripcion',estado as 'Estado Activo/Inactivo',idempresa as 'Cod Empresa' from tarea");
         }
         private void TareaMRP_Load(object sender, EventArgs e)
         {
+            cmbempresa.DataSource = PRUEBA.getSQL("select idempresa, nombre_empresa from empresa");
+            cmbempresa.DisplayMember = "nombre_empresa";
+            cmbempresa.ValueMember = "idempresa";
+            
             consulta();
+            txtcodigo.Visible = false;
         }
     }
 }
