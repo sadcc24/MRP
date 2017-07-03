@@ -290,7 +290,6 @@ C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.MRP
 C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.OP_ManoObraMRP.resources
 C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_mdiMRP.resources
 C:\Users\Canel\Desktop\subir repositorio\PrototipoMRP\obj\Debug\PrototipoMRP.OP_TareaMRP.resources
-<<<<<<< HEAD
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
@@ -330,44 +329,3 @@ C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_mdi
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.OP_TareaMRP.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe.config
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.exe
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.pdb
-=======
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\PrototipoMRP.exe
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\PrototipoMRP.pdb
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\CAPADATOS.dll
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\CAPANEGOCIO.dll
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\CAPADATOS.pdb
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\bin\Debug\CAPANEGOCIO.pdb
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.csprojResolveAssemblyReference.cache
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.OP_AsignacionTareaMRP.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.OP_FasesTareaMRP.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.RC_frmBuscarOP.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.RC_frmCalendario.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_frmEmpresa.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.RC_frmEstadoPlanificacion.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.RC_frmPedidoCRM.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.RC_frmPronosticoVentasCRM.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_conectividad.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_EstructuraMateriales.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_ExistenciaProducto.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_ListadoMateriales.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_ListaProduccion.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_ListaSolicitudProducto.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.RC_frmPlanificacion.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_MantUnidadMedidacs.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_NuevaUnidadMedida.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CreacionOrdenProduccion.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_loginAutenticacion.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_poliza.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_Prorrateo.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_SolicitudProducto.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_UnidadMedida.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_Inicial.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.OP_ManoObraMRP.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_mdiMRP.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.Properties.Resources.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.OP_TareaMRP.resources
-C:\Users\ronyc\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
->>>>>>> master
