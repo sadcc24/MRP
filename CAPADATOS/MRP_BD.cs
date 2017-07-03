@@ -23,7 +23,6 @@ public class MRP_BD
         Usuario = "adminseminario";// "usuario para autenticacion para conectarse ala base de datos";
         Passs = "S@dseminario"; // "passwor para la autenticacion del usuario que se esten conectando";
         String cadena = "Data Source= " + Servidor + "; Initial Catalog=" + B_Datos + "; User Id=" + Usuario + "; Password=" + Passs + ";";
-        //String cadena = @"Data Source=.\SQL; Initial Catalog=BD_PRUEBA; User Id=canel; Password=canel;";
         conexion = new SqlConnection(cadena);
     }
 
