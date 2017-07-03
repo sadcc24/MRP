@@ -121,10 +121,10 @@
             // inventarioToolStripMenuItem
             // 
             this.inventarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.unidadMedidaToolStripMenuItem,
             this.existenciasDeProductoToolStripMenuItem,
             this.solicitudDeProductoToolStripMenuItem,
-            this.generacionDeOrdenesDeProduccionToolStripMenuItem,
-            this.unidadMedidaToolStripMenuItem});
+            this.generacionDeOrdenesDeProduccionToolStripMenuItem});
             this.inventarioToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.inventario;
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
@@ -369,7 +369,7 @@
             this.tooltxtempresa.Size = new System.Drawing.Size(15, 17);
             this.tooltxtempresa.Text = "[]";
             // 
-            // MRPmdiMRP
+            // MRP_mdiMRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -383,7 +383,7 @@
             this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "MRPmdiMRP";
+            this.Name = "MRP_mdiMRP";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modulo - MRP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

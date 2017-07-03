@@ -67,6 +67,7 @@
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(167, 26);
             this.txtusuario.TabIndex = 2;
+            this.txtusuario.Text = "aaaa";
             // 
             // txtcontraseña
             // 
@@ -76,6 +77,7 @@
             this.txtcontraseña.PasswordChar = '@';
             this.txtcontraseña.Size = new System.Drawing.Size(167, 26);
             this.txtcontraseña.TabIndex = 3;
+            this.txtcontraseña.Text = "aaaa";
             // 
             // button1
             // 
@@ -130,7 +132,7 @@
             this.label5.Text = "Olvido su Contraseña?";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // GloginAutenticacion
+            // MRP_loginAutenticacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,7 +150,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "GloginAutenticacion";
+            this.Name = "MRP_loginAutenticacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autenticacion Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

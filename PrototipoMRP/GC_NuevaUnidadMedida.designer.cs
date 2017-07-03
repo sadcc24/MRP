@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.txtsimbolo = new System.Windows.Forms.TextBox();
-            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Simbolo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,12 +56,12 @@
             this.txtsimbolo.Size = new System.Drawing.Size(322, 20);
             this.txtsimbolo.TabIndex = 55;
             // 
-            // txtnombre
+            // txtdescripcion
             // 
-            this.txtnombre.Location = new System.Drawing.Point(144, 97);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(325, 20);
-            this.txtnombre.TabIndex = 54;
+            this.txtdescripcion.Location = new System.Drawing.Point(144, 97);
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(325, 20);
+            this.txtdescripcion.TabIndex = 54;
             // 
             // label6
             // 
@@ -77,9 +77,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(60, 105);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 52;
-            this.label4.Text = "Nombre";
+            this.label4.Text = "Descripcion";
             // 
             // label5
             // 
@@ -189,7 +189,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
-            this.Nombre,
+            this.Descripcion,
             this.Simbolo});
             this.dataGridView1.Location = new System.Drawing.Point(29, 159);
             this.dataGridView1.Name = "dataGridView1";
@@ -203,11 +203,11 @@
             this.Codigo.HeaderText = "Codigo";
             this.Codigo.Name = "Codigo";
             // 
-            // Nombre
+            // Descripcion
             // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
             // 
             // Simbolo
             // 
@@ -215,7 +215,7 @@
             this.Simbolo.HeaderText = "Simbolo";
             this.Simbolo.Name = "Simbolo";
             // 
-            // GNuevaUnidadMedida
+            // GC_NuevaUnidadMedida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -225,7 +225,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.txtsimbolo);
-            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
@@ -236,7 +236,7 @@
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.btnnuevo);
-            this.Name = "GNuevaUnidadMedida";
+            this.Name = "GC_NuevaUnidadMedida";
             this.Text = "GNuevaUnidadMedida";
             this.Load += new System.EventHandler(this.GNuevaUnidadMedida_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -248,7 +248,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtsimbolo;
-        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -263,7 +263,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Simbolo;
     }
 }
