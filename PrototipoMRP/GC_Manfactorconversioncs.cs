@@ -24,7 +24,9 @@ namespace PrototipoMRP
 
             switch (actualizarmodificar) {
                 case 0:
+
                     Limpiar();
+                    cargarCombos();
                     break;
                 case 1: //insertar
                     try
@@ -39,10 +41,7 @@ namespace PrototipoMRP
                     break;
 
                 case 2: //modificar
-                    cmborigen.Enabled = false;
-                    cmbdestino.Enabled = false;
-                    cmbproducto.Enabled = false;
-                    txtfactor.Enabled = true;
+                    
                    break;
                 case 3:
                     
@@ -54,8 +53,7 @@ namespace PrototipoMRP
         public void Limpiar() {
             cmbdestino.DataSource = null;
             cmborigen.DataSource = null;
-            txtfactor.Text = string.Empty;
-            cargarCombos();
+            txtfactor.Text = string.Empty;           
         }
         public GC_Manfactorconversioncs()
         {
@@ -88,7 +86,9 @@ namespace PrototipoMRP
 
         private void GMantUnidadMedidacs_Load(object sender, EventArgs e)
         {
-            cargarCombos();
+            deshabilitartodos();
+
+
         }
 
 
@@ -113,8 +113,7 @@ namespace PrototipoMRP
         private void button5_Click(object sender, EventArgs e)
         {
 
-
-            Acciones();
+             Acciones();
             
             
         }
@@ -122,19 +121,44 @@ namespace PrototipoMRP
         private void button1_Click(object sender, EventArgs e)
         {
             actualizarmodificar = 1;
-            Acciones();
+            Limpiar();
+            cargarCombos();
+            habilitartodos();
+            
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             actualizarmodificar = 2;
-            Acciones();
+            cmborigen.Enabled = cmbdestino.Enabled = cmbproducto.Enabled = false;
+            txtfactor.Enabled = true;
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             actualizarmodificar = 0;
-            Acciones();
+            Limpiar();
+            
+
+        }
+
+
+
+
+
+        public void deshabilitartodos() {
+
+            cmbdestino.Enabled = cmborigen.Enabled = txtfactor.Enabled = cmbproducto.Enabled = false;
+        }
+        public void habilitartodos() {
+
+            cmbdestino.Enabled = cmborigen.Enabled = txtfactor.Enabled = cmbproducto.Enabled = true;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }
