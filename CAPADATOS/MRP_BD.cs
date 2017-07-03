@@ -18,17 +18,11 @@ public class MRP_BD
     public MRP_BD()
     {
 
-        Servidor = @".\SQLEXPRESS"; //"aqui deben ingresar el servidor de su maquina que estan haciendo pruebas";
-        B_Datos = "master";//"ingresan la base de datos donde estan trabajando";
-        Usuario = "OLIVIA";// "usuario para autenticacion para conectarse ala base de datos";
-        Passs = "oliviamrp"; // "passwor para la autenticacion del usuario que se esten conectando";
-
-      //  Servidor = "erpseminario.database.windows.net"; //"aqui deben ingresar el servidor de su maquina que estan haciendo pruebas";
-      //  B_Datos = "ERPSeminario";//"ingresan la base de datos donde estan trabajando";
-       // Usuario = "adminseminario";// "usuario para autenticacion para conectarse ala base de datos";
-       // Passs = "S@dseminario"; // "passwor para la autenticacion del usuario que se esten conectando";
+        Servidor = @"erpseminario.database.windows.net"; //"aqui deben ingresar el servidor de su maquina que estan haciendo pruebas";
+        B_Datos = "ERPSeminario";//"ingresan la base de datos donde estan trabajando";
+        Usuario = "adminseminario";// "usuario para autenticacion para conectarse ala base de datos";
+        Passs = "S@dseminario"; // "passwor para la autenticacion del usuario que se esten conectando";
         String cadena = "Data Source= " + Servidor + "; Initial Catalog=" + B_Datos + "; User Id=" + Usuario + "; Password=" + Passs + ";";
-        //String cadena = @"Data Source=.\SQL; Initial Catalog=BD_PRUEBA; User Id=canel; Password=canel;";
         conexion = new SqlConnection(cadena);
     }
 
