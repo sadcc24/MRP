@@ -64,7 +64,7 @@ namespace PrototipoMRP
         private void button2_Click(object sender, EventArgs e)
         {
             txtcodigo.Visible = true;
-            PRUEBA.updateSQL("update tarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + cmbestado.Text + "',nombre='"+txtnombre.Text+"',idempresa='"+cmbempresa.Text+"' where codtarea='" + txtcodigo.Text+ "'");
+            PRUEBA.updateSQL("update tarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + cmbestado.Text + "',nombre='"+txtnombre.Text+"',idempresa='"+ cmbempresa.SelectedValue.ToString()+ "' where codtarea='" + txtcodigo.Text+ "'");
             consulta();
         }
         
