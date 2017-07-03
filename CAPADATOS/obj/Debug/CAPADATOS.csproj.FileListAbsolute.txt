@@ -3,3 +3,8 @@ C:\Users\Canel\Desktop\subir repositorio\CAPADATOS\bin\Debug\CAPADATOS.pdb
 C:\Users\Canel\Desktop\subir repositorio\CAPADATOS\obj\Debug\CAPADATOS.csprojResolveAssemblyReference.cache
 C:\Users\Canel\Desktop\subir repositorio\CAPADATOS\obj\Debug\CAPADATOS.dll
 C:\Users\Canel\Desktop\subir repositorio\CAPADATOS\obj\Debug\CAPADATOS.pdb
+C:\Users\ronyc\Documents\GitHub\MRP\CAPADATOS\bin\Debug\CAPADATOS.dll
+C:\Users\ronyc\Documents\GitHub\MRP\CAPADATOS\bin\Debug\CAPADATOS.pdb
+C:\Users\ronyc\Documents\GitHub\MRP\CAPADATOS\obj\Debug\CAPADATOS.csprojResolveAssemblyReference.cache
+C:\Users\ronyc\Documents\GitHub\MRP\CAPADATOS\obj\Debug\CAPADATOS.dll
+C:\Users\ronyc\Documents\GitHub\MRP\CAPADATOS\obj\Debug\CAPADATOS.pdb
