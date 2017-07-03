@@ -24,8 +24,7 @@ namespace PrototipoMRP
 
             switch (actualizarmodificar) {
                 case 0:
-                 
-
+                    Limpiar();
                     break;
                 case 1: //insertar
                     try
@@ -40,12 +39,23 @@ namespace PrototipoMRP
                     break;
 
                 case 2: //modificar
-
-
-
+                    cmborigen.Enabled = false;
+                    cmbdestino.Enabled = false;
+                    cmbproducto.Enabled = false;
+                    txtfactor.Enabled = true;
                    break;
+                case 3:
+                    
+                    break;
             }
 
+        }
+
+        public void Limpiar() {
+            cmbdestino.DataSource = null;
+            cmborigen.DataSource = null;
+            txtfactor.Text = string.Empty;
+            cargarCombos();
         }
         public GC_Manfactorconversioncs()
         {
