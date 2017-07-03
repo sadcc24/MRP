@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ERPSeminarioDataSet1" targetNamespace="http://tempuri.org/ERPSeminarioDataSet1.xsd" xmlns:mstns="http://tempuri.org/ERPSeminarioDataSet1.xsd" xmlns="http://tempuri.org/ERPSeminarioDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERPSeminarioConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERPSeminarioConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PrototipoMRP.Properties.Settings.GlobalReference.Default.ERPSeminarioConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prorrateo1TableAdapter" GeneratorDataComponentClassName="prorrateo1TableAdapter" Name="prorrateo1" UserDataComponentName="prorrateo1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ERPSeminarioConnectionString (Settings)" DbObjectName="ERPSeminario.dbo.prorrateo1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idordenproduccion, fechacreacion, gastofabricacion, materiaprima, gastosMO, cantidadproducida, gastototalGF, gastototalMP, gastototalMO FROM dbo.prorrateo1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idordenproduccion" DataSetColumn="idordenproduccion" />
+              <Mapping SourceColumn="fechacreacion" DataSetColumn="fechacreacion" />
+              <Mapping SourceColumn="gastofabricacion" DataSetColumn="gastofabricacion" />
+              <Mapping SourceColumn="materiaprima" DataSetColumn="materiaprima" />
+              <Mapping SourceColumn="gastosMO" DataSetColumn="gastosMO" />
+              <Mapping SourceColumn="cantidadproducida" DataSetColumn="cantidadproducida" />
+              <Mapping SourceColumn="gastototalGF" DataSetColumn="gastototalGF" />
+              <Mapping SourceColumn="gastototalMP" DataSetColumn="gastototalMP" />
+              <Mapping SourceColumn="gastototalMO" DataSetColumn="gastototalMO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prorrateo2TableAdapter" GeneratorDataComponentClassName="prorrateo2TableAdapter" Name="prorrateo2" UserDataComponentName="prorrateo2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ERPSeminarioConnectionString (Settings)" DbObjectName="ERPSeminario.dbo.prorrateo2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO, costoprimo, factorX, gastosprorrateados, costodeproducciontotal, cantidadproducida, Costounitario FROM dbo.prorrateo2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idordenproduccion" DataSetColumn="idordenproduccion" />
+              <Mapping SourceColumn="fechacreacion" DataSetColumn="fechacreacion" />
+              <Mapping SourceColumn="gastototalGF" DataSetColumn="gastototalGF" />
+              <Mapping SourceColumn="gastototalMP" DataSetColumn="gastototalMP" />
+              <Mapping SourceColumn="gastototalMO" DataSetColumn="gastototalMO" />
+              <Mapping SourceColumn="costoprimo" DataSetColumn="costoprimo" />
+              <Mapping SourceColumn="factorX" DataSetColumn="factorX" />
+              <Mapping SourceColumn="gastosprorrateados" DataSetColumn="gastosprorrateados" />
+              <Mapping SourceColumn="costodeproducciontotal" DataSetColumn="costodeproducciontotal" />
+              <Mapping SourceColumn="cantidadproducida" DataSetColumn="cantidadproducida" />
+              <Mapping SourceColumn="Costounitario" DataSetColumn="Costounitario" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ERPSeminarioConnectionString (Settings)" DbObjectName="ERPSeminario.dbo.prorrateo2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="buscafecha" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="buscafecha" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="buscafecha">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO, costoprimo, factorX, gastosprorrateados, costodeproducciontotal, cantidadproducida, Costounitario
+FROM            prorrateo2
+WHERE        ('@' = 'fechacreacionDateTimePicker')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ERPSeminarioConnectionString (Settings)" DbObjectName="ERPSeminario.dbo.prorrateo2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="buscarid" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="buscarid" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="buscarid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO, costoprimo, factorX, gastosprorrateados, costodeproducciontotal, cantidadproducida, Costounitario
+FROM            prorrateo2
+WHERE        (idordenproduccion = @idordenproduccionTextBox)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="idordenproduccionTextBox" ColumnName="idordenproduccion" DataSourceName="ERPSeminario.dbo.prorrateo2" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idordenproduccionTextBox" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idordenproduccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ERPSeminarioConnectionString (Settings)" DbObjectName="ERPSeminario.dbo.prorrateo2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO, costoprimo, factorX, gastosprorrateados, costodeproducciontotal, cantidadproducida, Costounitario
+FROM            prorrateo2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ERPSeminarioConnectionString (Settings)" DbObjectName="ERPSeminario.dbo.prorrateo2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO, costoprimo, factorX, gastosprorrateados, costodeproducciontotal, cantidadproducida, Costounitario FROM dbo.prorrateo2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="ERPSeminarioConnectionString (Settings)" DbObjectName="ERPSeminario.dbo.prorrateo2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        idordenproduccion, fechacreacion, gastototalGF, gastototalMP, gastototalMO, costoprimo, factorX, gastosprorrateados, costodeproducciontotal, cantidadproducida, Costounitario
+FROM            prorrateo2
+WHERE        (idordenproduccion = @idordenproduccionTextBox)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="idordenproduccionTextBox" ColumnName="idordenproduccion" DataSourceName="ERPSeminario.dbo.prorrateo2" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@idordenproduccionTextBox" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="idordenproduccion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ERPSeminarioDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ERPSeminarioDataSet1" msprop:Generator_UserDSName="ERPSeminarioDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="prorrateo1" msprop:Generator_TableClassName="prorrateo1DataTable" msprop:Generator_TableVarName="tableprorrateo1" msprop:Generator_RowChangedName="prorrateo1RowChanged" msprop:Generator_TablePropName="prorrateo1" msprop:Generator_RowDeletingName="prorrateo1RowDeleting" msprop:Generator_RowChangingName="prorrateo1RowChanging" msprop:Generator_RowEvHandlerName="prorrateo1RowChangeEventHandler" msprop:Generator_RowDeletedName="prorrateo1RowDeleted" msprop:Generator_RowClassName="prorrateo1Row" msprop:Generator_UserTableName="prorrateo1" msprop:Generator_RowEvArgName="prorrateo1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idordenproduccion" msprop:Generator_ColumnVarNameInTable="columnidordenproduccion" msprop:Generator_ColumnPropNameInRow="idordenproduccion" msprop:Generator_ColumnPropNameInTable="idordenproduccionColumn" msprop:Generator_UserColumnName="idordenproduccion" type="xs:int" />
+              <xs:element name="fechacreacion" msprop:Generator_ColumnVarNameInTable="columnfechacreacion" msprop:Generator_ColumnPropNameInRow="fechacreacion" msprop:Generator_ColumnPropNameInTable="fechacreacionColumn" msprop:Generator_UserColumnName="fechacreacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="gastofabricacion" msprop:Generator_ColumnVarNameInTable="columngastofabricacion" msprop:Generator_ColumnPropNameInRow="gastofabricacion" msprop:Generator_ColumnPropNameInTable="gastofabricacionColumn" msprop:Generator_UserColumnName="gastofabricacion" type="xs:decimal" minOccurs="0" />
+              <xs:element name="materiaprima" msprop:Generator_ColumnVarNameInTable="columnmateriaprima" msprop:Generator_ColumnPropNameInRow="materiaprima" msprop:Generator_ColumnPropNameInTable="materiaprimaColumn" msprop:Generator_UserColumnName="materiaprima" type="xs:decimal" minOccurs="0" />
+              <xs:element name="gastosMO" msprop:Generator_ColumnVarNameInTable="columngastosMO" msprop:Generator_ColumnPropNameInRow="gastosMO" msprop:Generator_ColumnPropNameInTable="gastosMOColumn" msprop:Generator_UserColumnName="gastosMO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cantidadproducida" msprop:Generator_ColumnVarNameInTable="columncantidadproducida" msprop:Generator_ColumnPropNameInRow="cantidadproducida" msprop:Generator_ColumnPropNameInTable="cantidadproducidaColumn" msprop:Generator_UserColumnName="cantidadproducida" type="xs:decimal" minOccurs="0" />
+              <xs:element name="gastototalGF" msprop:Generator_ColumnVarNameInTable="columngastototalGF" msprop:Generator_ColumnPropNameInRow="gastototalGF" msprop:Generator_ColumnPropNameInTable="gastototalGFColumn" msprop:Generator_UserColumnName="gastototalGF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="gastototalMP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columngastototalMP" msprop:Generator_ColumnPropNameInRow="gastototalMP" msprop:Generator_ColumnPropNameInTable="gastototalMPColumn" msprop:Generator_UserColumnName="gastototalMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="gastototalMO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columngastototalMO" msprop:Generator_ColumnPropNameInRow="gastototalMO" msprop:Generator_ColumnPropNameInTable="gastototalMOColumn" msprop:Generator_UserColumnName="gastototalMO" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="prorrateo2" msprop:Generator_TableClassName="prorrateo2DataTable" msprop:Generator_TableVarName="tableprorrateo2" msprop:Generator_RowChangedName="prorrateo2RowChanged" msprop:Generator_TablePropName="prorrateo2" msprop:Generator_RowDeletingName="prorrateo2RowDeleting" msprop:Generator_RowChangingName="prorrateo2RowChanging" msprop:Generator_RowEvHandlerName="prorrateo2RowChangeEventHandler" msprop:Generator_RowDeletedName="prorrateo2RowDeleted" msprop:Generator_RowClassName="prorrateo2Row" msprop:Generator_UserTableName="prorrateo2" msprop:Generator_RowEvArgName="prorrateo2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idordenproduccion" msprop:Generator_ColumnVarNameInTable="columnidordenproduccion" msprop:Generator_ColumnPropNameInRow="idordenproduccion" msprop:Generator_ColumnPropNameInTable="idordenproduccionColumn" msprop:Generator_UserColumnName="idordenproduccion" type="xs:int" />
+              <xs:element name="fechacreacion" msprop:Generator_ColumnVarNameInTable="columnfechacreacion" msprop:Generator_ColumnPropNameInRow="fechacreacion" msprop:Generator_ColumnPropNameInTable="fechacreacionColumn" msprop:Generator_UserColumnName="fechacreacion" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="gastototalGF" msprop:Generator_ColumnVarNameInTable="columngastototalGF" msprop:Generator_ColumnPropNameInRow="gastototalGF" msprop:Generator_ColumnPropNameInTable="gastototalGFColumn" msprop:Generator_UserColumnName="gastototalGF" type="xs:decimal" minOccurs="0" />
+              <xs:element name="gastototalMP" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columngastototalMP" msprop:Generator_ColumnPropNameInRow="gastototalMP" msprop:Generator_ColumnPropNameInTable="gastototalMPColumn" msprop:Generator_UserColumnName="gastototalMP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="gastototalMO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columngastototalMO" msprop:Generator_ColumnPropNameInRow="gastototalMO" msprop:Generator_ColumnPropNameInTable="gastototalMOColumn" msprop:Generator_UserColumnName="gastototalMO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="costoprimo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncostoprimo" msprop:Generator_ColumnPropNameInRow="costoprimo" msprop:Generator_ColumnPropNameInTable="costoprimoColumn" msprop:Generator_UserColumnName="costoprimo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="factorX" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnfactorX" msprop:Generator_ColumnPropNameInRow="factorX" msprop:Generator_ColumnPropNameInTable="factorXColumn" msprop:Generator_UserColumnName="factorX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="gastosprorrateados" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columngastosprorrateados" msprop:Generator_ColumnPropNameInRow="gastosprorrateados" msprop:Generator_ColumnPropNameInTable="gastosprorrateadosColumn" msprop:Generator_UserColumnName="gastosprorrateados" type="xs:decimal" minOccurs="0" />
+              <xs:element name="costodeproducciontotal" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncostodeproducciontotal" msprop:Generator_ColumnPropNameInRow="costodeproducciontotal" msprop:Generator_ColumnPropNameInTable="costodeproducciontotalColumn" msprop:Generator_UserColumnName="costodeproducciontotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cantidadproducida" msprop:Generator_ColumnVarNameInTable="columncantidadproducida" msprop:Generator_ColumnPropNameInRow="cantidadproducida" msprop:Generator_ColumnPropNameInTable="cantidadproducidaColumn" msprop:Generator_UserColumnName="cantidadproducida" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Costounitario" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCostounitario" msprop:Generator_ColumnPropNameInRow="Costounitario" msprop:Generator_ColumnPropNameInTable="CostounitarioColumn" msprop:Generator_UserColumnName="Costounitario" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:prorrateo1" />
+      <xs:field xpath="mstns:idordenproduccion" />
+    </xs:unique>
+    <xs:unique name="prorrateo2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:prorrateo2" />
+      <xs:field xpath="mstns:idordenproduccion" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
