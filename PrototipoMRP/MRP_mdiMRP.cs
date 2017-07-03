@@ -74,7 +74,11 @@ namespace PrototipoMRP
 
         private void listaDeMaterialesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GC_ListadoMateriales listado = new GC_ListadoMateriales();
+            //GC_ListadoMateriales listado = new GC_ListadoMateriales();
+            //listado.MdiParent = this;
+            //listado.Show();
+
+            ListadoRecetario listado = new ListadoRecetario(empresa);
             listado.MdiParent = this;
             listado.Show();
         }

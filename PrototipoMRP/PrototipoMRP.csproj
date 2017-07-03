@@ -58,6 +58,12 @@
     <Compile Include="GC_conversionproductos_nuevo.designer.cs">
       <DependentUpon>GC_conversionproductos_nuevo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListadoRecetario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoRecetario.Designer.cs">
+      <DependentUpon>ListadoRecetario.cs</DependentUpon>
+    </Compile>
     <Compile Include="OP_AsignacionTareaMRP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GC_conversionproductos_nuevo.resx">
       <DependentUpon>GC_conversionproductos_nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoRecetario.resx">
+      <DependentUpon>ListadoRecetario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OP_AsignacionTareaMRP.resx">
       <DependentUpon>OP_AsignacionTareaMRP.cs</DependentUpon>

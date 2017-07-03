@@ -335,3 +335,4 @@ C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.recet
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.unidadmedida_nuevo.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_Listadodeconversiones.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_Manfactorconversioncs.resources
+C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.ListadoRecetario.resources
