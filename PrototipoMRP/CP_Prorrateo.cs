@@ -96,28 +96,9 @@ namespace PrototipoMRP
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (idordenproduccionTextBox==null|| idordenproduccionTextBox.Equals(""))
 
+            try
             {
-                if (fechacreacionDateTimePicker==null)
-                  { System.Windows.Forms.MessageBox.Show("error");
-                }
-                else
-                {
-                    try
-                    {
-                        this.prorrateo2TableAdapter2.FillBy(this.eRPSeminarioDataSet2.prorrateo2, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechacreacionDateTimePicker.Text, typeof(System.DateTime))))));
-                    }
-                    catch (System.Exception ex)
-                    {
-                        System.Windows.Forms.MessageBox.Show(ex.Message);
-                    }
-                }
-            }
-            else
-                {
-                    try
-                    {
                 this.prorrateo2TableAdapter2.consultaid(this.eRPSeminarioDataSet2.prorrateo2, ((int)(System.Convert.ChangeType(idordenproduccionTextBox.Text, typeof(int)))));
             }
             catch (System.Exception ex)
@@ -125,10 +106,24 @@ namespace PrototipoMRP
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
 
-                }
+            //
+        }
 
+        private void fechacreacion_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.prorrateo2TableAdapter2.FillBy(this.eRPSeminarioDataSet2.prorrateo2, new System.Nullable<System.DateTime>(((System.DateTime)(System.Convert.ChangeType(fechacreacionDateTimePicker.Text, typeof(System.DateTime))))));
             }
-
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

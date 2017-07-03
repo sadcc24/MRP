@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label idordenproduccionLabel;
-            System.Windows.Forms.Label fechacreacionLabel;
+            System.Windows.Forms.Label fechacreacion;
             this.prorrateo2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.eRPSeminarioDataSet = new PrototipoMRP.ERPSeminarioDataSet();
             this.prorrateo2TableAdapter1 = new PrototipoMRP.ERPSeminarioDataSetTableAdapters.prorrateo2TableAdapter();
@@ -48,6 +48,8 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.idordenproduccionTextBox = new System.Windows.Forms.TextBox();
+            this.prorrateo2BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.eRPSeminarioDataSet2 = new PrototipoMRP.ERPSeminarioDataSet2();
             this.fechacreacionDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.button8 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -63,42 +65,42 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prorrateo2BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.eRPSeminarioDataSet2 = new PrototipoMRP.ERPSeminarioDataSet2();
             this.poliza2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.poliza2TableAdapter = new PrototipoMRP.ERPSeminarioDataSet2TableAdapters.poliza2TableAdapter();
             this.tableAdapterManager2 = new PrototipoMRP.ERPSeminarioDataSet2TableAdapters.TableAdapterManager();
             this.prorrateo2TableAdapter2 = new PrototipoMRP.ERPSeminarioDataSet2TableAdapters.prorrateo2TableAdapter();
+            this.button9 = new System.Windows.Forms.Button();
             idordenproduccionLabel = new System.Windows.Forms.Label();
-            fechacreacionLabel = new System.Windows.Forms.Label();
+            fechacreacion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.poliza2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // idordenproduccionLabel
             // 
             idordenproduccionLabel.AutoSize = true;
-            idordenproduccionLabel.Location = new System.Drawing.Point(31, 92);
+            idordenproduccionLabel.Location = new System.Drawing.Point(3, 87);
             idordenproduccionLabel.Name = "idordenproduccionLabel";
-            idordenproduccionLabel.Size = new System.Drawing.Size(98, 13);
+            idordenproduccionLabel.Size = new System.Drawing.Size(187, 13);
             idordenproduccionLabel.TabIndex = 17;
-            idordenproduccionLabel.Text = "idordenproduccion:";
+            idordenproduccionLabel.Text = "buscar por id de orden de produccion:";
             // 
-            // fechacreacionLabel
+            // fechacreacion
             // 
-            fechacreacionLabel.AutoSize = true;
-            fechacreacionLabel.Location = new System.Drawing.Point(489, 92);
-            fechacreacionLabel.Name = "fechacreacionLabel";
-            fechacreacionLabel.Size = new System.Drawing.Size(78, 13);
-            fechacreacionLabel.TabIndex = 18;
-            fechacreacionLabel.Text = "fechacreacion:";
+            fechacreacion.AutoSize = true;
+            fechacreacion.Location = new System.Drawing.Point(465, 87);
+            fechacreacion.Name = "fechacreacion";
+            fechacreacion.Size = new System.Drawing.Size(126, 13);
+            fechacreacion.TabIndex = 18;
+            fechacreacion.Text = "buscar por fecha creado:";
+            fechacreacion.Click += new System.EventHandler(this.fechacreacion_Click);
             // 
             // prorrateo2BindingSource1
             // 
@@ -225,22 +227,32 @@
             // idordenproduccionTextBox
             // 
             this.idordenproduccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.prorrateo2BindingSource2, "idordenproduccion", true));
-            this.idordenproduccionTextBox.Location = new System.Drawing.Point(135, 89);
+            this.idordenproduccionTextBox.Location = new System.Drawing.Point(196, 84);
             this.idordenproduccionTextBox.Name = "idordenproduccionTextBox";
-            this.idordenproduccionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idordenproduccionTextBox.Size = new System.Drawing.Size(129, 20);
             this.idordenproduccionTextBox.TabIndex = 18;
+            // 
+            // prorrateo2BindingSource2
+            // 
+            this.prorrateo2BindingSource2.DataMember = "prorrateo2";
+            this.prorrateo2BindingSource2.DataSource = this.eRPSeminarioDataSet2;
+            // 
+            // eRPSeminarioDataSet2
+            // 
+            this.eRPSeminarioDataSet2.DataSetName = "ERPSeminarioDataSet2";
+            this.eRPSeminarioDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // fechacreacionDateTimePicker
             // 
             this.fechacreacionDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.prorrateo2BindingSource2, "fechacreacion", true));
-            this.fechacreacionDateTimePicker.Location = new System.Drawing.Point(587, 89);
+            this.fechacreacionDateTimePicker.Location = new System.Drawing.Point(597, 84);
             this.fechacreacionDateTimePicker.Name = "fechacreacionDateTimePicker";
             this.fechacreacionDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.fechacreacionDateTimePicker.TabIndex = 19;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(270, 87);
+            this.button8.Location = new System.Drawing.Point(340, 82);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 20;
@@ -250,8 +262,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(fechacreacionLabel);
+            this.panel1.Controls.Add(fechacreacion);
             this.panel1.Controls.Add(this.fechacreacionDateTimePicker);
             this.panel1.Controls.Add(idordenproduccionLabel);
             this.panel1.Controls.Add(this.idordenproduccionTextBox);
@@ -372,16 +385,6 @@
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
-            // prorrateo2BindingSource2
-            // 
-            this.prorrateo2BindingSource2.DataMember = "prorrateo2";
-            this.prorrateo2BindingSource2.DataSource = this.eRPSeminarioDataSet2;
-            // 
-            // eRPSeminarioDataSet2
-            // 
-            this.eRPSeminarioDataSet2.DataSetName = "ERPSeminarioDataSet2";
-            this.eRPSeminarioDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // poliza2BindingSource
             // 
             this.poliza2BindingSource.DataMember = "poliza2";
@@ -401,6 +404,16 @@
             // 
             this.prorrateo2TableAdapter2.ClearBeforeFill = true;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(812, 81);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 21;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // CP_Prorrateo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,11 +429,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prorrateo2DataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prorrateo2BindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eRPSeminarioDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.poliza2BindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -465,5 +478,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridView prorrateo2DataGridView;
+        private System.Windows.Forms.Button button9;
     }
 }
