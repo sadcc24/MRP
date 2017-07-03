@@ -12,10 +12,3 @@ C:\Users\Olivia Perez\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPADATOS.pdb
 C:\Users\Olivia Perez\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.csprojResolveAssemblyReference.cache
 C:\Users\Olivia Perez\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.dll
 C:\Users\Olivia Perez\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.pdb
-C:\Users\ronyc\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPANEGOCIO.dll
-C:\Users\ronyc\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPANEGOCIO.pdb
-C:\Users\ronyc\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPADATOS.dll
-C:\Users\ronyc\Documents\GitHub\MRP\CAPANEGOCIO\bin\Debug\CAPADATOS.pdb
-C:\Users\ronyc\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.csprojResolveAssemblyReference.cache
-C:\Users\ronyc\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.dll
-C:\Users\ronyc\Documents\GitHub\MRP\CAPANEGOCIO\obj\Debug\CAPANEGOCIO.pdb
