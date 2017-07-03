@@ -57,7 +57,7 @@ namespace PrototipoMRP
         private void button3_Click(object sender, EventArgs e)
         {
             PRUEBA.deleteSQL("delete [dbo].[TAREA] where codtarea = '" + txtcodigo.Text + "'");
-            MessageBox.Show("Fallo Registro Insertado", "Fallo Insercion cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Esta seguro de eliminar la tarea?", "Esta seguro de eliminar la tarea?", MessageBoxButtons.OK, MessageBoxIcon.Information);
             consulta();
         }
 
