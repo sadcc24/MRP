@@ -166,11 +166,11 @@
     <Compile Include="RC_frmPlanificacion.Designer.cs">
       <DependentUpon>RC_frmPlanificacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="GC_MantUnidadMedidacs.cs">
+    <Compile Include="GC_Manfactorconversioncs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GC_MantUnidadMedidacs.designer.cs">
-      <DependentUpon>GC_MantUnidadMedidacs.cs</DependentUpon>
+    <Compile Include="GC_Manfactorconversioncs.designer.cs">
+      <DependentUpon>GC_Manfactorconversioncs.cs</DependentUpon>
     </Compile>
     <Compile Include="GC_NuevaUnidadMedida.cs">
       <SubType>Form</SubType>
@@ -208,11 +208,11 @@
     <Compile Include="GC_SolicitudProducto.Designer.cs">
       <DependentUpon>GC_SolicitudProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="GC_UnidadMedida.cs">
+    <Compile Include="GC_Listadodeconversiones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GC_UnidadMedida.designer.cs">
-      <DependentUpon>GC_UnidadMedida.cs</DependentUpon>
+    <Compile Include="GC_Listadodeconversiones.designer.cs">
+      <DependentUpon>GC_Listadodeconversiones.cs</DependentUpon>
     </Compile>
     <Compile Include="MRP_Inicial.cs">
       <SubType>Form</SubType>
@@ -246,11 +246,11 @@
     <Compile Include="GC_recetario_nuevo.designer.cs">
       <DependentUpon>GC_recetario_nuevo.cs</DependentUpon>
     </Compile>
-    <Compile Include="GC_unidadmedida_nuevo.cs">
+    <Compile Include="GC_unidadmedida_nuevo_inutilizable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GC_unidadmedida_nuevo.designer.cs">
-      <DependentUpon>GC_unidadmedida_nuevo.cs</DependentUpon>
+    <Compile Include="GC_unidadmedida_nuevo_inutilizable.designer.cs">
+      <DependentUpon>GC_unidadmedida_nuevo_inutilizable.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="GC_conversionproductos_matprimabusq.resx">
       <DependentUpon>GC_conversionproductos_matprimabusq.cs</DependentUpon>
@@ -309,8 +309,8 @@
     <EmbeddedResource Include="RC_frmPlanificacion.resx">
       <DependentUpon>RC_frmPlanificacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GC_MantUnidadMedidacs.resx">
-      <DependentUpon>GC_MantUnidadMedidacs.cs</DependentUpon>
+    <EmbeddedResource Include="GC_Manfactorconversioncs.resx">
+      <DependentUpon>GC_Manfactorconversioncs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GC_NuevaUnidadMedida.resx">
       <DependentUpon>GC_NuevaUnidadMedida.cs</DependentUpon>
@@ -330,8 +330,8 @@
     <EmbeddedResource Include="GC_SolicitudProducto.resx">
       <DependentUpon>GC_SolicitudProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GC_UnidadMedida.resx">
-      <DependentUpon>GC_UnidadMedida.cs</DependentUpon>
+    <EmbeddedResource Include="GC_Listadodeconversiones.resx">
+      <DependentUpon>GC_Listadodeconversiones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MRP_Inicial.resx">
       <DependentUpon>MRP_Inicial.cs</DependentUpon>
@@ -358,8 +358,8 @@
     <EmbeddedResource Include="GC_recetario_nuevo.resx">
       <DependentUpon>GC_recetario_nuevo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GC_unidadmedida_nuevo.resx">
-      <DependentUpon>GC_unidadmedida_nuevo.cs</DependentUpon>
+    <EmbeddedResource Include="GC_unidadmedida_nuevo_inutilizable.resx">
+      <DependentUpon>GC_unidadmedida_nuevo_inutilizable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

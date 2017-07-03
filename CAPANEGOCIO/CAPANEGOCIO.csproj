@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CPCL_PRUEBA.cs" />
     <Compile Include="GCCL_PRUEBA.cs" />
+    <Compile Include="GCCL_UnidadMedida.cs" />
     <Compile Include="MPRCL_Empresa.cs" />
     <Compile Include="OPCL_PRUEBA.cs" />
     <Compile Include="GCCL_OrdenProduccion.cs" />
@@ -51,7 +52,7 @@
     <Compile Include="RCCL_PRUEBA.cs" />
     <Compile Include="GCCL_Recetario.cs" />
     <Compile Include="GCCL_TipoProducto.cs" />
-    <Compile Include="GCCL_TipoUnidadMedida.cs" />
+    <Compile Include="GCCL_TipoUnidad.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CAPADATOS\CAPADATOS.csproj">

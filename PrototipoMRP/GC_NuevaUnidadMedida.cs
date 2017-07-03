@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CAPANEGOCIO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,8 +17,8 @@ namespace PrototipoMRP
     
     public partial class GC_NuevaUnidadMedida : Form
     {
-
-
+        
+        GCCL_UnidadMedida UNIDADMEDIDA = new GCCL_UnidadMedida();
         public bool edicion { get; set; }
 
         MRP_BD MRP = new MRP_BD();
@@ -46,7 +47,11 @@ namespace PrototipoMRP
 
                 try
                 {
-                    MRP.insertSQL("INSERT INTO tipounidad  (descripcion, SIMBOLO) VALUES ('" + txtdescripcion.Text + "','" + txtsimbolo.Text + "')");
+
+                    UNIDADMEDIDA.Descripcion = txtsimbolo.Text;
+                    UNIDADMEDIDA.NombreUnidad = txtdescripcion.Text;
+                    UNIDADMEDIDA.Insertar_TipoUnidad(UNIDADMEDIDA);
+                    //MRP.insertSQL("INSERT INTO tipounidad  (descripcion, SIMBOLO) VALUES ('" + txtdescripcion.Text + "','" + txtsimbolo.Text + "')");
                     MessageBox.Show("Registro Almacenado");
                     LimpiarCampos();
                     ActualizacionGridview();
@@ -63,7 +68,12 @@ namespace PrototipoMRP
                 try
                 {
 
-                    MRP.updateSQL("UPDATE tipounidad SET descripcion='" + txtdescripcion.Text + "', SIMBOLO='" + txtsimbolo.Text + "' WHERE idtipounidad='" + txtcodigo.Text + "'; ");
+                    UNIDADMEDIDA.Descripcion = txtsimbolo.Text;
+                    UNIDADMEDIDA.NombreUnidad = txtdescripcion.Text;
+                    UNIDADMEDIDA.Codunidad = Convert.ToInt32( txtcodigo.Text);
+                    UNIDADMEDIDA.Editar_TipoUnidad(UNIDADMEDIDA);
+
+                    //MRP.updateSQL("UPDATE tipounidad SET descripcion='" + txtdescripcion.Text + "', SIMBOLO='" + txtsimbolo.Text + "' WHERE idtipounidad='" + txtcodigo.Text + "'; ");
                     MessageBox.Show("Registro Actualizado");
                     ActualizacionGridview();
                     this.LimpiarCampos();
@@ -118,7 +128,13 @@ namespace PrototipoMRP
                 {
                     try
                     {
-                        MRP.deleteSQL("delete tipounidad where idtipounidad='"+ dataGridView1.Rows[indice].Cells["Codigo"].Value +  "'");
+
+                        UNIDADMEDIDA.Descripcion = txtsimbolo.Text;
+                        UNIDADMEDIDA.NombreUnidad = txtdescripcion.Text;
+                        UNIDADMEDIDA.Codunidad = Convert.ToInt32(txtcodigo.Text);
+                        UNIDADMEDIDA.Eliminar_TipoUnidad(UNIDADMEDIDA);
+
+//                        MRP.deleteSQL("delete tipounidad where idtipounidad='"+ dataGridView1.Rows[indice].Cells["Codigo"].Value +  "'");
                         MessageBox.Show("Registro Eliminado");
                     }
                     catch (Exception ex)
@@ -139,10 +155,14 @@ namespace PrototipoMRP
         {
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.DataSource = MRP.getSQL("select idtipounidad , simbolo  ,descripcion from TIPOUNIDAD;");            
-            dataGridView1.Columns["Codigo"].DataPropertyName = "idtipounidad";
-            dataGridView1.Columns["Simbolo"].DataPropertyName = "simbolo";
-            dataGridView1.Columns["Descripcion"].DataPropertyName = "descripcion";
+            //this.dataGridView1.DataSource = MRP.getSQL("select idtipounidad , simbolo  ,descripcion from TIPOUNIDAD;");            
+            //dataGridView1.Columns["Codigo"].DataPropertyName = "idtipounidad";
+            //dataGridView1.Columns["Simbolo"].DataPropertyName = "simbolo";
+            //dataGridView1.Columns["Descripcion"].DataPropertyName = "descripcion";
+            this.dataGridView1.DataSource = UNIDADMEDIDA.Listado_UnidadMedidas();
+            dataGridView1.Columns["Codigo"].DataPropertyName = "Codunidad";
+            dataGridView1.Columns["Simbolo"].DataPropertyName = "Descripcion";
+            dataGridView1.Columns["Descripcion"].DataPropertyName = "NombreUnidad";
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -36,10 +36,11 @@
             this.cambiarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factorDeConversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.existenciasDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudDeProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generacionDeOrdenesDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -122,6 +123,7 @@
             // 
             this.inventarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.unidadMedidaToolStripMenuItem,
+            this.factorDeConversionToolStripMenuItem,
             this.existenciasDeProductoToolStripMenuItem,
             this.solicitudDeProductoToolStripMenuItem,
             this.generacionDeOrdenesDeProduccionToolStripMenuItem});
@@ -129,6 +131,20 @@
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.inventarioToolStripMenuItem.Text = "Inventario";
+            // 
+            // unidadMedidaToolStripMenuItem
+            // 
+            this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
+            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.unidadMedidaToolStripMenuItem.Text = "Unidad Medida";
+            this.unidadMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadMedidaToolStripMenuItem_Click);
+            // 
+            // factorDeConversionToolStripMenuItem
+            // 
+            this.factorDeConversionToolStripMenuItem.Name = "factorDeConversionToolStripMenuItem";
+            this.factorDeConversionToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.factorDeConversionToolStripMenuItem.Text = "Factor de conversion";
+            this.factorDeConversionToolStripMenuItem.Click += new System.EventHandler(this.factorDeConversionToolStripMenuItem_Click);
             // 
             // existenciasDeProductoToolStripMenuItem
             // 
@@ -150,13 +166,6 @@
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Text = "Generacion de Ordenes de Produccion";
             this.generacionDeOrdenesDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.generacionDeOrdenesDeProduccionToolStripMenuItem_Click);
-            // 
-            // unidadMedidaToolStripMenuItem
-            // 
-            this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
-            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
-            this.unidadMedidaToolStripMenuItem.Text = "Unidad Medida";
-            this.unidadMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadMedidaToolStripMenuItem_Click);
             // 
             // materialesToolStripMenuItem
             // 
@@ -436,5 +445,6 @@
         private System.Windows.Forms.ToolStripStatusLabel tooltxtusuario;
         private System.Windows.Forms.ToolStripStatusLabel toolEmpresa;
         private System.Windows.Forms.ToolStripStatusLabel tooltxtempresa;
+        private System.Windows.Forms.ToolStripMenuItem factorDeConversionToolStripMenuItem;
     }
 }

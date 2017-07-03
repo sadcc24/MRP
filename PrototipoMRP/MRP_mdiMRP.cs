@@ -140,7 +140,7 @@ namespace PrototipoMRP
 
         private void unidadMedidaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GC_UnidadMedida uni = new GC_UnidadMedida();
+            GC_NuevaUnidadMedida uni = new GC_NuevaUnidadMedida();
             uni.MdiParent = this;
             uni.Show();
         }
@@ -162,6 +162,14 @@ namespace PrototipoMRP
         private void MRPmdiMRP_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void factorDeConversionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GC_Listadodeconversiones listado = new GC_Listadodeconversiones();
+            listado.MdiParent = this;
+            listado.Show();
+
         }
     }
 }

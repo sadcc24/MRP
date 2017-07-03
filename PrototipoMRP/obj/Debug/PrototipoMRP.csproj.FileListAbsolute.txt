@@ -315,14 +315,12 @@ C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_Li
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_ListaProduccion.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_ListaSolicitudProducto.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.RC_frmPlanificacion.resources
-C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_MantUnidadMedidacs.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_NuevaUnidadMedida.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.CreacionOrdenProduccion.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_loginAutenticacion.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.CP_poliza.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.CP_Prorrateo.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_SolicitudProducto.resources
-C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_UnidadMedida.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_Inicial.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.OP_ManoObraMRP.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.MRP_mdiMRP.resources
@@ -335,3 +333,5 @@ C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.orden
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.ordenproduccion_prodfinalizadobusq.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.recetario_nuevo.resources
 C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.unidadmedida_nuevo.resources
+C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_Listadodeconversiones.resources
+C:\Users\Canel\Documents\MRPPRODUCCION\PrototipoMRP\obj\Debug\PrototipoMRP.GC_Manfactorconversioncs.resources
