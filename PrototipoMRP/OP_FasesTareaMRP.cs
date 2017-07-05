@@ -17,17 +17,22 @@ namespace PrototipoMRP
             InitializeComponent();
         }
         MRP_BD PRUEBA = new MRP_BD();
+
+
         public void consulta()
         {
-            dgvfases.DataSource = PRUEBA.getSQL("select * from fasetarea");
+            
+            dgvfases.DataSource = PRUEBA.getSQL("select idfase as 'Codigo',nombre as 'Nombre',descripcion as 'Descripcion',estado as 'Estado', totalcantidadpersonas as 'Cant Personas' from fasetarea");
         }
         private void FasesTareaMRP_Load(object sender, EventArgs e)
         {
+            txtcodigo.Enabled = false;
             consulta();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            txtcodigo.Enabled = true;
             txtcodigo.Text = "";
             txtdescripcion.Text = "";
             txtnombre.Text = "";
@@ -36,17 +41,21 @@ namespace PrototipoMRP
 
         private void button5_Click(object sender, EventArgs e)
         {
-            PRUEBA.insertSQL("insert into [dbo].[FASETAREA] (descripcion,estado,nombre) values ('" + txtdescripcion.Text + "','" + cmbestado.Text + "','" + txtnombre.Text + "')");
+            PRUEBA.insertSQL("insert into [dbo].[FASETAREA] (descripcion,estado,nombre,totalcantidadpersonas) values ('" + txtdescripcion.Text + "','" + cmbestado.Text + "','" + txtnombre.Text + "','"+txtpersonas.Text+"')");
+            MessageBox.Show("Ingreso Exitoso", "Ingreso Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             consulta();
             txtcodigo.Text = "";
             txtdescripcion.Text = "";
             txtnombre.Text = "";
             cmbestado.Text = "";
+            txtpersonas.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            PRUEBA.deleteSQL("delete [dbo].[FASETAREA] where codtipo = '" + txtcodigo.Text + "'");
+            txtcodigo.Enabled = true;
+            MessageBox.Show("Esta seguro de eliminar la Fase?", "Esta seguro de eliminar la Fase?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            PRUEBA.deleteSQL("delete [dbo].[FASETAREA] where idfase = '" + txtcodigo.Text + "'");
             consulta();
             txtcodigo.Text = "";
             txtdescripcion.Text = "";
@@ -56,7 +65,8 @@ namespace PrototipoMRP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PRUEBA.updateSQL("update fasetarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + cmbestado.Text + "',nombre='" + txtnombre.Text + "' where codtipo='" + txtcodigo.Text + "'");
+            txtcodigo.Enabled = true;
+            PRUEBA.updateSQL("update fasetarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + cmbestado.Text + "',nombre='" + txtnombre.Text + "',totalcantidadpersonas='"+txtpersonas.Text+"' where idfase='" + txtcodigo.Text + "'");
             consulta();
         }
 
@@ -66,6 +76,7 @@ namespace PrototipoMRP
             txtdescripcion.Text = "";
             txtcodigo.Text = "";
             cmbestado.Text = "";
+            txtpersonas.Text = "";
         }
 
         private void button6_Click(object sender, EventArgs e)

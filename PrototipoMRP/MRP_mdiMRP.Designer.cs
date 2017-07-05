@@ -55,6 +55,8 @@
             this.fasesTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionEmpleadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.manoObraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.prorrateoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -183,14 +185,14 @@
             // listaDeMaterialesToolStripMenuItem
             // 
             this.listaDeMaterialesToolStripMenuItem.Name = "listaDeMaterialesToolStripMenuItem";
-            this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.listaDeMaterialesToolStripMenuItem.Text = "Recetario";
             this.listaDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.listaDeMaterialesToolStripMenuItem_Click);
             // 
             // ordenDeProduccionToolStripMenuItem
             // 
             this.ordenDeProduccionToolStripMenuItem.Name = "ordenDeProduccionToolStripMenuItem";
-            this.ordenDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.ordenDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ordenDeProduccionToolStripMenuItem.Text = "Planificacion";
             this.ordenDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.ordenDeProduccionToolStripMenuItem_Click);
             // 
@@ -201,7 +203,7 @@
             this.estadosToolStripMenuItem,
             this.costosFabricacionToolStripMenuItem});
             this.revisionManoDeObraToolStripMenuItem.Name = "revisionManoDeObraToolStripMenuItem";
-            this.revisionManoDeObraToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.revisionManoDeObraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.revisionManoDeObraToolStripMenuItem.Text = "Otros";
             // 
             // manoDeObraToolStripMenuItem
@@ -222,6 +224,7 @@
             this.costosFabricacionToolStripMenuItem.Name = "costosFabricacionToolStripMenuItem";
             this.costosFabricacionToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.costosFabricacionToolStripMenuItem.Text = "Costos Fabricacion";
+            this.costosFabricacionToolStripMenuItem.Click += new System.EventHandler(this.costosFabricacionToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -244,7 +247,9 @@
             this.tAREAToolStripMenuItem,
             this.fasesTareasToolStripMenuItem,
             this.asignacionTareasToolStripMenuItem,
-            this.asignacionEmpleadoToolStripMenuItem});
+            this.asignacionEmpleadoToolStripMenuItem,
+            this.asignacionEmpleadoToolStripMenuItem1,
+            this.manoObraToolStripMenuItem1});
             this.manoObraToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("manoObraToolStripMenuItem.Image")));
             this.manoObraToolStripMenuItem.Name = "manoObraToolStripMenuItem";
             this.manoObraToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
@@ -268,15 +273,29 @@
             // 
             this.asignacionTareasToolStripMenuItem.Name = "asignacionTareasToolStripMenuItem";
             this.asignacionTareasToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.asignacionTareasToolStripMenuItem.Text = "Asignacion Tareas";
+            this.asignacionTareasToolStripMenuItem.Text = "Asignacion Horas";
             this.asignacionTareasToolStripMenuItem.Click += new System.EventHandler(this.asignacionTareasToolStripMenuItem_Click);
             // 
             // asignacionEmpleadoToolStripMenuItem
             // 
             this.asignacionEmpleadoToolStripMenuItem.Name = "asignacionEmpleadoToolStripMenuItem";
             this.asignacionEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.asignacionEmpleadoToolStripMenuItem.Text = "Asignacion Empleado";
+            this.asignacionEmpleadoToolStripMenuItem.Text = "Asignacion Tareas";
             this.asignacionEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.asignacionEmpleadoToolStripMenuItem_Click);
+            // 
+            // asignacionEmpleadoToolStripMenuItem1
+            // 
+            this.asignacionEmpleadoToolStripMenuItem1.Name = "asignacionEmpleadoToolStripMenuItem1";
+            this.asignacionEmpleadoToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
+            this.asignacionEmpleadoToolStripMenuItem1.Text = "Asignacion Empleado";
+            this.asignacionEmpleadoToolStripMenuItem1.Click += new System.EventHandler(this.asignacionEmpleadoToolStripMenuItem1_Click);
+            // 
+            // manoObraToolStripMenuItem1
+            // 
+            this.manoObraToolStripMenuItem1.Name = "manoObraToolStripMenuItem1";
+            this.manoObraToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
+            this.manoObraToolStripMenuItem1.Text = "Mano Obra";
+            this.manoObraToolStripMenuItem1.Click += new System.EventHandler(this.manoObraToolStripMenuItem1_Click);
             // 
             // prorrateoToolStripMenuItem
             // 
@@ -446,5 +465,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolEmpresa;
         private System.Windows.Forms.ToolStripStatusLabel tooltxtempresa;
         private System.Windows.Forms.ToolStripMenuItem factorDeConversionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignacionEmpleadoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem manoObraToolStripMenuItem1;
     }
 }

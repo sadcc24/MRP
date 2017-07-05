@@ -44,9 +44,9 @@
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtdescripcion = new System.Windows.Forms.TextBox();
-            this.txtestado = new System.Windows.Forms.TextBox();
             this.cmbempresa = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbestado = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,32 +201,22 @@
             this.txtnombre.Location = new System.Drawing.Point(108, 150);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(100, 20);
-            this.txtnombre.TabIndex = 40;
+            this.txtnombre.TabIndex = 1;
             // 
             // txtdescripcion
             // 
             this.txtdescripcion.Location = new System.Drawing.Point(108, 186);
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(100, 20);
-            this.txtdescripcion.TabIndex = 41;
-            // 
-            // txtestado
-            // 
-            this.txtestado.Location = new System.Drawing.Point(392, 118);
-            this.txtestado.Name = "txtestado";
-            this.txtestado.Size = new System.Drawing.Size(100, 20);
-            this.txtestado.TabIndex = 42;
+            this.txtdescripcion.TabIndex = 2;
             // 
             // cmbempresa
             // 
             this.cmbempresa.FormattingEnabled = true;
-            this.cmbempresa.Items.AddRange(new object[] {
-            "Empresa 1",
-            "Empresa 2"});
             this.cmbempresa.Location = new System.Drawing.Point(392, 149);
             this.cmbempresa.Name = "cmbempresa";
             this.cmbempresa.Size = new System.Drawing.Size(121, 21);
-            this.cmbempresa.TabIndex = 43;
+            this.cmbempresa.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -236,15 +226,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(635, 180);
             this.dataGridView1.TabIndex = 44;
             // 
-            // TareaMRP
+            // cmbestado
+            // 
+            this.cmbestado.FormattingEnabled = true;
+            this.cmbestado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cmbestado.Location = new System.Drawing.Point(392, 118);
+            this.cmbestado.Name = "cmbestado";
+            this.cmbestado.Size = new System.Drawing.Size(121, 21);
+            this.cmbestado.TabIndex = 3;
+            // 
+            // OP_TareaMRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(668, 445);
+            this.Controls.Add(this.cmbestado);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cmbempresa);
-            this.Controls.Add(this.txtestado);
             this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtcodigo);
@@ -261,7 +262,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "TareaMRP";
+            this.Name = "OP_TareaMRP";
             this.Text = "TareaMRP";
             this.Load += new System.EventHandler(this.TareaMRP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -288,8 +289,8 @@
         private System.Windows.Forms.TextBox txtcodigo;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtdescripcion;
-        private System.Windows.Forms.TextBox txtestado;
         private System.Windows.Forms.ComboBox cmbempresa;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cmbestado;
     }
 }

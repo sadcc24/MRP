@@ -46,6 +46,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CP_gastoluz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_gastoluz.Designer.cs">
+      <DependentUpon>CP_gastoluz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_gastos.Designer.cs">
+      <DependentUpon>CP_gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_gastoV1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_gastoV1.Designer.cs">
+      <DependentUpon>CP_gastoV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_gastoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_gastoV2.Designer.cs">
+      <DependentUpon>CP_gastoV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_poliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_poliza.designer.cs">
+      <DependentUpon>CP_poliza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_Prorrateo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_Prorrateo.designer.cs">
+      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_prorrateov2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_prorrateov2.Designer.cs">
+      <DependentUpon>CP_prorrateov2.cs</DependentUpon>
+    </Compile>
     <Compile Include="GC_conversionproductos_matprimabusq.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,11 +106,29 @@
     <Compile Include="ListadoRecetario.Designer.cs">
       <DependentUpon>ListadoRecetario.cs</DependentUpon>
     </Compile>
+    <Compile Include="OP_AsignacionTareados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_AsignacionTareados.Designer.cs">
+      <DependentUpon>OP_AsignacionTareados.cs</DependentUpon>
+    </Compile>
     <Compile Include="OP_AsignacionTareaMRP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OP_AsignacionTareaMRP.Designer.cs">
       <DependentUpon>OP_AsignacionTareaMRP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OP_DetalleMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_DetalleMO.Designer.cs">
+      <DependentUpon>OP_DetalleMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OP_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_Empleado.Designer.cs">
+      <DependentUpon>OP_Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="OP_FasesTareaMRP.cs">
       <SubType>Form</SubType>
@@ -94,6 +154,12 @@
     <Compile Include="GC_ordenproduccion_prodfinalizadobusq.designer.cs">
       <DependentUpon>GC_ordenproduccion_prodfinalizadobusq.cs</DependentUpon>
     </Compile>
+    <Compile Include="OP_ManoObraMRP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OP_ManoObraMRP.Designer.cs">
+      <DependentUpon>OP_ManoObraMRP.cs</DependentUpon>
+    </Compile>
     <Compile Include="RC_frmBuscarOP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +183,12 @@
     </Compile>
     <Compile Include="RC_frmEstadoPlanificacion.Designer.cs">
       <DependentUpon>RC_frmEstadoPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmFasePlanificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmFasePlanificacion.Designer.cs">
+      <DependentUpon>RC_frmFasePlanificacion.cs</DependentUpon>
     </Compile>
     <Compile Include="RC_frmPedidoCRM.cs">
       <SubType>Form</SubType>
@@ -196,18 +268,6 @@
     <Compile Include="MRP_loginAutenticacion.Designer.cs">
       <DependentUpon>MRP_loginAutenticacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="CP_poliza.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CP_poliza.designer.cs">
-      <DependentUpon>CP_poliza.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CP_Prorrateo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CP_Prorrateo.designer.cs">
-      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
-    </Compile>
     <Compile Include="GC_SolicitudProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,12 +285,6 @@
     </Compile>
     <Compile Include="MRP_Inicial.Designer.cs">
       <DependentUpon>MRP_Inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OP_ManoObraMRP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OP_ManoObraMRP.Designer.cs">
-      <DependentUpon>OP_ManoObraMRP.cs</DependentUpon>
     </Compile>
     <Compile Include="MRP_mdiMRP.cs">
       <SubType>Form</SubType>
@@ -258,6 +312,27 @@
     <Compile Include="GC_unidadmedida_nuevo_inutilizable.designer.cs">
       <DependentUpon>GC_unidadmedida_nuevo_inutilizable.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CP_gastoluz.resx">
+      <DependentUpon>CP_gastoluz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_gastos.resx">
+      <DependentUpon>CP_gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_gastoV1.resx">
+      <DependentUpon>CP_gastoV1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_gastoV2.resx">
+      <DependentUpon>CP_gastoV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_poliza.resx">
+      <DependentUpon>CP_poliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_Prorrateo.resx">
+      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_prorrateov2.resx">
+      <DependentUpon>CP_prorrateov2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GC_conversionproductos_matprimabusq.resx">
       <DependentUpon>GC_conversionproductos_matprimabusq.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,8 +342,17 @@
     <EmbeddedResource Include="ListadoRecetario.resx">
       <DependentUpon>ListadoRecetario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OP_AsignacionTareados.resx">
+      <DependentUpon>OP_AsignacionTareados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OP_AsignacionTareaMRP.resx">
       <DependentUpon>OP_AsignacionTareaMRP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OP_DetalleMO.resx">
+      <DependentUpon>OP_DetalleMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OP_Empleado.resx">
+      <DependentUpon>OP_Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OP_FasesTareaMRP.resx">
       <DependentUpon>OP_FasesTareaMRP.cs</DependentUpon>
@@ -278,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GC_ordenproduccion_prodfinalizadobusq.resx">
       <DependentUpon>GC_ordenproduccion_prodfinalizadobusq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OP_ManoObraMRP.resx">
+      <DependentUpon>OP_ManoObraMRP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RC_frmBuscarOP.resx">
       <DependentUpon>RC_frmBuscarOP.cs</DependentUpon>
@@ -290,6 +377,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RC_frmEstadoPlanificacion.resx">
       <DependentUpon>RC_frmEstadoPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmFasePlanificacion.resx">
+      <DependentUpon>RC_frmFasePlanificacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RC_frmPedidoCRM.resx">
       <DependentUpon>RC_frmPedidoCRM.cs</DependentUpon>
@@ -330,12 +420,6 @@
     <EmbeddedResource Include="MRP_loginAutenticacion.resx">
       <DependentUpon>MRP_loginAutenticacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CP_poliza.resx">
-      <DependentUpon>CP_poliza.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CP_Prorrateo.resx">
-      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GC_SolicitudProducto.resx">
       <DependentUpon>GC_SolicitudProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -344,9 +428,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MRP_Inicial.resx">
       <DependentUpon>MRP_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OP_ManoObraMRP.resx">
-      <DependentUpon>OP_ManoObraMRP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MRP_mdiMRP.resx">
       <DependentUpon>MRP_mdiMRP.cs</DependentUpon>

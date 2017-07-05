@@ -36,6 +36,7 @@ namespace PrototipoMRP
                 emp.NombreEmpresa = this.dataGridView1.Rows[indice].Cells["NOMBRE"].Value.ToString();
                 MRP_mdiMRP mdi = new MRP_mdiMRP(usuario, emp);
                 mdi.Show();
+                this.Hide();
             }
         }
         private void frmEmpresa_FormClosed(object sender, FormClosedEventArgs e)

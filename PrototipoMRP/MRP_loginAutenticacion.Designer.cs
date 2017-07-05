@@ -67,7 +67,6 @@
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(167, 26);
             this.txtusuario.TabIndex = 2;
-            this.txtusuario.Text = "aaaa";
             // 
             // txtcontraseña
             // 
@@ -77,7 +76,6 @@
             this.txtcontraseña.PasswordChar = '@';
             this.txtcontraseña.Size = new System.Drawing.Size(167, 26);
             this.txtcontraseña.TabIndex = 3;
-            this.txtcontraseña.Text = "aaaa";
             // 
             // button1
             // 

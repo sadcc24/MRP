@@ -110,14 +110,16 @@ namespace PrototipoMRP
 
         private void asignacionTareasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OP_AsignacionTareaMRP asignacion = new OP_AsignacionTareaMRP();
-            asignacion.Show();
+            OP_AsignacionTareados asignaciondos = new OP_AsignacionTareados();
+            asignaciondos.Show();
         }
 
         private void asignacionEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OP_ManoObraMRP manoobra = new OP_ManoObraMRP();
-            manoobra.Show();
+            //OP_ManoObraMRP manoobra = new OP_ManoObraMRP();
+            //manoobra.Show();
+            OP_AsignacionTareaMRP atarea = new OP_AsignacionTareaMRP();
+            atarea.Show();
         }
 
         private void pedidoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -151,7 +153,7 @@ namespace PrototipoMRP
 
         private void prorrateoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CP_Prorrateo PRORRATEO = new CP_Prorrateo();
+            CP_prorrateov2 PRORRATEO = new CP_prorrateov2();
             PRORRATEO.MdiParent = this;
             PRORRATEO.Show();
         }
@@ -176,6 +178,24 @@ namespace PrototipoMRP
             GC_Manfactorconversioncs mantenimiento = new GC_Manfactorconversioncs();
             mantenimiento.MdiParent = this;
             mantenimiento.Show();
+        }
+
+        private void asignacionEmpleadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+          OP_ManoObraMRP mobra = new OP_ManoObraMRP();
+          mobra.Show();
+        }
+
+        private void manoObraToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            OP_DetalleMO detallemo = new OP_DetalleMO();
+            detallemo.Show();
+        }
+
+        private void costosFabricacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           CP_gastos costofab  = new CP_gastos();
+            costofab.Show();
         }
     }
 }
