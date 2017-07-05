@@ -22,19 +22,18 @@ namespace PrototipoMRP
             consulta();
         }
 
-        MRP_BD gasto = new MRP_BD();
+        CAPANEGOCIO.CapaCarlos gasto = new CAPANEGOCIO.CapaCarlos();
 
-
-        public void limpiar()
+        public void limpiar(String limpiarDato)
         {
-                        textBox1.Text = "";
-                        textBox2.Text = "";
-                        textBox3.Text = "";
+                        textBox1.Text = gasto.limpiarGasto(textBox1.Text);
+                        textBox2.Text = gasto.limpiarGasto(textBox2.Text);
+                        textBox3.Text = gasto.limpiarGasto(textBox3.Text);
         }
 
         private void consulta()
         {
-            dataGridView1.DataSource = gasto.getSQL("select A.idrecetario, A.nombre as receta, B.nombre as gasto, C.gastofabricacion as gastoconsumido  from recetario A, tipogasto B, recetariogasto C where A.idrecetario = C.idrecetario and C.idgasto = B.idgasto");
+            dataGridView1.DataSource = gasto.consultaGastos();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -62,13 +61,40 @@ namespace PrototipoMRP
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
-            gasto.insertSQL("insert into [dbo].[RECETARIOGASTO] (idrecetario,idgasto,gastofabricacion) values ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "')");
-            MessageBox.Show("Ingreso Exitoso", "Ingreso Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            limpiar();
+            gasto.insertarGasto(textBox1.Text, textBox2.Text, textBox3.Text);
+             MessageBox.Show("Ingreso Exitoso", "Ingreso Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar("");
             consulta();
-            
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            limpiar("");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            limpiar("");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("1. crea nuevo registro \n 2. edita registro \n 3. elimina registro \n 4. guarda registro \n 5. cancela ingreso \n 6. actualiza datos \n \n 7. utilice la calculadora de luz para calcular el consumo de energia electrica", "programa realizado por Carlos Pineda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("LOS DATOS SERAN BORRADOS", "Ingreso Exitoso", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            gasto.eliminarGasto (textBox1.Text, textBox2.Text);
+            limpiar("");
+            consulta();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            gasto.actualizarGasto(textBox3.Text, textBox1.Text, textBox2.Text);
+            limpiar("");
+            consulta();
         }
     }
 }

@@ -50,9 +50,9 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 92);
+            this.dataGridView1.Location = new System.Drawing.Point(323, 92);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(669, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(358, 251);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -119,6 +119,7 @@
             this.button7.Size = new System.Drawing.Size(50, 40);
             this.button7.TabIndex = 7;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -140,6 +141,7 @@
             this.button5.Size = new System.Drawing.Size(50, 40);
             this.button5.TabIndex = 5;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -150,6 +152,7 @@
             this.button4.Size = new System.Drawing.Size(50, 40);
             this.button4.TabIndex = 4;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -189,7 +192,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(689, 304);
+            this.ClientSize = new System.Drawing.Size(689, 348);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "CP_prorrateov2";
