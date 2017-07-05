@@ -76,12 +76,6 @@
     <Compile Include="CP_poliza.designer.cs">
       <DependentUpon>CP_poliza.cs</DependentUpon>
     </Compile>
-    <Compile Include="CP_Prorrateo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CP_Prorrateo.designer.cs">
-      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
-    </Compile>
     <Compile Include="CP_prorrateov2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,9 +320,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CP_poliza.resx">
       <DependentUpon>CP_poliza.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CP_Prorrateo.resx">
-      <DependentUpon>CP_Prorrateo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CP_prorrateov2.resx">
       <DependentUpon>CP_prorrateov2.cs</DependentUpon>

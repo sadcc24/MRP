@@ -21,22 +21,49 @@ namespace PrototipoMRP
         {
             consulta();
         }
-        MRP_BD tipogast = new MRP_BD();
+
+        CAPANEGOCIO.CapaCarlos tipoGastov1 = new CAPANEGOCIO.CapaCarlos();
 
         private void consulta()
         {
-            dataGridView1.DataSource = tipogast.getSQL("SELECT* FROM TIPOGASTO");
+            dataGridView1.DataSource = tipoGastov1.consultaTipoGasto();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = tipogast.getSQL("select * from tipogasto where nombre like upper ('%" + textBox1.Text + "%')");
-
+            dataGridView1.DataSource = tipoGastov1.buscarTipoGasto(textBox1.Text);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = tipogast.getSQL("SELECT* FROM TIPOGASTO");
+            consulta();
+        }
+        public void limpiarTipoG(String limpiarDato)
+        {
+            textBox1.Text = tipoGastov1.limpiarTipoGasto(textBox1.Text);
+            textBox2.Text = tipoGastov1.limpiarTipoGasto(textBox2.Text);
+            textBox3.Text = tipoGastov1.limpiarTipoGasto(textBox3.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            limpiarTipoG("");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("LOS DATOS SERAN BORRADOS", "Cuidado", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            tipoGastov1.eliminarTipoGasto(textBox4.Text); 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            tipoGastov1.insertarTipoGasto( textBox2.Text, textBox3.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            tipoGastov1.actualizarTipoGasto(textBox2.Text, textBox3.Text, textBox4.Text);
         }
     }
 }

@@ -84,7 +84,7 @@ namespace PrototipoMRP
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("LOS DATOS SERAN BORRADOS", "Ingreso Exitoso", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            MessageBox.Show("LOS DATOS SERAN BORRADOS", "Cuidado", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             gasto.eliminarGasto (textBox1.Text, textBox2.Text);
             limpiar("");
             consulta();

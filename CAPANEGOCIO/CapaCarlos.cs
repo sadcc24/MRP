@@ -93,7 +93,40 @@ namespace CAPANEGOCIO
 // TERMINA GASTOS
 
 
-
-
+// INICIA TIPO GASTO (CP_gastoV2)
+// CONSULTA TIPO GASTO
+        public DataTable consultaTipoGasto()
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("SELECT* FROM TIPOGASTO");
+            return dt;
+        }
+// BUSCA TIPO GASTO
+        public DataTable buscarTipoGasto(String buscarId)
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select * from tipogasto where nombre like upper ('%" + buscarId + "%')");
+            return dt;
+        }
+// LIMPIAR TIPO GASTO
+        public String limpiarTipoGasto(String text)
+        {
+            return "";
+        }
+// ELIMINAR TIPO GASTO
+        public void eliminarTipoGasto(String text1)
+        {
+            conexionCarlos.deleteSQL("delete tipogasto where idgasto = '" + text1 + "'");
+        }
+// GUARDA TIPO GASTO
+        public void insertarTipoGasto(String text1, String text2)
+        {
+            conexionCarlos.insertSQL("insert into [dbo].[tipogasto] (idgasto,nombre,descripcion) values ('" + text1 + "','" + text2 + "'");
+        }
+// ACTUALIZA TIPO GASTO
+        public void actualizarTipoGasto(String text1, String text2, String text3)
+        {
+            conexionCarlos.updateSQL("update tipogasto set nombre = '" + text1 + "' descripcion = '" + text2 + "' where idgasto ='" + text3 + "'");
+        }
     }
 }

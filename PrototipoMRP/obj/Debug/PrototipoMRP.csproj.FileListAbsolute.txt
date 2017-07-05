@@ -452,7 +452,6 @@ C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_gast
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_gastoV1.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_gastoV2.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_poliza.resources
-C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_Prorrateo.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_prorrateov2.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_conversionproductos_matprimabusq.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.GC_conversionproductos_nuevo.resources
