@@ -82,5 +82,11 @@ namespace PrototipoMRP
         {
             MessageBox.Show("Utilice los botones para consultar las ordenes de produccion \n 1. limpia la busqueda \n 2. actualiza la lista \n 3. busca el primer registro \n 4. busca registro anterior \n 5. busca siguiente registro \n 6. busca ultimo registro", "Programa realizado por Carlos Pineda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            CP_prorrateobodega probo = new CP_prorrateobodega();
+            probo.Show();
+        }
     }
 }

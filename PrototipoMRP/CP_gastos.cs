@@ -79,7 +79,7 @@ namespace PrototipoMRP
 
         private void button7_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("1. crea nuevo registro \n 2. edita registro \n 3. elimina registro \n 4. guarda registro \n 5. cancela ingreso \n 6. actualiza datos \n \n 7. utilice la calculadora de luz para calcular el consumo de energia electrica", "programa realizado por Carlos Pineda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("1. crea nuevo registro \n 2. edita registro \n 3. elimina registro \n 4. guarda registro \n 5. cancela ingreso \n 6. actualiza datos \n \n 7. utilice la calculadora de luz para calcular el consumo de energia electrica \n \n para editar y eliminar ingrese el codigo de receta y de gasto ", "programa realizado por Carlos Pineda", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -99,6 +99,11 @@ namespace PrototipoMRP
             gasto.actualizarGasto(textBox3.Text, textBox1.Text, textBox2.Text);
             limpiar("");
             consulta();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource =  gasto.buscarGasto(textBox4.Text);
         }
     }
 }

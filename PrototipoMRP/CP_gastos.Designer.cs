@@ -46,6 +46,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +56,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(433, 17);
+            this.label4.Location = new System.Drawing.Point(695, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(191, 25);
             this.label4.TabIndex = 57;
@@ -64,7 +67,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(301, 111);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(308, 192);
+            this.dataGridView1.Size = new System.Drawing.Size(585, 192);
             this.dataGridView1.TabIndex = 58;
             // 
             // textBox1
@@ -137,11 +140,11 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(16, 233);
+            this.button10.Location = new System.Drawing.Point(329, 13);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.Size = new System.Drawing.Size(72, 40);
             this.button10.TabIndex = 67;
-            this.button10.Text = "calculo luz";
+            this.button10.Text = "Calculadora Luz";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -149,7 +152,7 @@
             // 
             this.button7.BackgroundImage = global::PrototipoMRP.Properties.Resources.help;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.Location = new System.Drawing.Point(326, 13);
+            this.button7.Location = new System.Drawing.Point(407, 13);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(50, 40);
             this.button7.TabIndex = 56;
@@ -223,12 +226,41 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(402, 87);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.TabIndex = 70;
+            this.label5.Text = "Buscar receta";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(505, 84);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(216, 20);
+            this.textBox4.TabIndex = 69;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(753, 82);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 68;
+            this.button11.Text = "Buscar";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // CP_gastos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(631, 315);
+            this.ClientSize = new System.Drawing.Size(898, 315);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -276,5 +308,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button11;
     }
 }

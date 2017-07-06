@@ -491,3 +491,4 @@ C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.OP_Tare
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.recetario_nuevo.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.unidadmedida_nuevo.resources
 C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.csproj.GenerateResource.Cache
+C:\Users\Sayuka\Documents\GitHub\MRP\PrototipoMRP\obj\Debug\PrototipoMRP.CP_prorrateobodega.resources

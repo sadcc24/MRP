@@ -70,7 +70,13 @@ namespace CAPANEGOCIO
             dt = conexionCarlos.getSQL("select A.idrecetario, A.nombre as receta, B.nombre as gasto, C.gastofabricacion as gastoconsumido  from recetario A, tipogasto B, recetariogasto C where A.idrecetario = C.idrecetario and C.idgasto = B.idgasto");
             return dt;
         }
-// LIMPIA TEXTO
+        public DataTable buscarGasto(String buscarId)
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select A.idrecetario, A.nombre as receta, B.nombre as gasto, C.gastofabricacion as gastoconsumido  from recetario A, tipogasto B, recetariogasto C where A.idrecetario = C.idrecetario and C.idgasto = B.idgasto and A.idrecetario = '" + buscarId + "'");
+            return dt;
+        }
+        // LIMPIA TEXTO
         public String limpiarGasto(String text)
         {
             return "";
@@ -145,10 +151,24 @@ namespace CAPANEGOCIO
             dt = conexionCarlos.getSQL("select idrecetario, nombre, descripcion, fechacreacion from recetario where nombre like upper ('%" + buscarId + "%')");
             return dt;
         }
+// TERMINA TIPO GASTO (CP_gastoV2)
 
-
-        // TERMINA TIPO GASTO (CP_gastoV2)
-
+// COMIENZA PRORRATEO DE BODEGA
+// CONSULTA DE PRORRATEO DE BODEGA
+        public DataTable consultaProrrateoBodega()
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select * from bodega order by idbodega desc");
+            return dt;
+        }
+// BUSQUEDA DE BODEGA POR NOMBRE
+        public DataTable buscarProrrateoBodega(String buscarId)
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select * from bodega where nombre_bodega like upper ('%" + buscarId + "%')");
+            return dt;
+        }
+        //
 
     }
 }
