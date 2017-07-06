@@ -98,7 +98,7 @@ namespace CAPANEGOCIO
         public DataTable consultaTipoGasto()
         {
             dt = new DataTable();
-            dt = conexionCarlos.getSQL("SELECT* FROM TIPOGASTO");
+            dt = conexionCarlos.getSQL("SELECT* FROM TIPOGASTO order by idgasto desc");
             return dt;
         }
 // BUSCA TIPO GASTO
@@ -119,9 +119,10 @@ namespace CAPANEGOCIO
             conexionCarlos.deleteSQL("delete tipogasto where idgasto = '" + text1 + "'");
         }
 // GUARDA TIPO GASTO
-        public void insertarTipoGasto(String text1, String text2)
+        public void insertarTipoGasto(String text1, String text2, String text3)
         {
-            conexionCarlos.insertSQL("insert into [dbo].[tipogasto] (idgasto,nombre,descripcion) values ('" + text1 + "','" + text2 + "'");
+            String insert1 = "SET IDENTITY_INSERT tipogasto ON insert into tipogasto (idgasto,nombre,descripcion) values ('" + text1 + "','" + text2 + "','" + text3 + "') SET IDENTITY_INSERT tipogasto OFF ";
+            conexionCarlos.insertSQL(insert1);
         }
 // ACTUALIZA TIPO GASTO
         public void actualizarTipoGasto(String text1, String text2, String text3)

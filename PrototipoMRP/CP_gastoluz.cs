@@ -29,7 +29,7 @@ namespace PrototipoMRP
             {
                 total += Convert.ToDouble(row.Cells["Column4"].Value);
             }
-            textBox1.Text = Convert.ToString(total + "  Q");
+            textBox1.Text = Convert.ToString(total);
         }
 
         private void button2_Click(object sender, EventArgs e)
