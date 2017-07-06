@@ -23,23 +23,16 @@ namespace PrototipoMRP
             consulta();
         }
 
-        MRP_BD receta = new MRP_BD();
-        
+        CAPANEGOCIO.CapaCarlos tipoGastov2 = new CAPANEGOCIO.CapaCarlos();
+
         private void consulta()
         {
-            dataGridView1.DataSource = receta.getSQL("select idrecetario, nombre, descripcion, fechacreacion from recetario order by idrecetario");
-        }
-
-        private void buscar()
-        {
-            dataGridView1.DataSource = receta.getSQL("select idrecetario, nombre, descripcion, fechacreacion from recetario where nombre like '% " + textBox1.Text + " %'");
+            dataGridView1.DataSource = tipoGastov2.consultaTipoGasto1();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-  //          buscar();
-            dataGridView1.DataSource = receta.getSQL("select idrecetario, nombre, descripcion, fechacreacion from recetario where nombre like upper ('%"+textBox1.Text+"%')");
-
+            dataGridView1.DataSource = tipoGastov2.buscarTipoGasto1(textBox1.Text);
         }
 
         private void button6_Click(object sender, EventArgs e)

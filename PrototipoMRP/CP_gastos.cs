@@ -84,10 +84,14 @@ namespace PrototipoMRP
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("LOS DATOS SERAN BORRADOS", "Cuidado", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (
+           MessageBox.Show("LOS DATOS SERAN BORRADOS", "  CUIDADO ! ! !", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
             gasto.eliminarGasto (textBox1.Text, textBox2.Text);
             limpiar("");
             consulta();
+            MessageBox.Show("LOS DATOS SE BORRARON");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

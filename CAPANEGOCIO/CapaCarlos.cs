@@ -129,5 +129,26 @@ namespace CAPANEGOCIO
         {
             conexionCarlos.updateSQL("update tipogasto set nombre = '" + text1 + "' descripcion = '" + text2 + "' where idgasto ='" + text3 + "'");
         }
+// TERMINA TIPO GASTO (CP_gastoV2)
+
+
+// INICIA TIPO GASTO (CP_gastoV1)
+        public DataTable consultaTipoGasto1()
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select idrecetario, nombre, descripcion, fechacreacion from recetario order by idrecetario DESC");
+            return dt;
+        }
+        public DataTable buscarTipoGasto1(String buscarId)
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select idrecetario, nombre, descripcion, fechacreacion from recetario where nombre like upper ('%" + buscarId + "%')");
+            return dt;
+        }
+
+
+        // TERMINA TIPO GASTO (CP_gastoV2)
+
+
     }
 }

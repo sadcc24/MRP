@@ -53,7 +53,7 @@ namespace PrototipoMRP
         private void button3_Click(object sender, EventArgs e)
         {
             if(
-            MessageBox.Show("LOS DATOS SERAN BORRADOS", "Cuidado", MessageBoxButtons.YesNo)==DialogResult.Yes)
+            MessageBox.Show("LOS DATOS SERAN BORRADOS", "  CUIDADO ! ! !", MessageBoxButtons.YesNo)==DialogResult.Yes)
             {
                 tipoGastov1.eliminarTipoGasto(textBox4.Text);
                 limpiarTipoG("");
@@ -66,6 +66,7 @@ namespace PrototipoMRP
         private void button5_Click(object sender, EventArgs e)
         {
             tipoGastov1.insertarTipoGasto(textBox4.Text, textBox2.Text, textBox3.Text);
+            MessageBox.Show("DATOS AGREGADOS");
             limpiarTipoG("");
             consulta();
         }
