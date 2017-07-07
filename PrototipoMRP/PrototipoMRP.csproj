@@ -76,6 +76,12 @@
     <Compile Include="CP_poliza.designer.cs">
       <DependentUpon>CP_poliza.cs</DependentUpon>
     </Compile>
+    <Compile Include="CP_polizaV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_polizaV2.Designer.cs">
+      <DependentUpon>CP_polizaV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="CP_prorrateobodega.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CP_poliza.resx">
       <DependentUpon>CP_poliza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_polizaV2.resx">
+      <DependentUpon>CP_polizaV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CP_prorrateobodega.resx">
       <DependentUpon>CP_prorrateobodega.cs</DependentUpon>

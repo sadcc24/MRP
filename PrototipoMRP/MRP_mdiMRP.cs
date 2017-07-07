@@ -160,7 +160,7 @@ namespace PrototipoMRP
 
         private void polizaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CP_poliza poliza = new CP_poliza();
+            CP_polizaV2 poliza = new CP_polizaV2();
             poliza.MdiParent = this;
             poliza.Show();
         }
