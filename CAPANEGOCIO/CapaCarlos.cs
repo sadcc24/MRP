@@ -59,24 +59,38 @@ namespace CAPANEGOCIO
             dt = conexionCarlos.getSQL("SELECT (D.idordenproduccion-1) as idordenproduccion, D.fechacreacion, SUM(A.gastofabricacion * C.cantidad) as gastototalGF, (TABLA2.totalMP * C.cantidad) as gastototalMP, (E.costo * C.cantidad) as gastototalMO, ((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)) as costoprimo, (SUM(A.gastofabricacion * C.cantidad) / ((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad))) as factorX, (((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)) * (SUM(A.gastofabricacion * C.cantidad) / ((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)))) as gastosprorrateados, ((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)) + (((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)) * (SUM(A.gastofabricacion * C.cantidad) / ((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)))) as costodeproducciontotal, C.cantidad as cantidadproducida, ((((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)) + (((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad)) * (SUM(A.gastofabricacion * C.cantidad) / ((E.costo * C.cantidad) + (TABLA2.totalMP * C.cantidad))))) / C.cantidad) as Costounitario FROM RECETARIOGASTO A, RECETARIO B, DETORDENPROD C, ORDENPRODUCCION D, DETALLEMOUNO E, (SELECT SUM(totalMP) totalMP, idrecetario FROM(select  A.precio, C.cantidad, B.idrecetario, (A.precio * C.cantidad) as totalMP FROM PRODUCTO A, RECETARIO B, DETALLERECETARIO C WHERE B.idrecetario = C.idrecetario AND A.idproducto = C.idproducto) TABLA GROUP BY idrecetario) TABLA2 WHERE A.idrecetario = B.idrecetario AND B.idrecetario = C.idrecetario AND C.idordenproduccion = D.idordenproduccion AND D.idordenproduccion = E.idordenproduccion AND B.idrecetario = TABLA2.idrecetario group by D.idordenproduccion, D.fechacreacion, TABLA2.totalMP, E.costo, C.cantidad");
             return dt;
         }
+
+// INSERTA EN PRORRATEO
+        public void insertarProrrateo(String text1, String text2, String text3)
+        {
+            conexionCarlos.insertSQL("insert into existencia (idbodega,idproducto,cantidad) values ('" + text1 + "','" + text2 + "','" + text3 + "')");
+        }
+        // LIMPIA TEXTO
+        public String limpiarProrrateo(String text)
+        {
+            return "";
+        }
+
+//FINALIZA PRORRATEO DE PRODUCTO
 // TERMINA PRORRATEO
 
 
 // INICIA GASTOS
-// CONSULTA GASTOS
+        // CONSULTA GASTOS
         public DataTable consultaGastos()
         {
             dt = new DataTable();
             dt = conexionCarlos.getSQL("select A.idrecetario, A.nombre as receta, B.nombre as gasto, C.gastofabricacion as gastoconsumido  from recetario A, tipogasto B, recetariogasto C where A.idrecetario = C.idrecetario and C.idgasto = B.idgasto");
             return dt;
         }
+// BUSCA GASTOS
         public DataTable buscarGasto(String buscarId)
         {
             dt = new DataTable();
             dt = conexionCarlos.getSQL("select A.idrecetario, A.nombre as receta, B.nombre as gasto, C.gastofabricacion as gastoconsumido  from recetario A, tipogasto B, recetariogasto C where A.idrecetario = C.idrecetario and C.idgasto = B.idgasto and A.idrecetario = '" + buscarId + "'");
             return dt;
         }
-        // LIMPIA TEXTO
+// LIMPIA TEXTO
         public String limpiarGasto(String text)
         {
             return "";
@@ -168,7 +182,31 @@ namespace CAPANEGOCIO
             dt = conexionCarlos.getSQL("select * from bodega where nombre_bodega like upper ('%" + buscarId + "%')");
             return dt;
         }
-        //
+// TERMINA PRORRATEO DE BODEGA
+
+
+// INICIA PRORRATEO DE PRODUCTO
+        public DataTable consultaProrrateoProducto()
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select * from producto order by idproducto desc");
+            return dt;
+        }
+// BUSCA POR DESCRIPCION
+        public DataTable buscarProrrateoProducto1(String buscarId)
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select * from producto where descripcion like upper ('%" + buscarId + "%')");
+            return dt;
+        }
+//BUSCA POR ID
+        public DataTable buscarProrrateoProducto2(String buscarId)
+        {
+            dt = new DataTable();
+            dt = conexionCarlos.getSQL("select * from producto where idproducto = (" + buscarId + ")");
+            return dt;
+        }
+
 
     }
 }

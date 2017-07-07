@@ -82,6 +82,12 @@
     <Compile Include="CP_prorrateobodega.Designer.cs">
       <DependentUpon>CP_prorrateobodega.cs</DependentUpon>
     </Compile>
+    <Compile Include="CP_prorrateoproducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_prorrateoproducto.Designer.cs">
+      <DependentUpon>CP_prorrateoproducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="CP_prorrateov2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CP_prorrateobodega.resx">
       <DependentUpon>CP_prorrateobodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_prorrateoproducto.resx">
+      <DependentUpon>CP_prorrateoproducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CP_prorrateov2.resx">
       <DependentUpon>CP_prorrateov2.cs</DependentUpon>

@@ -24,6 +24,13 @@ namespace PrototipoMRP
 
        CAPANEGOCIO.CapaCarlos prorrateo = new CAPANEGOCIO.CapaCarlos();
 
+        public void limpiar(String limpiarDato)
+        {
+            textBox1.Text = prorrateo.limpiarProrrateo(textBox1.Text);
+            textBox2.Text = prorrateo.limpiarProrrateo(textBox2.Text);
+            textBox3.Text = prorrateo.limpiarProrrateo(textBox3.Text);
+            textBox4.Text = prorrateo.limpiarProrrateo(textBox4.Text);
+        }
         private void consulta()
         {
             dataGridView1.DataSource = prorrateo.consultaProrrateo();
@@ -87,6 +94,25 @@ namespace PrototipoMRP
         {
             CP_prorrateobodega probo = new CP_prorrateobodega();
             probo.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            CP_prorrateoproducto propro = new CP_prorrateoproducto();
+            propro.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            prorrateo.insertarProrrateo(textBox2.Text, textBox3.Text, textBox4.Text);
+            MessageBox.Show("Ingreso Exitoso", "Ingreso Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpiar("");
+            consulta();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            limpiar("");
         }
     }
 }

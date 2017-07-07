@@ -50,6 +50,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -95,7 +96,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(621, 51);
+            this.button8.Location = new System.Drawing.Point(691, 53);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(83, 20);
             this.button8.TabIndex = 12;
@@ -106,15 +107,15 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(377, 54);
+            this.label1.Location = new System.Drawing.Point(308, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.Size = new System.Drawing.Size(188, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Buscar ID";
+            this.label1.Text = "Buscar por ID de orden de produccion";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(436, 51);
+            this.textBox1.Location = new System.Drawing.Point(502, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(168, 20);
             this.textBox1.TabIndex = 8;
@@ -195,6 +196,7 @@
             this.button1.TabIndex = 0;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -262,15 +264,26 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "Buscar";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(124, 273);
+            this.button11.Location = new System.Drawing.Point(124, 253);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(102, 25);
             this.button11.TabIndex = 5;
-            this.button11.Text = "Agregar";
+            this.button11.Text = "Agregar a bodega";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(124, 294);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(102, 25);
+            this.button12.TabIndex = 5;
+            this.button12.Text = "Nuevo producto";
+            this.button12.UseVisualStyleBackColor = true;
             // 
             // CP_prorrateov2
             // 
@@ -278,6 +291,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(920, 348);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -324,5 +338,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
     }
 }
