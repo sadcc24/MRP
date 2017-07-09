@@ -74,7 +74,6 @@ namespace PrototipoMRP
         private void button5_Click(object sender, EventArgs e)
         {
             ordenPro.insertarOrdenProd(textBox5.Text, textBox3.Text, textBox4.Text, textBox2.Text);
-            MessageBox.Show("DATOS AGREGADOS");
             limpiarTipoG("");
             consulta();
         }

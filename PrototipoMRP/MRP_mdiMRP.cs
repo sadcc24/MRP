@@ -50,14 +50,8 @@ namespace PrototipoMRP
         {
             GC_ExistenciaProducto empre = new GC_ExistenciaProducto();
             empre.MdiParent = this;
-            if(menu.Equals("1")) {
-                empre.Show();
-            } else
-            {
-                empre.Hide();
-            }
+            empre.Show();
         }
-
         private void generacionDeOrdenesDeProduccionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GC_ListaProduccion prod = new GC_ListaProduccion();
@@ -159,16 +153,11 @@ namespace PrototipoMRP
 
         private void prorrateoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CP_prorrateov2 PRORRATEO = new CP_prorrateov2();
-            PRORRATEO.MdiParent = this;
-            PRORRATEO.Show();
+            
         }
-
         private void polizaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CP_polizaV2 poliza = new CP_polizaV2();
-            poliza.MdiParent = this;
-            poliza.Show();
+            
         }
 
         private void MRPmdiMRP_FormClosed(object sender, FormClosedEventArgs e)
@@ -217,6 +206,41 @@ namespace PrototipoMRP
         private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void prorrateoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CP_prorrateov2 PRORRATEO = new CP_prorrateov2();
+            PRORRATEO.MdiParent = this;
+            if (menu.Equals("1"))
+            {
+                PRORRATEO.Show();
+            }
+            else
+            {
+                PRORRATEO.Hide();
+            }
+        }
+
+        private void ingresoDePolizaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CP_polizaV2 poli = new CP_polizaV2();
+            poli.MdiParent = this;
+            if (menu.Equals("1"))
+            {
+                poli.Show();
+            }
+            else
+            {
+                poli.Hide();
+            }
+
+        }
+
+        private void confirmacionDeProducctionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+                CP_ordenprod orpr = new CP_ordenprod();
+                orpr.Show();
         }
     }
 }

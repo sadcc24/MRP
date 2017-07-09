@@ -124,7 +124,7 @@ namespace PrototipoMRP
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("contacte con recursos humanos", "CMPE...", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void MRP_loginAutenticacion_Load(object sender, EventArgs e)

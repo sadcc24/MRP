@@ -34,8 +34,10 @@ public class MRP_BD
 
     public void insertSQL(String QInsert)
     {
+        try
+        {
 
-        if (conexion.State != System.Data.ConnectionState.Open)
+            if (conexion.State != System.Data.ConnectionState.Open)
         {
             conexion.Open();
         }
@@ -45,12 +47,24 @@ public class MRP_BD
         adap.InsertCommand = comando.Connection.CreateCommand();
         adap.InsertCommand.CommandText = QInsert;
         adap.InsertCommand.ExecuteNonQuery();
-
-        if (conexion.State != System.Data.ConnectionState.Closed)
+        }
+        catch(Exception ex)
+        {
+            System.Console.WriteLine(ex.Message);
+        }
+        finally
         {
             conexion.Close();
         }
+/*        if (conexion.State != System.Data.ConnectionState.Closed)
+        {
+            conexion.Close();
+        }
+*/
     }
+
+
+
     public void deleteSQL(String QInsert, SqlTransaction tran = null)
     {
 

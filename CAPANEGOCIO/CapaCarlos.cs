@@ -311,15 +311,7 @@ namespace CAPANEGOCIO
 // TERMINA POLIZACONTABLE
 
 
-
-
-
-
-
-
-// INICIA ORDENPROD
-
-
+// INICIA ORDENPROD (confirmacion de pedido)
 // CONSULTA ORDENPROD
         public DataTable consultaOrdenProd()
         {
@@ -355,11 +347,7 @@ namespace CAPANEGOCIO
         {
             conexionCarlos.updateSQL("update detordenprod set cantidad = '" + text1 + "', idordenproduccion = '" + text2 + "', idrecetario = '" + text3 + "' where iddetordenprod ='" + text4 + "'");
         }
-
 // TERMINA ORDENPROD
-
-
-
 
 
 //INICIA LOGIN
@@ -384,12 +372,8 @@ namespace CAPANEGOCIO
                     autenetic = "no";
                 }
             }
-            
-                
-            
             return autenetic;
         }
 //TERMINA LOGIN
-
     }
 }

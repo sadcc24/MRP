@@ -69,6 +69,9 @@
             this.tooltxtusuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolEmpresa = new System.Windows.Forms.ToolStripStatusLabel();
             this.tooltxtempresa = new System.Windows.Forms.ToolStripStatusLabel();
+            this.prorrateoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoDePolizaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.confirmacionDeProducctionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -176,7 +179,8 @@
             this.materialesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listaDeMaterialesToolStripMenuItem,
             this.ordenDeProduccionToolStripMenuItem,
-            this.revisionManoDeObraToolStripMenuItem});
+            this.revisionManoDeObraToolStripMenuItem,
+            this.confirmacionDeProducctionToolStripMenuItem});
             this.materialesToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.estructura;
             this.materialesToolStripMenuItem.Name = "materialesToolStripMenuItem";
             this.materialesToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
@@ -301,6 +305,8 @@
             // 
             // prorrateoToolStripMenuItem
             // 
+            this.prorrateoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.prorrateoToolStripMenuItem1});
             this.prorrateoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("prorrateoToolStripMenuItem.Image")));
             this.prorrateoToolStripMenuItem.Name = "prorrateoToolStripMenuItem";
             this.prorrateoToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
@@ -309,6 +315,8 @@
             // 
             // polizaToolStripMenuItem
             // 
+            this.polizaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresoDePolizaToolStripMenuItem});
             this.polizaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("polizaToolStripMenuItem.Image")));
             this.polizaToolStripMenuItem.Name = "polizaToolStripMenuItem";
             this.polizaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
@@ -399,6 +407,27 @@
             this.tooltxtempresa.Size = new System.Drawing.Size(15, 17);
             this.tooltxtempresa.Text = "[]";
             // 
+            // prorrateoToolStripMenuItem1
+            // 
+            this.prorrateoToolStripMenuItem1.Name = "prorrateoToolStripMenuItem1";
+            this.prorrateoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.prorrateoToolStripMenuItem1.Text = "Prorrateo";
+            this.prorrateoToolStripMenuItem1.Click += new System.EventHandler(this.prorrateoToolStripMenuItem1_Click);
+            // 
+            // ingresoDePolizaToolStripMenuItem
+            // 
+            this.ingresoDePolizaToolStripMenuItem.Name = "ingresoDePolizaToolStripMenuItem";
+            this.ingresoDePolizaToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.ingresoDePolizaToolStripMenuItem.Text = "Ingreso de poliza";
+            this.ingresoDePolizaToolStripMenuItem.Click += new System.EventHandler(this.ingresoDePolizaToolStripMenuItem_Click);
+            // 
+            // confirmacionDeProducctionToolStripMenuItem
+            // 
+            this.confirmacionDeProducctionToolStripMenuItem.Name = "confirmacionDeProducctionToolStripMenuItem";
+            this.confirmacionDeProducctionToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.confirmacionDeProducctionToolStripMenuItem.Text = "Confirmacion de producction";
+            this.confirmacionDeProducctionToolStripMenuItem.Click += new System.EventHandler(this.confirmacionDeProducctionToolStripMenuItem_Click);
+            // 
             // MRP_mdiMRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,5 +499,8 @@
         private System.Windows.Forms.ToolStripMenuItem factorDeConversionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem asignacionEmpleadoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem manoObraToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem prorrateoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ingresoDePolizaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem confirmacionDeProducctionToolStripMenuItem;
     }
 }

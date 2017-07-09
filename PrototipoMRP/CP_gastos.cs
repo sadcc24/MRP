@@ -62,7 +62,6 @@ namespace PrototipoMRP
         private void button5_Click(object sender, EventArgs e)
         {
             gasto.insertarGasto(textBox1.Text, textBox2.Text, textBox3.Text);
-             MessageBox.Show("Ingreso Exitoso", "Ingreso Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             limpiar("");
             consulta();
         }

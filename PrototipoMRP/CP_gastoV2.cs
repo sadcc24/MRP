@@ -66,7 +66,6 @@ namespace PrototipoMRP
         private void button5_Click(object sender, EventArgs e)
         {
             tipoGastov1.insertarTipoGasto(textBox4.Text, textBox2.Text, textBox3.Text);
-            MessageBox.Show("DATOS AGREGADOS");
             limpiarTipoG("");
             consulta();
         }

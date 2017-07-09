@@ -68,7 +68,6 @@ namespace PrototipoMRP
         private void button5_Click(object sender, EventArgs e)
         {
             polizav4.insertarPolizaContable(textBox4.Text, textBox2.Text, textBox3.Text, textBox6.Text, textBox5.Text);
-            MessageBox.Show("DATOS AGREGADOS");
             limpiarPoliza("");
             consulta();
         }
