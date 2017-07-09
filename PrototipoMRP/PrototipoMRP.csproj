@@ -70,11 +70,23 @@
     <Compile Include="CP_gastoV2.Designer.cs">
       <DependentUpon>CP_gastoV2.cs</DependentUpon>
     </Compile>
-    <Compile Include="CP_poliza.cs">
+    <Compile Include="CP_ordenprod.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CP_poliza.designer.cs">
-      <DependentUpon>CP_poliza.cs</DependentUpon>
+    <Compile Include="CP_ordenprod.Designer.cs">
+      <DependentUpon>CP_ordenprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_polizacontable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_polizacontable.Designer.cs">
+      <DependentUpon>CP_polizacontable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CP_polizapoliza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CP_polizapoliza.Designer.cs">
+      <DependentUpon>CP_polizapoliza.cs</DependentUpon>
     </Compile>
     <Compile Include="CP_polizaV2.cs">
       <SubType>Form</SubType>
@@ -336,8 +348,14 @@
     <EmbeddedResource Include="CP_gastoV2.resx">
       <DependentUpon>CP_gastoV2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CP_poliza.resx">
-      <DependentUpon>CP_poliza.cs</DependentUpon>
+    <EmbeddedResource Include="CP_ordenprod.resx">
+      <DependentUpon>CP_ordenprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_polizacontable.resx">
+      <DependentUpon>CP_polizacontable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CP_polizapoliza.resx">
+      <DependentUpon>CP_polizapoliza.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CP_polizaV2.resx">
       <DependentUpon>CP_polizaV2.cs</DependentUpon>

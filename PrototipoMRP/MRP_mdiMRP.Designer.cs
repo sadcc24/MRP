@@ -133,6 +133,7 @@
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.inventarioToolStripMenuItem.Text = "Inventario";
+            this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
             // 
             // unidadMedidaToolStripMenuItem
             // 
@@ -185,14 +186,14 @@
             // listaDeMaterialesToolStripMenuItem
             // 
             this.listaDeMaterialesToolStripMenuItem.Name = "listaDeMaterialesToolStripMenuItem";
-            this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.listaDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.listaDeMaterialesToolStripMenuItem.Text = "Recetario";
             this.listaDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.listaDeMaterialesToolStripMenuItem_Click);
             // 
             // ordenDeProduccionToolStripMenuItem
             // 
             this.ordenDeProduccionToolStripMenuItem.Name = "ordenDeProduccionToolStripMenuItem";
-            this.ordenDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ordenDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.ordenDeProduccionToolStripMenuItem.Text = "Planificacion";
             this.ordenDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.ordenDeProduccionToolStripMenuItem_Click);
             // 
@@ -203,7 +204,7 @@
             this.estadosToolStripMenuItem,
             this.costosFabricacionToolStripMenuItem});
             this.revisionManoDeObraToolStripMenuItem.Name = "revisionManoDeObraToolStripMenuItem";
-            this.revisionManoDeObraToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.revisionManoDeObraToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.revisionManoDeObraToolStripMenuItem.Text = "Otros";
             // 
             // manoDeObraToolStripMenuItem
@@ -254,6 +255,7 @@
             this.manoObraToolStripMenuItem.Name = "manoObraToolStripMenuItem";
             this.manoObraToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.manoObraToolStripMenuItem.Text = "Mano Obra";
+            this.manoObraToolStripMenuItem.Click += new System.EventHandler(this.manoObraToolStripMenuItem_Click);
             // 
             // tAREAToolStripMenuItem
             // 
@@ -416,6 +418,7 @@
             this.Text = "Modulo - MRP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MRPmdiMRP_FormClosed);
+            this.Load += new System.EventHandler(this.MRP_mdiMRP_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

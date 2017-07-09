@@ -11,6 +11,7 @@ namespace CAPANEGOCIO
 
         private int codigoempleado;
         private string nombreempleado;
+        private string rolEmpleado;
 
         public int CodigoEmpleado
         {
@@ -37,5 +38,22 @@ namespace CAPANEGOCIO
                 nombreempleado = value;
             }
         }
+
+
+        public string rollEmpleado
+        {
+            get
+            {
+                return rolEmpleado;
+            }
+
+            set
+            {
+                rolEmpleado = value;
+            }
+        }
+
+
+
     }
 }

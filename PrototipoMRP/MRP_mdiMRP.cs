@@ -17,7 +17,7 @@ namespace PrototipoMRP
 {
     public partial class MRP_mdiMRP : Form
     {
-     
+        String menu = "";
         MPRCL_Empresa empresa; //esta variables tienen que enviar para cualquier formulario siempre y cuando tengan constructores
         MPRCL_Usuario usuario;//esta variables tienen que enviar para cualquier formulario siempre y cuando tengan constructores
         public MRP_mdiMRP(MPRCL_Usuario user, MPRCL_Empresa emp) {
@@ -26,6 +26,7 @@ namespace PrototipoMRP
             usuario = user;
             tooltxtempresa.Text = empresa.NombreEmpresa;
             tooltxtusuario.Text = usuario.NombreEmpleado.ToString();
+            menu = usuario.rollEmpleado.ToString();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,7 +50,12 @@ namespace PrototipoMRP
         {
             GC_ExistenciaProducto empre = new GC_ExistenciaProducto();
             empre.MdiParent = this;
-            empre.Show();
+            if(menu.Equals("1")) {
+                empre.Show();
+            } else
+            {
+                empre.Hide();
+            }
         }
 
         private void generacionDeOrdenesDeProduccionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -196,6 +202,21 @@ namespace PrototipoMRP
         {
            CP_gastos costofab  = new CP_gastos();
             costofab.Show();
+        }
+
+        private void MRP_mdiMRP_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void manoObraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
