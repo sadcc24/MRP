@@ -36,6 +36,7 @@ namespace PrototipoMRP
                 emp.NombreEmpresa = this.dataGridView1.Rows[indice].Cells["NOMBRE"].Value.ToString();
                 MRP_mdiMRP mdi = new MRP_mdiMRP(usuario, emp);
                 mdi.Show();
+                this.Hide();
             }
         }
         private void frmEmpresa_FormClosed(object sender, FormClosedEventArgs e)
@@ -48,6 +49,11 @@ namespace PrototipoMRP
             this.dataGridView1.DataSource= emp.ListadoEmpresas();            
             this.dataGridView1.Columns["CODIGO"].DataPropertyName = "CodigoEmpresa";
             this.dataGridView1.Columns["NOMBRE"].DataPropertyName = "NombreEmpresa";   
+        }
+
+        private void lbletiqueta_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

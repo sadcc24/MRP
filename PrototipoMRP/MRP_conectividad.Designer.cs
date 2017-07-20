@@ -167,14 +167,15 @@
             this.button4.Text = "Limpiar";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Gconectividad
+            // MRP_conectividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(433, 304);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Gconectividad";
+            this.MaximizeBox = false;
+            this.Name = "MRP_conectividad";
             this.Text = "Conexion a Base de Datos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

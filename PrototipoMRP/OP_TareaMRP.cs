@@ -1,4 +1,9 @@
-﻿using System;
+﻿//Programador: Olivia Perez
+//Analista: Olivia Perez
+//Comentarios: Form para creacion de tareas para proceso de produccion
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -56,20 +61,29 @@ namespace PrototipoMRP
 
         private void button3_Click(object sender, EventArgs e)
         {
-            PRUEBA.deleteSQL("delete [dbo].[TAREA] where codtarea = '" + txtcodigo.Text + "'");
-            MessageBox.Show("Esta seguro de eliminar la tarea?", "Esta seguro de eliminar la tarea?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult dialogResult = MessageBox.Show("Esta seguro que desea eliminar la informacion?", "Confirmacion", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                PRUEBA.deleteSQL("delete [dbo].[TAREA] where idtarea = '" + txtcodigo.Text + "'");
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                this.Show();
+            }
             consulta();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             txtcodigo.Visible = true;
-            PRUEBA.updateSQL("update tarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + cmbestado.Text + "',nombre='"+txtnombre.Text+"',idempresa='"+ cmbempresa.SelectedValue.ToString()+ "' where codtarea='" + txtcodigo.Text+ "'");
+            PRUEBA.updateSQL("update tarea set descripcion ='" + txtdescripcion.Text + "',estado= '" + cmbestado.Text + "',nombre='"+txtnombre.Text+"',idempresa='"+ cmbempresa.SelectedValue.ToString()+ "' where idtarea='" + txtcodigo.Text+ "'");
             consulta();
         }
         
         private void button1_Click(object sender, EventArgs e)
         {
+
+            txtcodigo.Enabled = true;
             txtcodigo.Text = "";
             txtdescripcion.Text = "";
             cmbestado.Text = "";
@@ -78,16 +92,16 @@ namespace PrototipoMRP
         }
          public void consulta()
         {
-            dataGridView1.DataSource = PRUEBA.getSQL("select codtarea as 'Codigo', nombre as 'Nombre',descripcion as 'Descripcion',estado as 'Estado Activo/Inactivo',idempresa as 'Cod Empresa' from tarea");
+            dataGridView1.DataSource = PRUEBA.getSQL("select idtarea as 'Codigo', nombre as 'Nombre',descripcion as 'Descripcion',estado as 'Estado Activo/Inactivo',idempresa as 'Cod Empresa' from tarea");
         }
         private void TareaMRP_Load(object sender, EventArgs e)
         {
             cmbempresa.DataSource = PRUEBA.getSQL("select idempresa, nombre_empresa from empresa");
             cmbempresa.DisplayMember = "nombre_empresa";
             cmbempresa.ValueMember = "idempresa";
-            
+            txtcodigo.Enabled = false;
             consulta();
-            txtcodigo.Visible = false;
+            txtcodigo.Visible = true;
         }
     }
 }

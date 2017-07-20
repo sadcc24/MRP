@@ -25,10 +25,7 @@ namespace PrototipoMRP
 
         private void GListaProduccion_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i <= 10; i++)
-            {
-              dataGridView1.Rows.Add("OC-1000" + i, DateTime.Now.ToString());
-            }
+           
         }
     }
 }

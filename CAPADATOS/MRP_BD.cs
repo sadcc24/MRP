@@ -1,4 +1,3 @@
-
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,79 +18,116 @@ public class MRP_BD
     public MRP_BD()
     {
 
-        Servidor = @"erpseminario.database.windows.net"; //"aqui deben ingresar el servidor de su maquina que estan haciendo pruebas";
-        B_Datos = "ERPSeminario";//"ingresan la base de datos donde estan trabajando";
-        Usuario = "adminseminario";// "usuario para autenticacion para conectarse ala base de datos";
-        Passs = "S@dseminario"; // "passwor para la autenticacion del usuario que se esten conectando";
- 
+        //Servidor = @".\SQL"; //"aqui deben ingresar el servidor de su maquina que estan haciendo pruebas";
+        //B_Datos = "BDSAD17";//"ingresan la base de datos donde estan trabajando";
+        //Usuario = "canel";// "usuario para autenticacion para conectarse ala base de datos";
+        //Passs = "canel"; // "passwor para la autenticacion del usuario que se esten conectando";
+        Servidor = "erpseminario.database.windows.net";
+        B_Datos = "ERPSeminario";
+        Usuario = "adminseminario";
+        Passs = "S@dseminario";
+
         String cadena = "Data Source= " + Servidor + "; Initial Catalog=" + B_Datos + "; User Id=" + Usuario + "; Password=" + Passs + ";";
+        //String cadena = @"Data Source=.\SQL; Initial Catalog=BD_PRUEBA; User Id=canel; Password=canel;";
         conexion = new SqlConnection(cadena);
     }
 
     public void insertSQL(String QInsert)
     {
-
-        if (conexion.State != System.Data.ConnectionState.Open)
+        try
         {
-            conexion.Open();
+
+            if (conexion.State != System.Data.ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+            comando = new SqlCommand(QInsert, conexion);
+
+            SqlDataAdapter adap = new SqlDataAdapter();
+            adap.InsertCommand = comando.Connection.CreateCommand();
+            adap.InsertCommand.CommandText = QInsert;
+            adap.InsertCommand.ExecuteNonQuery();
         }
-        comando = new SqlCommand(QInsert, conexion);
-
-        SqlDataAdapter adap = new SqlDataAdapter();
-        adap.InsertCommand = comando.Connection.CreateCommand();
-        adap.InsertCommand.CommandText = QInsert;
-        adap.InsertCommand.ExecuteNonQuery();
-
-        if (conexion.State != System.Data.ConnectionState.Closed)
+        catch (Exception ex)
+        {
+            System.Console.WriteLine(ex.Message);
+        }
+        finally
         {
             conexion.Close();
         }
+        /*        if (conexion.State != System.Data.ConnectionState.Closed)
+                {
+                    conexion.Close();
+                }
+        */
     }
+
+
+
     public void deleteSQL(String QInsert, SqlTransaction tran = null)
     {
-
-        if (conexion.State != System.Data.ConnectionState.Open)
+        try
         {
-            conexion.Open();
+
+            if (conexion.State != System.Data.ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+
+            comando = new SqlCommand(QInsert, conexion);
+
+            SqlDataAdapter adap = new SqlDataAdapter();
+            adap.DeleteCommand = comando.Connection.CreateCommand();
+            adap.DeleteCommand.CommandText = QInsert;
+            adap.DeleteCommand.ExecuteNonQuery();
         }
-
-        comando = new SqlCommand(QInsert, conexion);
-
-        SqlDataAdapter adap = new SqlDataAdapter();
-        adap.DeleteCommand = comando.Connection.CreateCommand();
-        adap.DeleteCommand.CommandText = QInsert;
-        adap.DeleteCommand.ExecuteNonQuery();
-
-        if (conexion.State != System.Data.ConnectionState.Closed)
+        catch (Exception ex)
+        {
+            System.Console.WriteLine(ex.Message);
+        }
+        finally
         {
             conexion.Close();
         }
+
+
     }
     public void updateSQL(String QInsert, SqlTransaction tran = null)
     {
-
-        if (conexion.State != System.Data.ConnectionState.Open)
+        try
         {
-            conexion.Open();
+            if (conexion.State != System.Data.ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+            comando = new SqlCommand(QInsert, conexion);
+
+
+            SqlDataAdapter adap = new SqlDataAdapter();
+
+            adap.UpdateCommand = comando.Connection.CreateCommand();
+            adap.UpdateCommand.CommandText = QInsert;
+            adap.UpdateCommand.ExecuteNonQuery();
+
         }
-        comando = new SqlCommand(QInsert, conexion);
-
-
-        SqlDataAdapter adap = new SqlDataAdapter();
-
-        adap.UpdateCommand = comando.Connection.CreateCommand();
-        adap.UpdateCommand.CommandText = QInsert;
-        adap.UpdateCommand.ExecuteNonQuery();
-
-        if (conexion.State != System.Data.ConnectionState.Closed)
+        catch (Exception ex)
+        {
+            System.Console.WriteLine(ex.Message);
+        }
+        finally
         {
             conexion.Close();
         }
-    }
 
+
+    }
     public DataTable getSQL(String QConsulta)
     {
-        DataTable dt = new DataTable();
+        DataTable dt = null;
+        try
+        {
+            dt = new DataTable();
         if (conexion.State != System.Data.ConnectionState.Open)
         {
             conexion.Open();
@@ -105,6 +141,11 @@ public class MRP_BD
             conexion.Close();
         }
         return dt;
+        }
+        catch (Exception ex)
+        {
+            return dt;
+        }
     }
 
 }
