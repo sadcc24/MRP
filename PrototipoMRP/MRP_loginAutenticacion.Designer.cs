@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MRP_loginAutenticacion));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
@@ -73,7 +74,7 @@
             this.txtcontraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontraseña.Location = new System.Drawing.Point(120, 147);
             this.txtcontraseña.Name = "txtcontraseña";
-            this.txtcontraseña.PasswordChar = '@';
+            this.txtcontraseña.PasswordChar = '*';
             this.txtcontraseña.Size = new System.Drawing.Size(167, 26);
             this.txtcontraseña.TabIndex = 3;
             // 
@@ -101,12 +102,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(159, 36);
+            this.label3.Location = new System.Drawing.Point(128, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 24);
+            this.label3.Size = new System.Drawing.Size(182, 24);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Bienvenido";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Text = "Bienvenido a MRP";
             // 
             // label4
             // 
@@ -117,7 +117,6 @@
             this.label4.Size = new System.Drawing.Size(136, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Iniciar Sesion";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -130,7 +129,7 @@
             this.label5.Text = "Olvido su Contraseña?";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // GloginAutenticacion
+            // MRP_loginAutenticacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,9 +145,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "GloginAutenticacion";
+            this.Name = "MRP_loginAutenticacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autenticacion Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

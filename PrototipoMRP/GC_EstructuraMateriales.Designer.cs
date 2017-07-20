@@ -326,14 +326,15 @@
             this.Descripcion.HeaderText = "Descripcion";
             this.Descripcion.Name = "Descripcion";
             // 
-            // GEstructuraMateriales
+            // GC_EstructuraMateriales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1032, 469);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "GEstructuraMateriales";
+            this.MaximizeBox = false;
+            this.Name = "GC_EstructuraMateriales";
             this.Text = "GEstructuraMateriales";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

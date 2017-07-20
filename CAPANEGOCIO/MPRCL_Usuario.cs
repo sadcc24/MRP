@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CAPANEGOCIO
 {
-  public class MPRCL_Usuario
+    public class MPRCL_Usuario
     {
 
         private int codigoempleado;
         private string nombreempleado;
+        private string rolEmpleado;
 
         public int CodigoEmpleado
         {
@@ -37,5 +38,22 @@ namespace CAPANEGOCIO
                 nombreempleado = value;
             }
         }
+
+
+        public string rollEmpleado
+        {
+            get
+            {
+                return rolEmpleado;
+            }
+
+            set
+            {
+                rolEmpleado = value;
+            }
+        }
+
+
+
     }
 }

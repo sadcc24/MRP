@@ -256,14 +256,15 @@
             this.CantidadMinimaRequerida.HeaderText = "Cantidad Minima Requerida";
             this.CantidadMinimaRequerida.Name = "CantidadMinimaRequerida";
             // 
-            // GSolicitudProducto
+            // GC_SolicitudProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(775, 415);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "GSolicitudProducto";
+            this.MaximizeBox = false;
+            this.Name = "GC_SolicitudProducto";
             this.Text = "Solicitud Producto";
             this.Load += new System.EventHandler(this.GSolicitudProducto_Load);
             this.panel1.ResumeLayout(false);

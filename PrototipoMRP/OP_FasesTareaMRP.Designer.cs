@@ -45,6 +45,8 @@
             this.cmbestado = new System.Windows.Forms.ComboBox();
             this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.dgvfases = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtpersonas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvfases)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,7 +171,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(290, 79);
+            this.label5.Location = new System.Drawing.Point(21, 153);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 19);
             this.label5.TabIndex = 45;
@@ -195,14 +197,14 @@
             this.cmbestado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.cmbestado.Location = new System.Drawing.Point(396, 78);
+            this.cmbestado.Location = new System.Drawing.Point(111, 153);
             this.cmbestado.Name = "cmbestado";
             this.cmbestado.Size = new System.Drawing.Size(121, 21);
             this.cmbestado.TabIndex = 48;
             // 
             // txtdescripcion
             // 
-            this.txtdescripcion.Location = new System.Drawing.Point(396, 109);
+            this.txtdescripcion.Location = new System.Drawing.Point(422, 109);
             this.txtdescripcion.Multiline = true;
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(185, 119);
@@ -213,15 +215,34 @@
             this.dgvfases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvfases.Location = new System.Drawing.Point(25, 247);
             this.dgvfases.Name = "dgvfases";
-            this.dgvfases.Size = new System.Drawing.Size(556, 150);
+            this.dgvfases.Size = new System.Drawing.Size(578, 150);
             this.dgvfases.TabIndex = 50;
             // 
-            // FasesTareaMRP
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(290, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(122, 19);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "Cant de Personas";
+            // 
+            // txtpersonas
+            // 
+            this.txtpersonas.Location = new System.Drawing.Point(422, 76);
+            this.txtpersonas.Name = "txtpersonas";
+            this.txtpersonas.Size = new System.Drawing.Size(100, 20);
+            this.txtpersonas.TabIndex = 52;
+            // 
+            // OP_FasesTareaMRP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(631, 428);
+            this.Controls.Add(this.txtpersonas);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvfases);
             this.Controls.Add(this.txtdescripcion);
             this.Controls.Add(this.cmbestado);
@@ -239,7 +260,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "FasesTareaMRP";
+            this.Name = "OP_FasesTareaMRP";
             this.Text = "FasesTareaMRP";
             this.Load += new System.EventHandler(this.FasesTareaMRP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvfases)).EndInit();
@@ -267,5 +288,7 @@
         private System.Windows.Forms.ComboBox cmbestado;
         private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.DataGridView dgvfases;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtpersonas;
     }
 }

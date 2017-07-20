@@ -28,118 +28,215 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.panel1.SuspendLayout();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnayuda = new System.Windows.Forms.Button();
+            this.btnnuevo = new System.Windows.Forms.Button();
+            this.btneditar = new System.Windows.Forms.Button();
+            this.btneliminar = new System.Windows.Forms.Button();
+            this.btnlimpiar = new System.Windows.Forms.Button();
+            this.btnguardar = new System.Windows.Forms.Button();
+            this.btnactualizar = new System.Windows.Forms.Button();
+            this.lblcodigoestado = new System.Windows.Forms.Label();
+            this.txtcodigoestado = new System.Windows.Forms.TextBox();
+            this.txtdescripcion = new System.Windows.Forms.TextBox();
+            this.lbldescripcion = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.lblnombre = new System.Windows.Forms.Label();
+            this.CODIGO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DESCRIPCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // groupBox1
             // 
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(268, 71);
-            this.panel1.TabIndex = 1;
+            this.groupBox1.Controls.Add(this.btnayuda);
+            this.groupBox1.Controls.Add(this.btnnuevo);
+            this.groupBox1.Controls.Add(this.btneditar);
+            this.groupBox1.Controls.Add(this.btneliminar);
+            this.groupBox1.Controls.Add(this.btnlimpiar);
+            this.groupBox1.Controls.Add(this.btnguardar);
+            this.groupBox1.Controls.Add(this.btnactualizar);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(393, 72);
+            this.groupBox1.TabIndex = 102;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Menu";
             // 
-            // button7
+            // btnayuda
             // 
-            this.button7.BackgroundImage = global::PrototipoMRP.Properties.Resources.help;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.Location = new System.Drawing.Point(182, 13);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(50, 40);
-            this.button7.TabIndex = 70;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnayuda.BackgroundImage = global::PrototipoMRP.Properties.Resources.ayuda;
+            this.btnayuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnayuda.Location = new System.Drawing.Point(328, 19);
+            this.btnayuda.Name = "btnayuda";
+            this.btnayuda.Size = new System.Drawing.Size(50, 40);
+            this.btnayuda.TabIndex = 65;
+            this.btnayuda.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnnuevo
             // 
-            this.button5.BackgroundImage = global::PrototipoMRP.Properties.Resources.guardar;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.Location = new System.Drawing.Point(126, 13);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 40);
-            this.button5.TabIndex = 68;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnnuevo.BackgroundImage = global::PrototipoMRP.Properties.Resources.nuevo;
+            this.btnnuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnnuevo.Location = new System.Drawing.Point(14, 18);
+            this.btnnuevo.Name = "btnnuevo";
+            this.btnnuevo.Size = new System.Drawing.Size(50, 40);
+            this.btnnuevo.TabIndex = 59;
+            this.btnnuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnnuevo.UseVisualStyleBackColor = true;
+            this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
-            // button4
+            // btneditar
             // 
-            this.button4.BackgroundImage = global::PrototipoMRP.Properties.Resources.cancelar;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.Location = new System.Drawing.Point(70, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 40);
-            this.button4.TabIndex = 67;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btneditar.BackgroundImage = global::PrototipoMRP.Properties.Resources.editar;
+            this.btneditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btneditar.Location = new System.Drawing.Point(65, 18);
+            this.btneditar.Name = "btneditar";
+            this.btneditar.Size = new System.Drawing.Size(50, 40);
+            this.btneditar.TabIndex = 60;
+            this.btneditar.UseVisualStyleBackColor = true;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
-            // button2
+            // btneliminar
             // 
-            this.button2.BackgroundImage = global::PrototipoMRP.Properties.Resources.editar;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(14, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 40);
-            this.button2.TabIndex = 65;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btneliminar.BackgroundImage = global::PrototipoMRP.Properties.Resources.eliminar;
+            this.btneliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btneliminar.Location = new System.Drawing.Point(117, 18);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(50, 40);
+            this.btneliminar.TabIndex = 61;
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
-            // label1
+            // btnlimpiar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 110);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Nombre";
+            this.btnlimpiar.BackgroundImage = global::PrototipoMRP.Properties.Resources.cancelar;
+            this.btnlimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnlimpiar.Location = new System.Drawing.Point(221, 18);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(50, 40);
+            this.btnlimpiar.TabIndex = 62;
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
-            // comboBox1
+            // btnguardar
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(93, 107);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.btnguardar.BackgroundImage = global::PrototipoMRP.Properties.Resources.guardar;
+            this.btnguardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnguardar.Location = new System.Drawing.Point(169, 18);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(50, 40);
+            this.btnguardar.TabIndex = 63;
+            this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
-            // label2
+            // btnactualizar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Descripcion";
+            this.btnactualizar.BackgroundImage = global::PrototipoMRP.Properties.Resources.actualizar;
+            this.btnactualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnactualizar.Location = new System.Drawing.Point(275, 18);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(50, 40);
+            this.btnactualizar.TabIndex = 64;
+            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
-            // listBox1
+            // lblcodigoestado
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(93, 153);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(198, 43);
-            this.listBox1.TabIndex = 6;
+            this.lblcodigoestado.AutoSize = true;
+            this.lblcodigoestado.Location = new System.Drawing.Point(74, 98);
+            this.lblcodigoestado.Name = "lblcodigoestado";
+            this.lblcodigoestado.Size = new System.Drawing.Size(76, 13);
+            this.lblcodigoestado.TabIndex = 103;
+            this.lblcodigoestado.Text = "Codigo Estado";
             // 
-            // frmEstadoPlanificacion
+            // txtcodigoestado
+            // 
+            this.txtcodigoestado.Location = new System.Drawing.Point(172, 91);
+            this.txtcodigoestado.Name = "txtcodigoestado";
+            this.txtcodigoestado.Size = new System.Drawing.Size(278, 20);
+            this.txtcodigoestado.TabIndex = 104;
+            // 
+            // txtdescripcion
+            // 
+            this.txtdescripcion.Location = new System.Drawing.Point(172, 175);
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(278, 20);
+            this.txtdescripcion.TabIndex = 105;
+            // 
+            // lbldescripcion
+            // 
+            this.lbldescripcion.AutoSize = true;
+            this.lbldescripcion.Location = new System.Drawing.Point(74, 178);
+            this.lbldescripcion.Name = "lbldescripcion";
+            this.lbldescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lbldescripcion.TabIndex = 106;
+            this.lbldescripcion.Text = "Descripcion";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CODIGO,
+            this.NOMBRE,
+            this.DESCRIPCION});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 201);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(535, 211);
+            this.dataGridView1.TabIndex = 107;
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.Location = new System.Drawing.Point(172, 129);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(278, 20);
+            this.txtnombre.TabIndex = 108;
+            // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Location = new System.Drawing.Point(77, 136);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(44, 13);
+            this.lblnombre.TabIndex = 109;
+            this.lblnombre.Text = "Nombre";
+            // 
+            // CODIGO
+            // 
+            this.CODIGO.HeaderText = "CODIGO";
+            this.CODIGO.Name = "CODIGO";
+            // 
+            // NOMBRE
+            // 
+            this.NOMBRE.HeaderText = "NOMBRE";
+            this.NOMBRE.Name = "NOMBRE";
+            // 
+            // DESCRIPCION
+            // 
+            this.DESCRIPCION.HeaderText = "DESCRIPCION";
+            this.DESCRIPCION.Name = "DESCRIPCION";
+            // 
+            // RC_frmEstadoPlanificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(320, 220);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
-            this.Name = "frmEstadoPlanificacion";
+            this.ClientSize = new System.Drawing.Size(559, 405);
+            this.Controls.Add(this.lblnombre);
+            this.Controls.Add(this.txtnombre);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lbldescripcion);
+            this.Controls.Add(this.txtdescripcion);
+            this.Controls.Add(this.txtcodigoestado);
+            this.Controls.Add(this.lblcodigoestado);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "RC_frmEstadoPlanificacion";
             this.Text = "Estado Planificacion WO";
             this.Load += new System.EventHandler(this.frmEstadoPlanificacion_Load);
-            this.panel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,14 +244,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnayuda;
+        private System.Windows.Forms.Button btnnuevo;
+        private System.Windows.Forms.Button btneditar;
+        private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.Button btnguardar;
+        private System.Windows.Forms.Button btnactualizar;
+        private System.Windows.Forms.Label lblcodigoestado;
+        private System.Windows.Forms.TextBox txtcodigoestado;
+        private System.Windows.Forms.TextBox txtdescripcion;
+        private System.Windows.Forms.Label lbldescripcion;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.Label lblnombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CODIGO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DESCRIPCION;
     }
 }

@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(267, 50);
+            this.label2.Location = new System.Drawing.Point(253, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 11;
@@ -185,7 +185,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(518, 44);
+            this.dateTimePicker2.Location = new System.Drawing.Point(540, 47);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(134, 20);
             this.dateTimePicker2.TabIndex = 16;
@@ -193,7 +193,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(450, 51);
+            this.label5.Location = new System.Drawing.Point(462, 51);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 15;
@@ -270,14 +270,14 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // GCListaProduccion
+            // GC_ListaProduccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(736, 425);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "GCListaProduccion";
+            this.Name = "GC_ListaProduccion";
             this.Text = "Lista Produccion";
             this.Load += new System.EventHandler(this.GListaProduccion_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
