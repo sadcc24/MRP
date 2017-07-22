@@ -80,7 +80,27 @@ namespace PrototipoMRP
             
 
             dataGridView1.CommitEdit(DataGridViewDataErrorContexts.Commit);
+
+
+            dataGridView1.AutoGenerateColumns=false;
             
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Visible = false;
+            }
+            dataGridView1.Columns["CODPRODUCTO"].Visible = true;
+            dataGridView1.Columns["NOMBREPRODUCTO"].Visible = true;
+            dataGridView1.Columns["CANTIDAD"].Visible = true;
+            dataGridView1.Columns["COSTO"].Visible = true;
+            dataGridView1.Columns["CODUNIDADORIGEN"].Visible = false;
+            dataGridView1.Columns["UNIDADORIGEN"].Visible = true;
+            dataGridView1.Columns["UNIDADUSAR"].Visible = true;
+            dataGridView1.Columns["FACTOR"].Visible = true;
+            dataGridView1.Columns["CANTIDADEQUIV"].Visible = true;
+            dataGridView1.Columns["COSTOEQUIV"].Visible = true;
+
+
+
 
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -148,13 +168,19 @@ namespace PrototipoMRP
         {
             operacion = "update";
 
+            if (txtcodrecetario.Text == "" || txtcodrecetario.Text == string.Empty)
+            {
+                MessageBox.Show("No hay informacion a eliminar");
+                return;
+
+            }
 
             if (dataGridView1.Rows.Count - 1 < 0)
             {
                 MessageBox.Show("No hay campos para editar");
                 return;
             }
-            int indice = this.dataGridView1.CurrentRow.Index;
+            //int indice = this.dataGridView1.CurrentRow.Index;
             if (dataGridView1.Rows.Count - 1 > -1)
             {
 
@@ -169,39 +195,30 @@ namespace PrototipoMRP
 
         private void btneliminar_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count < 0)
-            {
-                MessageBox.Show("No hay campos para eliminar");
+            if (txtcodrecetario.Text == null || txtcodrecetario.Text == "") {
+                MessageBox.Show("Debe haber un recetario para poder eliminar");
                 return;
             }
-            int indice = this.dataGridView1.CurrentRow.Index;
-            if (indice > -1)
+
+            DialogResult resultado = MessageBox.Show("Desea eliminar el recetario","",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
             {
-                DialogResult resultado = MessageBox.Show("Desea elminar el registro: " + dataGridView1.Rows[indice].Cells["UNIDADORIGEN"].Value.ToString() + " -  " + dataGridView1.Rows[indice].Cells["UNIDADDESTINO"].Value.ToString(), "", MessageBoxButtons.YesNo);
-                if (resultado == DialogResult.Yes)
+                try
                 {
-                    try
-                    {
-                        //conversiones = new GCCL_Conversiones();
-                        //conversiones.CodConversion = Convert.ToInt32(dataGridView1.Rows[indice].Cells["CODIGO"].Value.ToString());
-                        //conversiones.CodTipoorigen = Convert.ToInt32(dataGridView1.Rows[indice].Cells["CODUNIDADORIGEN"].Value.ToString());
-                        //conversiones.CodTipodestino = Convert.ToInt32(dataGridView1.Rows[indice].Cells["CODUNIDADDESTINO"].Value.ToString());
-                        //conversiones.Factorconversion = Convert.ToDouble(dataGridView1.Rows[indice].Cells["FACTORCONVERSION"].Value.ToString());
-                        //conversiones.Eliminar_Conversion(conversiones);
-                        MessageBox.Show("Registro Eliminado");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("No se pudo elminar" + ex.ToString());
-                    }
+
+                
+                cnn.deleteSQL("delete *from detallerecetario where iddetallerecetario='"+txtcodrecetario.Text+"'");
+                cnn.deleteSQL("delete *from recetario where idrecetario='"+txtcodrecetario.Text+"'");
+
+                    MessageBox.Show("Registro Eliminado");
                 }
-                else
+                catch (Exception)
                 {
-                    MessageBox.Show("Registro no eliminado");
+
+                    MessageBox.Show("No se puede eliminar el Recetario indicado, asegurese que no se este usando en otros registros");
                 }
             }
 
-            actualizargridview();
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
@@ -270,24 +287,36 @@ namespace PrototipoMRP
                     {
 
                     
-                    cnn.updateSQL("update RECETARIO set nombre='" + txtnombrerecetario.Text + "' , descripcion='" + txtdescripcionrecetario.Text + "', totalcantidad=" + txtcostototalrecetario.Text + ",costototalrecetario=" + txtcostototalrecetario.Text + " where idrecetario='"+txtcodrecetario.Text+"'");
+                    cnn.updateSQL("update RECETARIO set nombre='" + txtnombrerecetario.Text + "' , descripcion='" + txtdescripcionrecetario.Text + "', totalcantidad=" + txttotalitems.Text + ",costototalrecetario=" + txtcostototalrecetario.Text + " where idrecetario='"+txtcodrecetario.Text+"'");
 
                         DataTable tabla = (DataTable)dataGridView1.DataSource;
 
+                        cnn.deleteSQL("delete from detallerecetario where   idrecetario='" + txtcodrecetario.Text + "'");
+
                         foreach (DataRow fila in tabla.Rows)
                         {
-                            if (fila.RowState == DataRowState.Added) {
-                                cnn.insertSQL("insert into detallerecetario(cantidad,idproducto,idrecetario,costoproducto, unidadusar, cantequivalente, costoequivalente) values ('"+fila["CANTIDAD"]+"','','','','','','')");
+                            //if (fila.RowState == DataRowState.Added)
+                            //{
+                                cnn.insertSQL("insert into detallerecetario(cantidad,idproducto,idrecetario,costoproducto, unidadusar, cantequivalente, costoequivalente) values ('" + fila["cantidad"] + "','" + fila["idproducto"] + "','" + txtcodrecetario.Text + "','" + fila["costoproducto"] + "','" + fila["unidadusar"] + "','" + fila["cantequivalente"] + "','" + fila["costoequivalente"] + "')");
+                            //}
+                            //if (fila.RowState == DataRowState.Modified)
+                            //{
+                            //    string CADENA = "UPDATE detallerecetario set cantidad='" + fila["cantidad"] + "', costoproducto='" + fila["costoproducto"] + "', unidadusar='" + fila["unidadusar"] + "', cantequivalente='" + fila["cantequivalente"] + "', costoequivalente='" + fila["costoequivalente"] + "' where idproducto='" + fila["idproducto"] + "' and idrecetario='" + txtcodrecetario.Text + "'";
+                            //    cnn.updateSQL(CADENA);
 
-                            }
+                            //}
+                            //if (fila.RowState == DataRowState.Deleted)
+                            //{
+                            //    cnn.deleteSQL("delete from detallerecetario where idproducto='" + fila["idproducto"] + "' and idrecetario='"+ txtcodrecetario.Text + "'");
 
+                            //}
 
                         }
                     }
-                    catch (Exception)
+                    catch (Exception EX)
                     {
 
-                        MessageBox.Show("Error al actualizar el registro del recetario");
+                        MessageBox.Show("Error al actualizar el registro del recetario" +EX.ToString());
                     }
 
 
@@ -474,7 +503,7 @@ namespace PrototipoMRP
             catch (Exception)
             {
 
-                throw;
+                //MessageBox.Show("Campo no valido");
             }
         }
 
@@ -532,6 +561,8 @@ namespace PrototipoMRP
                     txtfechacreacion.Text = string.Empty;
                     txtnombrerecetario.Text = string.Empty;
                     txtdescripcionrecetario.Text = string.Empty;
+                    txttotalitems.Text = string.Empty;
+                    txtcostototalrecetario.Text = string.Empty;
                     
                     dataGridView1.DataSource = null;
                     dataGridView1.Rows.Clear();
@@ -554,6 +585,8 @@ namespace PrototipoMRP
                 {
 
                     if (fila.Cells["COSTOEQUIV"].Value != null) {
+
+                        string A = fila.Cells["COSTOEQUIV"].Value.ToString();
                         costorecetario =Convert.ToDouble( fila.Cells["COSTOEQUIV"].Value.ToString() );
                     }
                     

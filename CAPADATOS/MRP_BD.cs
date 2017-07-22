@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
+using System.Configuration;
 
 public class MRP_BD
 {
@@ -13,23 +15,39 @@ public class MRP_BD
     private String Usuario = null;
     private String Passs = null;
     private SqlCommand comando;
-    SqlConnection conexion = null;
+    public SqlConnection conexion = null;
 
     public MRP_BD()
     {
+        Servidor = ConfigurationManager.AppSettings["txtservidor"];
+        B_Datos = ConfigurationManager.AppSettings["txtbd"];
+        Usuario = ConfigurationManager.AppSettings["txtusuario"];
+        Passs = ConfigurationManager.AppSettings["txtpass"];
 
         //Servidor = @".\SQL"; //"aqui deben ingresar el servidor de su maquina que estan haciendo pruebas";
         //B_Datos = "BDSAD17";//"ingresan la base de datos donde estan trabajando";
         //Usuario = "canel";// "usuario para autenticacion para conectarse ala base de datos";
         //Passs = "canel"; // "passwor para la autenticacion del usuario que se esten conectando";
-        Servidor = "erpseminario.database.windows.net";
-        B_Datos = "ERPSeminario";
-        Usuario = "adminseminario";
-        Passs = "S@dseminario";
 
-        String cadena = "Data Source= " + Servidor + "; Initial Catalog=" + B_Datos + "; User Id=" + Usuario + "; Password=" + Passs + ";";
+
+        //Servidor = "erpseminario.database.windows.net";
+        //B_Datos = "ERPSeminario";
+        //Usuario = "adminseminario";
+        //Passs = "S@dseminario";
+
+     String cadena = "Data Source= " + Servidor + "; Initial Catalog=" + B_Datos + "; User Id=" + Usuario + "; Password=" + Passs + ";";
         //String cadena = @"Data Source=.\SQL; Initial Catalog=BD_PRUEBA; User Id=canel; Password=canel;";
         conexion = new SqlConnection(cadena);
+    }
+
+    public MRP_BD(String user, string pass, string bd, string server) {
+        Servidor = @""+server;
+        B_Datos = bd;
+        Usuario = user;
+        Passs = pass;
+        String cadena = "Data Source= " + Servidor + "; Initial Catalog=" + B_Datos + "; User Id=" + Usuario + "; Password=" + Passs + ";";        
+        conexion = new SqlConnection(cadena);
+
     }
 
     public void insertSQL(String QInsert)

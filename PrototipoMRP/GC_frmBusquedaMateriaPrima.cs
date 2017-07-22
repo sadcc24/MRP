@@ -72,7 +72,7 @@ namespace PrototipoMRP
             catch (Exception)
             {
 
-                MessageBox.Show("Intente nuevamente");
+                MessageBox.Show("Campo de entrada no valida");
             }
 
         }

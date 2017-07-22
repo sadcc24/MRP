@@ -68,6 +68,7 @@
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(167, 26);
             this.txtusuario.TabIndex = 2;
+            this.txtusuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtusuario_KeyDown);
             // 
             // txtcontraseña
             // 
@@ -151,6 +152,8 @@
             this.Name = "MRP_loginAutenticacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autenticacion Usuarios";
+            this.Load += new System.EventHandler(this.MRP_loginAutenticacion_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MRP_loginAutenticacion_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

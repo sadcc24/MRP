@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace PrototipoMRP
 {
@@ -49,6 +50,18 @@ namespace PrototipoMRP
 // CREADO POR CARLOS PINEDA
         private void button1_Click(object sender, EventArgs e)
         {
+            String Servidor = ConfigurationManager.AppSettings["txtservidor"];
+            String B_Datos = ConfigurationManager.AppSettings["txtbd"];
+            String Usuario = ConfigurationManager.AppSettings["txtusuario"];
+            String Passs = ConfigurationManager.AppSettings["txtpass"];
+
+            if (Servidor == null || B_Datos == null || Usuario == null || Passs == null)
+            {
+                MessageBox.Show("Se debe configurar la conexion a la base de datos");
+                return;
+            }
+
+
             if (txtusuario.Text == string.Empty)
             {
                 MessageBox.Show("Debe ingresar un usuario");
@@ -94,6 +107,31 @@ namespace PrototipoMRP
         private void label5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("contacte con recursos humanos", "MRP", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void MRP_loginAutenticacion_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            MRP_conectividad conn = new MRP_conectividad();
+            conn.ShowDialog();
+        }
+
+        private void MRP_loginAutenticacion_KeyDown(object sender, KeyEventArgs e)
+        {
+          
+        }
+
+        private void txtusuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.L)
+            {
+                MRP_conectividad conn = new MRP_conectividad();
+                conn.ShowDialog();
+
+            }
         }
     }
 }

@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PrototipoMRP</RootNamespace>
     <AssemblyName>PrototipoMRP</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,8 +34,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -220,6 +229,11 @@
     <Compile Include="CP_tipoproducto.Designer.cs">
       <DependentUpon>CP_tipoproducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GC_conversionproductos_matprimabusq.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +251,18 @@
     </Compile>
     <Compile Include="GC_frmBusquedaMateriaPrima.Designer.cs">
       <DependentUpon>GC_frmBusquedaMateriaPrima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_frmBusquedaRecetario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_frmBusquedaRecetario.Designer.cs">
+      <DependentUpon>GC_frmBusquedaRecetario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GC_frmListadoRecetarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GC_frmListadoRecetarios.Designer.cs">
+      <DependentUpon>GC_frmListadoRecetarios.cs</DependentUpon>
     </Compile>
     <Compile Include="GC_frmNuevaUnidadMedida.cs">
       <SubType>Form</SubType>
@@ -351,6 +377,12 @@
     </Compile>
     <Compile Include="RC_frmEstadoPlanificacion.Designer.cs">
       <DependentUpon>RC_frmEstadoPlanificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RC_frmfase2sig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_frmfase2sig.Designer.cs">
+      <DependentUpon>RC_frmfase2sig.cs</DependentUpon>
     </Compile>
     <Compile Include="RC_frmFasePlanificacion.cs">
       <SubType>Form</SubType>
@@ -474,6 +506,24 @@
     <Compile Include="GC_unidadmedida_nuevo_inutilizable.designer.cs">
       <DependentUpon>GC_unidadmedida_nuevo_inutilizable.cs</DependentUpon>
     </Compile>
+    <Compile Include="RC_PLANIFICACION.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RC_PLANIFICACION.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RC_planificacionfinales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC_planificacionfinales.Designer.cs">
+      <DependentUpon>RC_planificacionfinales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizador.Designer.cs">
+      <DependentUpon>Visualizador.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CP_detallerecetario.resx">
       <DependentUpon>CP_detallerecetario.cs</DependentUpon>
     </EmbeddedResource>
@@ -570,6 +620,12 @@
     <EmbeddedResource Include="GC_frmBusquedaMateriaPrima.resx">
       <DependentUpon>GC_frmBusquedaMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GC_frmBusquedaRecetario.resx">
+      <DependentUpon>GC_frmBusquedaRecetario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_frmListadoRecetarios.resx">
+      <DependentUpon>GC_frmListadoRecetarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GC_frmNuevaUnidadMedida.resx">
       <DependentUpon>GC_frmNuevaUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
@@ -578,6 +634,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GC_frmtipocategoria.resx">
       <DependentUpon>GC_frmtipocategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GC_ordenproduccion_listado.resx">
+      <DependentUpon>GC_ordenproduccion_listado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoRecetario.resx">
       <DependentUpon>ListadoRecetario.cs</DependentUpon>
@@ -623,6 +682,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RC_frmEstadoPlanificacion.resx">
       <DependentUpon>RC_frmEstadoPlanificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_frmfase2sig.resx">
+      <DependentUpon>RC_frmfase2sig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RC_frmFasePlanificacion.resx">
       <DependentUpon>RC_frmFasePlanificacion.cs</DependentUpon>
@@ -694,6 +756,27 @@
     <EmbeddedResource Include="GC_unidadmedida_nuevo_inutilizable.resx">
       <DependentUpon>GC_unidadmedida_nuevo_inutilizable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RC_PLANIFICACION.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RC_PLANIFICACION.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC_planificacionfinales.resx">
+      <DependentUpon>RC_planificacionfinales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizador.resx">
+      <DependentUpon>Visualizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -857,6 +940,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

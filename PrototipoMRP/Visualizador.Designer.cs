@@ -1,6 +1,6 @@
 ﻿namespace PrototipoMRP
 {
-    partial class ordenproduccion_listado
+    partial class Visualizador
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // ordenproduccion_listado
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(781, 466);
+            this.crystalReportViewer1.TabIndex = 0;
+            // 
+            // Visualizador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 471);
-            this.Name = "ordenproduccion_listado";
-            this.Text = "ordenproduccion_listado";
+            this.ClientSize = new System.Drawing.Size(781, 466);
+            this.Controls.Add(this.crystalReportViewer1);
+            this.Name = "Visualizador";
+            this.Text = "Visualizador";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }
