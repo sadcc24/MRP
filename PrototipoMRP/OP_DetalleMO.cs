@@ -23,7 +23,8 @@ namespace PrototipoMRP
         }
         MRP_BD PRUEBA = new MRP_BD();
 
-        SqlConnection conexion = new SqlConnection("Data Source= erpseminario.database.windows.net; Initial Catalog=ERPSeminario; User Id=adminseminario; Password=S@dseminario;");
+        //SqlConnection conexion = new SqlConnection("Data Source= erpseminario.database.windows.net; Initial Catalog=ERPSeminario; User Id=adminseminario; Password=S@dseminario;");
+        SqlConnection conexion = new MRP_BD().conexion;
 
 
 

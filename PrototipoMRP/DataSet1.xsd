@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PLANIFICACION" msprop:Generator_TableClassName="PLANIFICACIONDataTable" msprop:Generator_TableVarName="tablePLANIFICACION" msprop:Generator_RowChangedName="PLANIFICACIONRowChanged" msprop:Generator_TablePropName="PLANIFICACION" msprop:Generator_RowDeletingName="PLANIFICACIONRowDeleting" msprop:Generator_RowChangingName="PLANIFICACIONRowChanging" msprop:Generator_RowEvHandlerName="PLANIFICACIONRowChangeEventHandler" msprop:Generator_RowDeletedName="PLANIFICACIONRowDeleted" msprop:Generator_RowClassName="PLANIFICACIONRow" msprop:Generator_UserTableName="PLANIFICACION" msprop:Generator_RowEvArgName="PLANIFICACIONRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idempresa" msprop:Generator_ColumnVarNameInTable="columnidempresa" msprop:Generator_ColumnPropNameInRow="idempresa" msprop:Generator_ColumnPropNameInTable="idempresaColumn" msprop:Generator_UserColumnName="idempresa" type="xs:string" minOccurs="0" />
+              <xs:element name="NOMBRE_EMPRESA" msprop:Generator_ColumnVarNameInTable="columnNOMBRE_EMPRESA" msprop:Generator_ColumnPropNameInRow="NOMBRE_EMPRESA" msprop:Generator_ColumnPropNameInTable="NOMBRE_EMPRESAColumn" msprop:Generator_UserColumnName="NOMBRE_EMPRESA" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_RECETARIO" msprop:Generator_ColumnVarNameInTable="columnCOD_RECETARIO" msprop:Generator_ColumnPropNameInRow="COD_RECETARIO" msprop:Generator_ColumnPropNameInTable="COD_RECETARIOColumn" msprop:Generator_UserColumnName="COD_RECETARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_ORDEN_PRODUCCION" msprop:Generator_ColumnVarNameInTable="columnCOD_ORDEN_PRODUCCION" msprop:Generator_ColumnPropNameInRow="COD_ORDEN_PRODUCCION" msprop:Generator_ColumnPropNameInTable="COD_ORDEN_PRODUCCIONColumn" msprop:Generator_UserColumnName="COD_ORDEN_PRODUCCION" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_CREACION_ORDEN" msprop:Generator_ColumnVarNameInTable="columnFECHA_CREACION_ORDEN" msprop:Generator_ColumnPropNameInRow="FECHA_CREACION_ORDEN" msprop:Generator_ColumnPropNameInTable="FECHA_CREACION_ORDENColumn" msprop:Generator_UserColumnName="FECHA_CREACION_ORDEN" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_A_ENTREGAR" msprop:Generator_ColumnVarNameInTable="columnFECHA_A_ENTREGAR" msprop:Generator_ColumnPropNameInRow="FECHA_A_ENTREGAR" msprop:Generator_ColumnPropNameInTable="FECHA_A_ENTREGARColumn" msprop:Generator_UserColumnName="FECHA_A_ENTREGAR" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA_RECIBIDO" msprop:Generator_ColumnVarNameInTable="columnFECHA_RECIBIDO" msprop:Generator_ColumnPropNameInRow="FECHA_RECIBIDO" msprop:Generator_ColumnPropNameInTable="FECHA_RECIBIDOColumn" msprop:Generator_UserColumnName="FECHA_RECIBIDO" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPCION_ORDEN_PRODUCCION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPCION_ORDEN_PRODUCCION" msprop:Generator_ColumnPropNameInRow="DESCRIPCION_ORDEN_PRODUCCION" msprop:Generator_ColumnPropNameInTable="DESCRIPCION_ORDEN_PRODUCCIONColumn" msprop:Generator_UserColumnName="DESCRIPCION_ORDEN_PRODUCCION" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEMS_A_PRODUCCIR" msprop:Generator_ColumnVarNameInTable="columnITEMS_A_PRODUCCIR" msprop:Generator_ColumnPropNameInRow="ITEMS_A_PRODUCCIR" msprop:Generator_ColumnPropNameInTable="ITEMS_A_PRODUCCIRColumn" msprop:Generator_UserColumnName="ITEMS_A_PRODUCCIR" type="xs:string" minOccurs="0" />
+              <xs:element name="COD_ESTADO_PLAN" msprop:Generator_ColumnVarNameInTable="columnCOD_ESTADO_PLAN" msprop:Generator_ColumnPropNameInRow="COD_ESTADO_PLAN" msprop:Generator_ColumnPropNameInTable="COD_ESTADO_PLANColumn" msprop:Generator_UserColumnName="COD_ESTADO_PLAN" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTADO_PLANIFICACION" msprop:Generator_ColumnVarNameInTable="columnESTADO_PLANIFICACION" msprop:Generator_ColumnPropNameInRow="ESTADO_PLANIFICACION" msprop:Generator_ColumnPropNameInTable="ESTADO_PLANIFICACIONColumn" msprop:Generator_UserColumnName="ESTADO_PLANIFICACION" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPCION_RECETARIO" msprop:Generator_ColumnVarNameInTable="columnDESCRIPCION_RECETARIO" msprop:Generator_ColumnPropNameInRow="DESCRIPCION_RECETARIO" msprop:Generator_ColumnPropNameInTable="DESCRIPCION_RECETARIOColumn" msprop:Generator_UserColumnName="DESCRIPCION_RECETARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="CANTIDAD_RECETARIO" msprop:Generator_ColumnVarNameInTable="columnCANTIDAD_RECETARIO" msprop:Generator_ColumnPropNameInRow="CANTIDAD_RECETARIO" msprop:Generator_ColumnPropNameInTable="CANTIDAD_RECETARIOColumn" msprop:Generator_UserColumnName="CANTIDAD_RECETARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="COSTO_TOTAL_RECETARIO" msprop:Generator_ColumnVarNameInTable="columnCOSTO_TOTAL_RECETARIO" msprop:Generator_ColumnPropNameInRow="COSTO_TOTAL_RECETARIO" msprop:Generator_ColumnPropNameInTable="COSTO_TOTAL_RECETARIOColumn" msprop:Generator_UserColumnName="COSTO_TOTAL_RECETARIO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

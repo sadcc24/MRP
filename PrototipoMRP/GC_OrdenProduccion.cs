@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CAPANEGOCIO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,15 @@ namespace PrototipoMRP
 {
     public partial class CreacionOrdenProduccion : Form
     {
-        public CreacionOrdenProduccion()
+        public CreacionOrdenProduccion(MPRCL_Empresa empresa)
         {
             InitializeComponent();
         }
+        public CreacionOrdenProduccion(MPRCL_Empresa empresa,String codorden)
+        {
+            InitializeComponent();
 
+        }
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -30,6 +35,11 @@ namespace PrototipoMRP
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

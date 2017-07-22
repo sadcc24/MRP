@@ -1,6 +1,6 @@
 ﻿namespace PrototipoMRP
 {
-    partial class ordenproduccion_nuevo
+    partial class GC_ordenproduccion_nuevo
     {
         /// <summary>
         /// Required designer variable.
@@ -38,20 +38,23 @@
             this.btnactualizar = new System.Windows.Forms.Button();
             this.lbltitulo = new System.Windows.Forms.Label();
             this.lblfechacreacion = new System.Windows.Forms.Label();
-            this.lblfechasolicitud = new System.Windows.Forms.Label();
-            this.lblfechaenvio = new System.Windows.Forms.Label();
             this.lbldescripcion = new System.Windows.Forms.Label();
             this.lbltotalcantidad = new System.Windows.Forms.Label();
             this.lblreferencia = new System.Windows.Forms.Label();
             this.txtfechacreacion = new System.Windows.Forms.TextBox();
-            this.txtfechasolicitud = new System.Windows.Forms.TextBox();
-            this.txtfechaennvio = new System.Windows.Forms.TextBox();
             this.txtdescripcion = new System.Windows.Forms.TextBox();
             this.txttotalcantidad = new System.Windows.Forms.TextBox();
             this.txtreferencia = new System.Windows.Forms.TextBox();
-            this.cmbestado = new System.Windows.Forms.ComboBox();
             this.Estado = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IDDETALLEORDENPROD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDRECETARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtcodestado = new System.Windows.Forms.TextBox();
+            this.txtcodorden = new System.Windows.Forms.TextBox();
+            this.cmbestado = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +79,7 @@
             this.btnnuevo.TabIndex = 59;
             this.btnnuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnnuevo.UseVisualStyleBackColor = true;
+            this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
             // btneditar
             // 
@@ -86,6 +90,7 @@
             this.btneditar.Size = new System.Drawing.Size(50, 40);
             this.btneditar.TabIndex = 60;
             this.btneditar.UseVisualStyleBackColor = true;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // btneliminar
             // 
@@ -96,6 +101,7 @@
             this.btneliminar.Size = new System.Drawing.Size(50, 40);
             this.btneliminar.TabIndex = 61;
             this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // groupBox1
             // 
@@ -132,6 +138,7 @@
             this.btnguardar.Size = new System.Drawing.Size(50, 40);
             this.btnguardar.TabIndex = 63;
             this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // btnactualizar
             // 
@@ -162,28 +169,10 @@
             this.lblfechacreacion.TabIndex = 100;
             this.lblfechacreacion.Text = "Fecha Creacion";
             // 
-            // lblfechasolicitud
-            // 
-            this.lblfechasolicitud.AutoSize = true;
-            this.lblfechasolicitud.Location = new System.Drawing.Point(221, 106);
-            this.lblfechasolicitud.Name = "lblfechasolicitud";
-            this.lblfechasolicitud.Size = new System.Drawing.Size(80, 13);
-            this.lblfechasolicitud.TabIndex = 101;
-            this.lblfechasolicitud.Text = "Fecha Solicitud";
-            // 
-            // lblfechaenvio
-            // 
-            this.lblfechaenvio.AutoSize = true;
-            this.lblfechaenvio.Location = new System.Drawing.Point(9, 136);
-            this.lblfechaenvio.Name = "lblfechaenvio";
-            this.lblfechaenvio.Size = new System.Drawing.Size(67, 13);
-            this.lblfechaenvio.TabIndex = 102;
-            this.lblfechaenvio.Text = "Fecha Envio";
-            // 
             // lbldescripcion
             // 
             this.lbldescripcion.AutoSize = true;
-            this.lbldescripcion.Location = new System.Drawing.Point(12, 159);
+            this.lbldescripcion.Location = new System.Drawing.Point(13, 133);
             this.lbldescripcion.Name = "lbldescripcion";
             this.lbldescripcion.Size = new System.Drawing.Size(63, 13);
             this.lbldescripcion.TabIndex = 103;
@@ -192,7 +181,7 @@
             // lbltotalcantidad
             // 
             this.lbltotalcantidad.AutoSize = true;
-            this.lbltotalcantidad.Location = new System.Drawing.Point(495, 438);
+            this.lbltotalcantidad.Location = new System.Drawing.Point(504, 463);
             this.lbltotalcantidad.Name = "lbltotalcantidad";
             this.lbltotalcantidad.Size = new System.Drawing.Size(76, 13);
             this.lbltotalcantidad.TabIndex = 104;
@@ -201,7 +190,7 @@
             // lblreferencia
             // 
             this.lblreferencia.AutoSize = true;
-            this.lblreferencia.Location = new System.Drawing.Point(12, 188);
+            this.lblreferencia.Location = new System.Drawing.Point(13, 162);
             this.lblreferencia.Name = "lblreferencia";
             this.lblreferencia.Size = new System.Drawing.Size(59, 13);
             this.lblreferencia.TabIndex = 105;
@@ -209,58 +198,37 @@
             // 
             // txtfechacreacion
             // 
-            this.txtfechacreacion.Location = new System.Drawing.Point(100, 99);
+            this.txtfechacreacion.Location = new System.Drawing.Point(104, 107);
             this.txtfechacreacion.Name = "txtfechacreacion";
-            this.txtfechacreacion.Size = new System.Drawing.Size(100, 20);
+            this.txtfechacreacion.Size = new System.Drawing.Size(179, 20);
             this.txtfechacreacion.TabIndex = 106;
-            // 
-            // txtfechasolicitud
-            // 
-            this.txtfechasolicitud.Location = new System.Drawing.Point(327, 103);
-            this.txtfechasolicitud.Name = "txtfechasolicitud";
-            this.txtfechasolicitud.Size = new System.Drawing.Size(100, 20);
-            this.txtfechasolicitud.TabIndex = 107;
-            // 
-            // txtfechaennvio
-            // 
-            this.txtfechaennvio.Location = new System.Drawing.Point(97, 133);
-            this.txtfechaennvio.Name = "txtfechaennvio";
-            this.txtfechaennvio.Size = new System.Drawing.Size(100, 20);
-            this.txtfechaennvio.TabIndex = 108;
             // 
             // txtdescripcion
             // 
-            this.txtdescripcion.Location = new System.Drawing.Point(100, 159);
+            this.txtdescripcion.Location = new System.Drawing.Point(104, 133);
             this.txtdescripcion.Name = "txtdescripcion";
             this.txtdescripcion.Size = new System.Drawing.Size(388, 20);
             this.txtdescripcion.TabIndex = 109;
             // 
             // txttotalcantidad
             // 
-            this.txttotalcantidad.Location = new System.Drawing.Point(599, 438);
+            this.txttotalcantidad.Location = new System.Drawing.Point(608, 463);
             this.txttotalcantidad.Name = "txttotalcantidad";
             this.txttotalcantidad.Size = new System.Drawing.Size(100, 20);
             this.txttotalcantidad.TabIndex = 110;
+            this.txttotalcantidad.Text = "0";
             // 
             // txtreferencia
             // 
-            this.txtreferencia.Location = new System.Drawing.Point(103, 185);
+            this.txtreferencia.Location = new System.Drawing.Point(104, 159);
             this.txtreferencia.Name = "txtreferencia";
             this.txtreferencia.Size = new System.Drawing.Size(388, 20);
             this.txtreferencia.TabIndex = 111;
             // 
-            // cmbestado
-            // 
-            this.cmbestado.FormattingEnabled = true;
-            this.cmbestado.Location = new System.Drawing.Point(103, 207);
-            this.cmbestado.Name = "cmbestado";
-            this.cmbestado.Size = new System.Drawing.Size(121, 21);
-            this.cmbestado.TabIndex = 112;
-            // 
             // Estado
             // 
             this.Estado.AutoSize = true;
-            this.Estado.Location = new System.Drawing.Point(15, 215);
+            this.Estado.Location = new System.Drawing.Point(16, 189);
             this.Estado.Name = "Estado";
             this.Estado.Size = new System.Drawing.Size(40, 13);
             this.Estado.TabIndex = 113;
@@ -268,36 +236,98 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 247);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDDETALLEORDENPROD,
+            this.IDRECETARIO,
+            this.NOMBRE,
+            this.CANTIDAD});
+            this.dataGridView1.Location = new System.Drawing.Point(18, 223);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(690, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(690, 234);
             this.dataGridView1.TabIndex = 114;
+            this.dataGridView1.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dataGridView1_CellValidating);
+            this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
+            this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
-            // ordenproduccion_nuevo
+            // IDDETALLEORDENPROD
+            // 
+            this.IDDETALLEORDENPROD.HeaderText = "IDDETALLEORDENPROD";
+            this.IDDETALLEORDENPROD.Name = "IDDETALLEORDENPROD";
+            // 
+            // IDRECETARIO
+            // 
+            this.IDRECETARIO.HeaderText = "COD PRODUCTO RECETARIO";
+            this.IDRECETARIO.Name = "IDRECETARIO";
+            // 
+            // NOMBRE
+            // 
+            this.NOMBRE.HeaderText = "NOMBRE";
+            this.NOMBRE.Name = "NOMBRE";
+            // 
+            // CANTIDAD
+            // 
+            this.CANTIDAD.HeaderText = "CANTIDAD";
+            this.CANTIDAD.Name = "CANTIDAD";
+            // 
+            // txtcodestado
+            // 
+            this.txtcodestado.Location = new System.Drawing.Point(231, 186);
+            this.txtcodestado.Name = "txtcodestado";
+            this.txtcodestado.Size = new System.Drawing.Size(125, 20);
+            this.txtcodestado.TabIndex = 115;
+            this.txtcodestado.Visible = false;
+            // 
+            // txtcodorden
+            // 
+            this.txtcodorden.Location = new System.Drawing.Point(104, 85);
+            this.txtcodorden.Name = "txtcodorden";
+            this.txtcodorden.Size = new System.Drawing.Size(100, 20);
+            this.txtcodorden.TabIndex = 117;
+            // 
+            // cmbestado
+            // 
+            this.cmbestado.FormattingEnabled = true;
+            this.cmbestado.Location = new System.Drawing.Point(104, 186);
+            this.cmbestado.Name = "cmbestado";
+            this.cmbestado.Size = new System.Drawing.Size(121, 21);
+            this.cmbestado.TabIndex = 118;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 119;
+            this.label1.Text = "Codigo Orden";
+            // 
+            // GC_ordenproduccion_nuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(720, 486);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbestado);
+            this.Controls.Add(this.txtcodorden);
+            this.Controls.Add(this.txtcodestado);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Estado);
-            this.Controls.Add(this.cmbestado);
             this.Controls.Add(this.txtreferencia);
             this.Controls.Add(this.txttotalcantidad);
             this.Controls.Add(this.txtdescripcion);
-            this.Controls.Add(this.txtfechaennvio);
-            this.Controls.Add(this.txtfechasolicitud);
             this.Controls.Add(this.txtfechacreacion);
             this.Controls.Add(this.lblreferencia);
             this.Controls.Add(this.lbltotalcantidad);
             this.Controls.Add(this.lbldescripcion);
-            this.Controls.Add(this.lblfechaenvio);
-            this.Controls.Add(this.lblfechasolicitud);
             this.Controls.Add(this.lblfechacreacion);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbltitulo);
-            this.Name = "ordenproduccion_nuevo";
+            this.Name = "GC_ordenproduccion_nuevo";
             this.Text = "Orden de Produccion";
+            this.Load += new System.EventHandler(this.GC_ordenproduccion_nuevo_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -316,19 +346,22 @@
         private System.Windows.Forms.Button btnactualizar;
         private System.Windows.Forms.Label lbltitulo;
         private System.Windows.Forms.Label lblfechacreacion;
-        private System.Windows.Forms.Label lblfechasolicitud;
-        private System.Windows.Forms.Label lblfechaenvio;
         private System.Windows.Forms.Label lbldescripcion;
         private System.Windows.Forms.Label lbltotalcantidad;
         private System.Windows.Forms.Label lblreferencia;
         private System.Windows.Forms.TextBox txtfechacreacion;
-        private System.Windows.Forms.TextBox txtfechasolicitud;
-        private System.Windows.Forms.TextBox txtfechaennvio;
         private System.Windows.Forms.TextBox txtdescripcion;
         private System.Windows.Forms.TextBox txttotalcantidad;
         private System.Windows.Forms.TextBox txtreferencia;
-        private System.Windows.Forms.ComboBox cmbestado;
         private System.Windows.Forms.Label Estado;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtcodestado;
+        private System.Windows.Forms.TextBox txtcodorden;
+        private System.Windows.Forms.ComboBox cmbestado;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDDETALLEORDENPROD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDRECETARIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
     }
 }

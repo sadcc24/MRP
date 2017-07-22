@@ -77,7 +77,7 @@ namespace CAPANEGOCIO
 
             DataTable dprod = new DataTable();
             GCCL_ProductosGenerales_MP producto = new GCCL_ProductosGenerales_MP();
-            dprod = cnn.getSQL("select prod.idproducto ,prod.idtipoproducto, prod.descripcion, prod.costo, " +
+            dprod = cnn.getSQL("select prod.idproducto ,prod.idtipoproducto, prod.descripcion,ISNULL(prod.costo,0) 'costo', " +
             "tu.idtipounidad, tu.simbolo from PRODUCTO prod " +
             "inner join TIPOUNIDAD tu on prod.unidadpeso = tu.idtipounidad where idproducto=" + codigo+" and idempresa='"+empresa.CodigoEmpresa+"'");
             if (dprod.Rows.Count== 1)

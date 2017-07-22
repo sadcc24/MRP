@@ -32,11 +32,24 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresoMateriaPrimaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.existenciaEnBodegaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaUnidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidadMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.factorDeConversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenDeProduccionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.recetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.detalleRecetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.costosDeFabricacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.validacionDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verificacionDeProrrateoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prorrateoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.recetarioDeMaterialesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenesDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manoObraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tAREAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fasesTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,15 +70,7 @@
             this.toolEmpresa = new System.Windows.Forms.ToolStripStatusLabel();
             this.tooltxtempresa = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolrol = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ingresoMateriaPrimaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.existenciaEnBodegaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.recetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.detalleRecetaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordenDeProduccionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.validacionDeProduccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.costosDeFabricacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verificacionDeProrrateoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fasesDePlanificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -82,7 +87,7 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -100,24 +105,45 @@
             this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.inventarioToolStripMenuItem.Text = "Inventario";
             // 
+            // ingresoMateriaPrimaToolStripMenuItem
+            // 
+            this.ingresoMateriaPrimaToolStripMenuItem.Name = "ingresoMateriaPrimaToolStripMenuItem";
+            this.ingresoMateriaPrimaToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.ingresoMateriaPrimaToolStripMenuItem.Text = "Ingreso Materia Prima";
+            this.ingresoMateriaPrimaToolStripMenuItem.Click += new System.EventHandler(this.ingresoMateriaPrimaToolStripMenuItem_Click);
+            // 
+            // existenciaEnBodegaToolStripMenuItem
+            // 
+            this.existenciaEnBodegaToolStripMenuItem.Name = "existenciaEnBodegaToolStripMenuItem";
+            this.existenciaEnBodegaToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.existenciaEnBodegaToolStripMenuItem.Text = "Existencia en bodega";
+            this.existenciaEnBodegaToolStripMenuItem.Click += new System.EventHandler(this.existenciaEnBodegaToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(208, 22);
+            this.toolStripMenuItem2.Text = "_________________________";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
             // categoriaUnidadMedidaToolStripMenuItem
             // 
             this.categoriaUnidadMedidaToolStripMenuItem.Name = "categoriaUnidadMedidaToolStripMenuItem";
-            this.categoriaUnidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.categoriaUnidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.categoriaUnidadMedidaToolStripMenuItem.Text = "Categoria unidad medida";
             this.categoriaUnidadMedidaToolStripMenuItem.Click += new System.EventHandler(this.categoriaUnidadMedidaToolStripMenuItem_Click);
             // 
             // unidadMedidaToolStripMenuItem
             // 
             this.unidadMedidaToolStripMenuItem.Name = "unidadMedidaToolStripMenuItem";
-            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.unidadMedidaToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.unidadMedidaToolStripMenuItem.Text = "Unidad Medida";
             this.unidadMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadMedidaToolStripMenuItem_Click);
             // 
             // factorDeConversionToolStripMenuItem
             // 
             this.factorDeConversionToolStripMenuItem.Name = "factorDeConversionToolStripMenuItem";
-            this.factorDeConversionToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
+            this.factorDeConversionToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.factorDeConversionToolStripMenuItem.Text = "Factor de conversion";
             this.factorDeConversionToolStripMenuItem.Click += new System.EventHandler(this.factorDeConversionToolStripMenuItem_Click);
             // 
@@ -131,19 +157,93 @@
             this.costosDeFabricacionToolStripMenuItem,
             this.validacionDeProduccionToolStripMenuItem,
             this.verificacionDeProrrateoToolStripMenuItem,
-            this.prorrateoToolStripMenuItem1});
+            this.prorrateoToolStripMenuItem1,
+            this.toolStripMenuItem3,
+            this.recetarioDeMaterialesToolStripMenuItem,
+            this.ordenesDeProduccionToolStripMenuItem,
+            this.fasesDePlanificacionToolStripMenuItem,
+            this.planificacionToolStripMenuItem});
             this.materialesToolStripMenuItem.Image = global::PrototipoMRP.Properties.Resources.estructura;
             this.materialesToolStripMenuItem.Name = "materialesToolStripMenuItem";
             this.materialesToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.materialesToolStripMenuItem.Text = "Produccion ";
             this.materialesToolStripMenuItem.Click += new System.EventHandler(this.materialesToolStripMenuItem_Click);
             // 
+            // ordenDeProduccionToolStripMenuItem1
+            // 
+            this.ordenDeProduccionToolStripMenuItem1.Name = "ordenDeProduccionToolStripMenuItem1";
+            this.ordenDeProduccionToolStripMenuItem1.Size = new System.Drawing.Size(244, 22);
+            this.ordenDeProduccionToolStripMenuItem1.Text = "Orden de Produccion";
+            this.ordenDeProduccionToolStripMenuItem1.Click += new System.EventHandler(this.ordenDeProduccionToolStripMenuItem1_Click);
+            // 
+            // recetaToolStripMenuItem
+            // 
+            this.recetaToolStripMenuItem.Name = "recetaToolStripMenuItem";
+            this.recetaToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.recetaToolStripMenuItem.Text = "Receta";
+            this.recetaToolStripMenuItem.Click += new System.EventHandler(this.recetaToolStripMenuItem_Click);
+            // 
+            // detalleRecetaToolStripMenuItem
+            // 
+            this.detalleRecetaToolStripMenuItem.Name = "detalleRecetaToolStripMenuItem";
+            this.detalleRecetaToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.detalleRecetaToolStripMenuItem.Text = "Detalle receta";
+            this.detalleRecetaToolStripMenuItem.Click += new System.EventHandler(this.detalleRecetaToolStripMenuItem_Click);
+            // 
+            // costosDeFabricacionToolStripMenuItem
+            // 
+            this.costosDeFabricacionToolStripMenuItem.Name = "costosDeFabricacionToolStripMenuItem";
+            this.costosDeFabricacionToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.costosDeFabricacionToolStripMenuItem.Text = "Costos de fabricacion";
+            this.costosDeFabricacionToolStripMenuItem.Click += new System.EventHandler(this.costosDeFabricacionToolStripMenuItem_Click);
+            // 
+            // validacionDeProduccionToolStripMenuItem
+            // 
+            this.validacionDeProduccionToolStripMenuItem.Name = "validacionDeProduccionToolStripMenuItem";
+            this.validacionDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.validacionDeProduccionToolStripMenuItem.Text = "Validacion de Produccion";
+            this.validacionDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.validacionDeProduccionToolStripMenuItem_Click);
+            // 
+            // verificacionDeProrrateoToolStripMenuItem
+            // 
+            this.verificacionDeProrrateoToolStripMenuItem.Name = "verificacionDeProrrateoToolStripMenuItem";
+            this.verificacionDeProrrateoToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.verificacionDeProrrateoToolStripMenuItem.Text = "Verificacion de prorrateo";
+            this.verificacionDeProrrateoToolStripMenuItem.Click += new System.EventHandler(this.verificacionDeProrrateoToolStripMenuItem_Click);
+            // 
             // prorrateoToolStripMenuItem1
             // 
             this.prorrateoToolStripMenuItem1.Name = "prorrateoToolStripMenuItem1";
-            this.prorrateoToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.prorrateoToolStripMenuItem1.Size = new System.Drawing.Size(244, 22);
             this.prorrateoToolStripMenuItem1.Text = "Prorrateo";
             this.prorrateoToolStripMenuItem1.Click += new System.EventHandler(this.prorrateoToolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(244, 22);
+            this.toolStripMenuItem3.Text = "__________________________________";
+            // 
+            // recetarioDeMaterialesToolStripMenuItem
+            // 
+            this.recetarioDeMaterialesToolStripMenuItem.Name = "recetarioDeMaterialesToolStripMenuItem";
+            this.recetarioDeMaterialesToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.recetarioDeMaterialesToolStripMenuItem.Text = "Recetario de Materiales";
+            this.recetarioDeMaterialesToolStripMenuItem.Click += new System.EventHandler(this.recetarioDeMaterialesToolStripMenuItem_Click);
+            // 
+            // ordenesDeProduccionToolStripMenuItem
+            // 
+            this.ordenesDeProduccionToolStripMenuItem.Name = "ordenesDeProduccionToolStripMenuItem";
+            this.ordenesDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.ordenesDeProduccionToolStripMenuItem.Text = "Ordenes de Produccion";
+            this.ordenesDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.ordenesDeProduccionToolStripMenuItem_Click);
+            // 
+            // planificacionToolStripMenuItem
+            // 
+            this.planificacionToolStripMenuItem.Name = "planificacionToolStripMenuItem";
+            this.planificacionToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.planificacionToolStripMenuItem.Text = "Planificacion de ordenes";
+            this.planificacionToolStripMenuItem.Click += new System.EventHandler(this.planificacionToolStripMenuItem_Click);
             // 
             // manoObraToolStripMenuItem
             // 
@@ -310,67 +410,12 @@
             this.toolrol.Size = new System.Drawing.Size(27, 17);
             this.toolrol.Text = "Rol:";
             // 
-            // ingresoMateriaPrimaToolStripMenuItem
+            // fasesDePlanificacionToolStripMenuItem
             // 
-            this.ingresoMateriaPrimaToolStripMenuItem.Name = "ingresoMateriaPrimaToolStripMenuItem";
-            this.ingresoMateriaPrimaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
-            this.ingresoMateriaPrimaToolStripMenuItem.Text = "Ingreso Materia Prima";
-            this.ingresoMateriaPrimaToolStripMenuItem.Click += new System.EventHandler(this.ingresoMateriaPrimaToolStripMenuItem_Click);
-            // 
-            // existenciaEnBodegaToolStripMenuItem
-            // 
-            this.existenciaEnBodegaToolStripMenuItem.Name = "existenciaEnBodegaToolStripMenuItem";
-            this.existenciaEnBodegaToolStripMenuItem.Size = new System.Drawing.Size(277, 22);
-            this.existenciaEnBodegaToolStripMenuItem.Text = "Existencia en bodega";
-            this.existenciaEnBodegaToolStripMenuItem.Click += new System.EventHandler(this.existenciaEnBodegaToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(277, 22);
-            this.toolStripMenuItem2.Text = "_________________________";
-            // 
-            // recetaToolStripMenuItem
-            // 
-            this.recetaToolStripMenuItem.Name = "recetaToolStripMenuItem";
-            this.recetaToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.recetaToolStripMenuItem.Text = "Receta";
-            this.recetaToolStripMenuItem.Click += new System.EventHandler(this.recetaToolStripMenuItem_Click);
-            // 
-            // detalleRecetaToolStripMenuItem
-            // 
-            this.detalleRecetaToolStripMenuItem.Name = "detalleRecetaToolStripMenuItem";
-            this.detalleRecetaToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.detalleRecetaToolStripMenuItem.Text = "Detalle receta";
-            this.detalleRecetaToolStripMenuItem.Click += new System.EventHandler(this.detalleRecetaToolStripMenuItem_Click);
-            // 
-            // ordenDeProduccionToolStripMenuItem1
-            // 
-            this.ordenDeProduccionToolStripMenuItem1.Name = "ordenDeProduccionToolStripMenuItem1";
-            this.ordenDeProduccionToolStripMenuItem1.Size = new System.Drawing.Size(224, 22);
-            this.ordenDeProduccionToolStripMenuItem1.Text = "Orden de Produccion";
-            this.ordenDeProduccionToolStripMenuItem1.Click += new System.EventHandler(this.ordenDeProduccionToolStripMenuItem1_Click);
-            // 
-            // validacionDeProduccionToolStripMenuItem
-            // 
-            this.validacionDeProduccionToolStripMenuItem.Name = "validacionDeProduccionToolStripMenuItem";
-            this.validacionDeProduccionToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.validacionDeProduccionToolStripMenuItem.Text = "Validacion de Produccion";
-            this.validacionDeProduccionToolStripMenuItem.Click += new System.EventHandler(this.validacionDeProduccionToolStripMenuItem_Click);
-            // 
-            // costosDeFabricacionToolStripMenuItem
-            // 
-            this.costosDeFabricacionToolStripMenuItem.Name = "costosDeFabricacionToolStripMenuItem";
-            this.costosDeFabricacionToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.costosDeFabricacionToolStripMenuItem.Text = "Costos de fabricacion";
-            this.costosDeFabricacionToolStripMenuItem.Click += new System.EventHandler(this.costosDeFabricacionToolStripMenuItem_Click);
-            // 
-            // verificacionDeProrrateoToolStripMenuItem
-            // 
-            this.verificacionDeProrrateoToolStripMenuItem.Name = "verificacionDeProrrateoToolStripMenuItem";
-            this.verificacionDeProrrateoToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.verificacionDeProrrateoToolStripMenuItem.Text = "Verificacion de prorrateo";
-            this.verificacionDeProrrateoToolStripMenuItem.Click += new System.EventHandler(this.verificacionDeProrrateoToolStripMenuItem_Click);
+            this.fasesDePlanificacionToolStripMenuItem.Name = "fasesDePlanificacionToolStripMenuItem";
+            this.fasesDePlanificacionToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.fasesDePlanificacionToolStripMenuItem.Text = "Fases de Planificacion";
+            this.fasesDePlanificacionToolStripMenuItem.Click += new System.EventHandler(this.fasesDePlanificacionToolStripMenuItem_Click);
             // 
             // MRP_mdiMRP
             // 
@@ -440,5 +485,10 @@
         private System.Windows.Forms.ToolStripMenuItem validacionDeProduccionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem costosDeFabricacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verificacionDeProrrateoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem recetarioDeMaterialesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenesDeProduccionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planificacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fasesDePlanificacionToolStripMenuItem;
     }
 }

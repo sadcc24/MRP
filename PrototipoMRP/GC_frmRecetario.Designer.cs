@@ -49,7 +49,6 @@
             this.FACTOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CANTIDADEQUIV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.COSTOEQUIV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lbltitulo = new System.Windows.Forms.Label();
             this.txtcodrecetario = new System.Windows.Forms.TextBox();
             this.txtfechacreacion = new System.Windows.Forms.TextBox();
@@ -166,7 +165,6 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(12, 197);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -267,16 +265,6 @@
             // 
             this.COSTOEQUIV.HeaderText = "COSTO EQUIVALENTE";
             this.COSTOEQUIV.Name = "COSTOEQUIV";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1087, 250);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // lbltitulo
             // 
@@ -390,6 +378,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1119, 485);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -430,7 +419,6 @@
         private System.Windows.Forms.Button btnactualizar;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label lbltitulo;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtcodrecetario;

@@ -25,8 +25,8 @@ namespace PrototipoMRP
         }
         MRP_BD PRUEBA = new MRP_BD();
 
-        SqlConnection saldo = new SqlConnection("Data Source= erpseminario.database.windows.net; Initial Catalog=ERPSeminario; User Id=adminseminario; Password=S@dseminario;");
-
+        //SqlConnection saldo = new SqlConnection("Data Source= erpseminario.database.windows.net; Initial Catalog=ERPSeminario; User Id=adminseminario; Password=S@dseminario;");
+        SqlConnection saldo = new MRP_BD().conexion;
         public void consulta()
         {
             dataGridView1.DataSource = PRUEBA.getSQL("select iddetalletarea as 'Codigo Asignacion', idtarea as 'Cod Tarea', idfase as 'Cod Fase', empleado as 'Cod Empleado', correlativofase as 'Horas Requeridas',costoporfase as 'Costo por Tarea' from detalletarea");

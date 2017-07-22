@@ -22,6 +22,11 @@ namespace PrototipoMRP
         String menu = "";
         MPRCL_Empresa empresa; //esta variables tienen que enviar para cualquier formulario siempre y cuando tengan constructores
         MPRCL_Usuario usuario; //esta variables tienen que enviar para cualquier formulario siempre y cuando tengan constructores
+
+        public MRP_mdiMRP()
+        {
+            InitializeComponent();
+        }
         public MRP_mdiMRP(MPRCL_Usuario user, MPRCL_Empresa emp)
         {
             InitializeComponent();
@@ -34,6 +39,7 @@ namespace PrototipoMRP
 
             menu = usuario.rollEmpleado.ToString();
         }
+       
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -61,9 +67,9 @@ namespace PrototipoMRP
 
         private void generacionDeOrdenesDeProduccionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            GC_ListaProduccion prod = new GC_ListaProduccion();
-            prod.MdiParent = this;
-            prod.Show();
+            //GC_ListaProduccion prod = new GC_ListaProduccion();
+            //prod.MdiParent = this;
+            //prod.Show();
         }
 
         private void solicitudDeProductoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -258,7 +264,7 @@ namespace PrototipoMRP
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Desarrollado por: \n\n  Olivia Perez - 100% \n Carlos Pineda - 100%\n Guillermo - 10% \n Rony - 10%", "MRP SAD 2017", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Desarrollado por: \n\n  Olivia Perez \n Carlos Pineda \n Guillermo -  \n Rony - ", "MRP SAD 2017", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void MRP_mdiMRP_Load(object sender, EventArgs e)
@@ -351,6 +357,45 @@ namespace PrototipoMRP
         private void produccionPorOCToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void conectividadToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void recetarioToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recetarioDeMaterialesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GC_frmListadoRecetarios listadorecetarios = new GC_frmListadoRecetarios(empresa);
+            listadorecetarios.Show();
+        }
+
+        private void ordenesDeProduccionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GC_ListaProduccion listaprod = new GC_ListaProduccion(empresa);
+            listaprod.Show();
+        }
+
+        private void planificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RC_planificacionfinales planificacion = new RC_planificacionfinales(empresa);
+            planificacion.Show();
+        }
+
+        private void fasesDePlanificacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RC_frmEstadoPlanificacion fases = new RC_frmEstadoPlanificacion();
+            fases.Show();
         }
     }
  }
